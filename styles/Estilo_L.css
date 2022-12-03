@@ -22,8 +22,11 @@ body{
     background-repeat:no-repeat;	
 }
 
-
 .logo img{
-    width: 200px;
-    height: 200px;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 741px;
+    top: 141px;
+    border-radius: 30px;
 }
