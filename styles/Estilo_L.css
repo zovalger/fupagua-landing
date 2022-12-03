@@ -6,16 +6,14 @@
 }
 
 body {
-  min-width: 100vh;
-
+  max-width: 100vw;
 }
 
 .Logo_header {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
-  left: 0px;
-  top: 0px;
   background: linear-gradient(
       0deg,
       rgba(0, 163, 255, 0.52),
@@ -51,49 +49,70 @@ ul {
   list-style: none;
 }
 
-#nav_logo{
+.nav_logo {
   display: flex;
-justify-content: center;
-  min-width: 100vh;
+  justify-content: center;
+  min-width: 100%;
 }
 
-#nav_logo li{
+.nav_logo li {
   display: inline-flex;
   color: rgb(255, 255, 255);
   align-items: center;
   padding: 18px 21px;
   height: 44px;
-    margin-left: 10px;
-    margin-top: 40px;
+  margin-left: 10px;
+  margin-top: 40px;
   border-bottom: 1px solid #ffffff;
 }
 
-.name_fun{
-    position: absolute;
+.seccion_presentacion {
+  background: #f2f9ff;
+}
+
+.name_fun {
+  display: flex;
   width: 100%;
   height: 100vh;
-  left: 0px;
-  top: 0px;
-    background-image: url("/public/IMG/20221116_124735.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 100vh;
-
-}
-.seccion_presentacion{
-    background: #F2F9FF;
+  flex-direction: column;
 }
 
-.name_fun p{
-    position: absolute;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    width: 300px;
-    bottom: 0;
-    left: 0;
-    margin-left: 20px;
-    margin-bottom: 150px;
+.vector_1 {
+  position: absolute;
+  z-index: 2;
+  clip-path: polygon(100% 56%, 0 88%, 0 28%);
+  background: linear-gradient(90deg, #0087d3 0.03%, #2fcdff 100%);
+  width: 100%;
+  height: 720px;
+  justify-content: flex-end;
 }
 
+.vector_2 {
+  clip-path: polygon(0 52%, 100% 98%, 100% 56%);
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(92.39deg, #00c0fd 0.8%, #007297 98.29%);
+  width: 100%;
+  height: 720px;
+  justify-content: flex-end;
+}
 
+.name_fun p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  z-index: 3;
+}
+
+.container_img {
+  background-image: url("/public/IMG/20221116_124735.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  min-height: 70vh;
+  width: 100%;
+  z-index: 0;
+}
