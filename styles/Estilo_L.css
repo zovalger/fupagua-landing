@@ -81,6 +81,9 @@ justify-content: center;
     margin-top: 100vh;
 
 }
+.seccion_presentacion{
+    background: #F2F9FF;
+}
 
 .name_fun p{
     position: absolute;
@@ -92,4 +95,5 @@ justify-content: center;
     margin-left: 20px;
     margin-bottom: 150px;
 }
+
 
