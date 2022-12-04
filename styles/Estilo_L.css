@@ -40,7 +40,7 @@ body {
   border-radius: 30px;
 }
 
-.logo p {
+.logo h1 {
   color: rgb(255, 255, 255);
   font-size: 48px;
 }
@@ -75,12 +75,14 @@ ul {
   width: 100%;
   height: 100vh;
   flex-direction: column;
+  flex-wrap: nowrap;
+  
 }
 
 .vector_1 {
   position: absolute;
   z-index: 2;
-  clip-path: polygon(100% 56%, 0 88%, 0 28%);
+  clip-path: polygon(100% 52%, 100% 55%, 0 100%, 0 29%);
   background: linear-gradient(90deg, #0087d3 0.03%, #2fcdff 100%);
   width: 100%;
   height: 720px;
@@ -88,7 +90,7 @@ ul {
 }
 
 .vector_2 {
-  clip-path: polygon(0 52%, 100% 98%, 100% 56%);
+  clip-path: polygon(0 52%, 100% 98%, 100% 55%);
   position: absolute;
   z-index: 1;
   background: linear-gradient(92.39deg, #00c0fd 0.8%, #007297 98.29%);
@@ -97,22 +99,47 @@ ul {
   justify-content: flex-end;
 }
 
-.name_fun p {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  width: 300px;
-  margin-left: 20px;
-  margin-bottom: 70px;
-  z-index: 3;
-}
-
 .container_img {
   background-image: url("/public/IMG/20221116_124735.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: flex-end;
-  min-height: 70vh;
+  min-height: 80vh;
   width: 100%;
   z-index: 0;
 }
+
+/* 
+.presentation p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  z-index: 3;
+} */
+
+
+.presentation{
+ position: absolute;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+top: 150vh;
+  z-index: 3;
+
+} 
+
+.presentation h2{ 
+font-size: 32px;
+text-align: center;
+margin-bottom: 30px;
+
+ } 
+
+ .presentation p{ 
+  font-size: 16px;
+  text-align: justify;
+   } 
