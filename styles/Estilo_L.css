@@ -384,7 +384,35 @@ ul {
   border-radius: 30px;
 }
 
+/* News */
+.container_yellow {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(107.56deg, #DBAA00 0%, rgba(219, 170, 0, 0) 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+
+.Vector_5 {
+position: absolute;
+width: 639px;
+height: 748px;
+left: -151px;
+top: 0px;
+background: linear-gradient(228.83deg, #C09C1E 0.41%, rgba(192, 156, 30, 0.423554) 72.93%, rgba(154, 0, 0, 0) 72.93%, rgba(192, 156, 30, 0.07) 72.94%);
+}
+
+.section_news {
+  background: #FFF8E2;
+}
+/* library banner */
 
 
 
@@ -458,6 +486,7 @@ border: 5px solid #39B30E;
 border-radius: 30px;
 }
 
+/* Welcome */
 .Welcome_title{
   font-size: 60px;
 }
