@@ -247,6 +247,16 @@ ul {
   justify-content: flex-end;
 }
 
+.Welcome_red {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 1000px;
+  height: 300px;
+  margin-left: 50px;
+  z-index: 3;
+  padding-top: 5rem;
+}
+
 /* Contenedor de videos */
 .container_section_video {
   display: flex;
@@ -325,6 +335,16 @@ ul {
   justify-content: flex-end;
 }
 
+.Welcome_green {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 1000px;
+  height: 300px;
+  margin-left: 50px;
+  z-index: 3;
+  padding-top: 5rem;
+}
+
 /* Contenedor de libros */
 .container_section_libro {
   display: flex;
@@ -363,6 +383,10 @@ ul {
   box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
+
+
+
+
 
  /* Formulario de Contactos */
 
@@ -432,4 +456,8 @@ box-sizing: border-box;
 background: #39B30E;
 border: 5px solid #39B30E;
 border-radius: 30px;
+}
+
+.Welcome_title{
+  font-size: 72px;
 }
