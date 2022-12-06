@@ -459,5 +459,11 @@ border-radius: 30px;
 }
 
 .Welcome_title{
-  font-size: 72px;
+  font-size: 60px;
+}
+
+.Welcome_description{
+  font-size: 36px;
+  width: 450px;
+  text-align: justify;
 }
