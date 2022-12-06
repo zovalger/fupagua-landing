@@ -249,8 +249,8 @@ width: 260px;
 
 }
 
-
-@media (max-height: 1180px) {
+/* (Hay que hacer pruebas) */
+/* @media (height: 1180px) {
  
 .vector_1 {
     position: absolute;
@@ -305,4 +305,4 @@ width: 260px;
     font-size: 16px;
     text-align: justify;
      } 
-}
+} */
