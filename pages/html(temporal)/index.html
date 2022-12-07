@@ -26,19 +26,44 @@
 <body>
 
   <header>
-    <div class="Logo_header">
+    <div class="Logo_header" id="header">
       <div class="logo">
         <img src="../../public/Icons/Logo.png" alt="Logo" />
         <h1>FUPAGUA</h1>
       </div>
       <nav class="nav_logo">
         <ul>
-          <li>Sobre nosotros</li>
-          <li>Servicios</li>
-          <li>Aprendizaje</li>
-          <li>Biblioteca</li>
-          <li>Noticias</li>
-          <li>Contacto</li>
+          <li class="nav_item">
+            <a href="#sobre_nosotros" class="nav_link active-link">
+              Sobre nosotros
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#servicios" class="nav_link">
+              Servicios
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#videos" class="nav_link">
+              Aprendizaje
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#libros" class="nav_link">
+              Nuestros Libros
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#noticias" class="nav_link">
+              Noticias
+            </a>
+          </li>
+          
+          <li class="nav_item">
+            <a href="#contactame" class="nav_link">
+              Contactanos
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -55,7 +80,7 @@
       <div class="vector_1"></div>
       <div class="vector_2"></div>
       <div class="presentation">
-        <h2>FUPAGUA</h2>
+        <h2 href="">FUPAGUA</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           natus quibusdam similique sit ex porro totam dolorum! Ab quibusdam
@@ -66,7 +91,7 @@
     </div>
 
     <!-- Contenedores del contenido "texto" -->
-    <div class="container_tex">
+    <div class="container_tex" id="sobre_nosotros">
       <div class="container_section_text">
         <div class="container_tex_img"></div>
         <img src="../../public/IMG/20221116_124735.jpg" alt="title_text" />
@@ -104,7 +129,7 @@
 
     <!-- Servicios -->
     <section class="services">
-      <div class="box-container">
+      <div class="box-container" id="servicios">
         <div class="box">
           <div class="circle_services">
             <img src="" alt="">
@@ -177,7 +202,7 @@
     <br>
 
     <!--- Sección de videos -->
-    <div class="section_video">
+    <div class="section_video" id="videos">
 
       <!-- Segundo encabezado -->
       <div class="name_fun">
@@ -196,8 +221,6 @@
           </p>
         </div>
       </div>
-
-     
 
       <!-- contenedores del contenido "texto" -->
       <section class="services">
@@ -241,7 +264,7 @@
     </div>
 
     <!--- Sección de libros -->
-    <div class="section_book">
+    <div class="section_book "id="libros">
 
           <!-- tercer encabezado -->
           <div class="name_fun">
@@ -307,36 +330,33 @@
     </div>
   
      <!--- Sección de libros -->
-     <div class="section_news">
-
-      <!-- tercer encabezado -->
+    <div class="section_news" id="noticias">
+      <!-- Segundo encabezado -->
       <div class="name_fun">
         <nav></nav>
         <div class="container_yellow"></div>
         <div class="vector_5"></div>
-        <div class="Welcome_green">
-          <h1 class= "Welcome_title">Noticias populares</h1>
+        <div class="Welcome_yellow">
+          <h1 class="Welcome_title">¿Que deseas aprender?</h1>
           <br>
           <br>
-            <p class="Welcome_description">                   
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-              praesentium totam adipisci, odio ratione, vitae perferendis ullam
-              atque, tenetur neque ex minima fugiat dolore dicta tempora illo
-              debitis itaque assumenda!
-            </p>
+          <p class="Welcome_description">                   
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            praesentium totam adipisci, odio ratione, vitae perferendis ullam
+            atque, tenetur neque ex minima fugiat dolore dicta tempora illo
+            debitis itaque assumenda!
+          </p>
         </div>
       </div>
 
-    
       <!-- contenedores del contenido "texto" -->
-
       <section class="services">
         <br>
         <div class="box-container">
 
-          <div class="box_libro content">
+          <div class="box_video content">
             <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
-            <h2 class="service_title">Pediatra</h2>
+            <h2 class="service_title">Title video</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
               praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -345,9 +365,9 @@
             </p>
           </div>
 
-          <div class="box_libro content">
+          <div class="box_video content">
             <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
-            <h2 class="service_title">Terapia</h2>
+            <h2 class="service_title">Title video</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
               praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -356,9 +376,9 @@
             </p>
           </div>
 
-          <div class="box_libro content">
+          <div class="box_video content">
             <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
-            <h3 class="service_title">Tratamiento</h3>
+            <h2 class="service_title">Title video</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
               praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -368,12 +388,10 @@
           </div>
         </div>
         <br>
-
-
     </div>
 
     <!-- Formulario de Contactos-->
-    <div class="form-container">
+    <div class="form-container" id="contactame">
         <form action="" class="form">
           <div class="form-header">
             <h1 class="form-title"> Contactanos </h1>

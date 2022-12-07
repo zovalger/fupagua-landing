@@ -69,3 +69,32 @@ export default function Home() {
     </div>
   )
 }
+/*============================= SCROLL SECTIONS ACTIVE LINK ================================*/ 
+const divs = document.querySelectorAll('div[id]')
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    divs.forEach(current =>{
+        const divHeight = current.offsetHeight
+        const divTop = current.offsetTop - 50;
+        divId = current.getAttribute('id') 
+
+        if(scrollY > sectionTop && scrollY <= divTop + divHeight){
+            document.querySelector('.nav_menu a[href*=' + divId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav_menu a[href*=' + divId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*============================= CHANGE BACKGROUND HEADER ================================*/ 
+function scrollHeader() {
+  const nav =  document.getElementById('header')
+
+  if(this.scrollY >= 800) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+
+window.addEventListener('scroll', scrollHeader)
+/*============================= SHOW SCROLL UP ================================*/ 

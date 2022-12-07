@@ -9,6 +9,9 @@ body {
   max-width: 100vw;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* muy probable a borrar */
 body::-webkit-scrollbar {
@@ -70,7 +73,6 @@ ul {
   color: rgb(255, 255, 255);
   align-items: center;
   padding: 18px 21px;
-  
   margin-left: 10px;
   margin-top: 40px;
   border-bottom: 1px solid #ffffff;
@@ -390,7 +392,7 @@ ul {
   display: flex;
   flex-direction: column;
   background: linear-gradient(107.56deg, #DBAA00 0%, rgba(219, 170, 0, 0) 100%);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   justify-content: flex-end;
   width: 100%;
   height: 100vh;
@@ -411,6 +413,16 @@ background: linear-gradient(228.83deg, #C09C1E 0.41%, rgba(192, 156, 30, 0.42355
 
 .section_news {
   background: #FFF8E2;
+}
+
+.Welcome_yellow {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 1000px;
+  height: 300px;
+  margin-left: 50px;
+  z-index: 3;
+  padding-top: 5rem;
 }
 /* library banner */
 
@@ -496,3 +508,4 @@ border-radius: 30px;
   width: 450px;
   text-align: justify;
 }
+
