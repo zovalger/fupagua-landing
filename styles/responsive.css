@@ -317,7 +317,7 @@ width: 260px;
 
 /*formulario de contactos*/
 
-@media (max-width:425px) 
+@media (max-width:900px) 
 {
   .form {
     width: 100%;
