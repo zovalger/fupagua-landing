@@ -112,8 +112,8 @@ position: absolute;
 .vector_container{
   display: flex;
 align-items: flex-end;
-  min-height: 100vh;
-  margin-top: 20px;
+  min-height: 110vh;
+  margin-top: 40px;
 }
 
 .vector_1 {
@@ -133,7 +133,7 @@ align-items: flex-end;
   width: 300px;
   height: 300px;
   margin-left: 50px;
-  top: 120vh;
+  top: 130vh;
   z-index: 3;
 }
 
