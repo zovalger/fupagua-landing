@@ -430,72 +430,76 @@ background: linear-gradient(228.83deg, #C09C1E 0.41%, rgba(192, 156, 30, 0.42355
 
  /* Formulario de Contactos */
 
- .form-container .form{
+ .form {
   display: flex;
   flex-direction: column;
   width: 100%;
   background: #313131;
   margin: auto;
-  margin-top: 38px;
-  padding: 5px 35px;
-  padding-bottom: 30px;
+  padding: 70px 380px;
+  font-family: 'Roboto';
+  font-style: normal;
+ }
+
+ .form .form-header {
+  margin-bottom: 20px;
  }
 
 .form .form-header .form-title {
-  width: 546px;
-  height: 113px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 112px;
+  font-size: 60px;
   color: #FFFFFF;
   flex: none;
   order: 0;
   flex-grow: 0;
   text-align: center;
+  margin-bottom: 2px;
 }
 
 .form .form-header p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 18px;
   color: #A0A0A0;
   text-align: center;
   flex: none;
   order: 0;
-  flex-grow: 0;
- 
 }
 
-.form-container .form .form-label {
+.form .form-label {
   display: block;
-  font-family: 'Roboto';
   font-style: normal;
   font-size: 20px;
-  color: #A0A0A0;
+  color: white;
 }
 
-.form-container .form .form-input, .form-textarea {
+.form .form-input, .form-textarea {
   outline: none;
   padding: 12PX;
   width: 100%;
   background: rgba(255, 255, 255, 0.51);
   border: 1px solid rgba(0, 0, 0, 0.51);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+  border-radius: 6px;
+  margin-bottom: 9px;
+  font-family: 'Roboto';
+  color: rgb(41, 38, 38);
+  font-size: 15px;
 }
 
 .btn-submit {
-align-items: center;
-color:white;
-width: 500px;
-box-sizing: border-box;
-background: #39B30E;
-border: 5px solid #39B30E;
-border-radius: 30px;
+  align-items: center;
+  color:white;
+  width: 100%;
+  box-sizing: border-box;
+  background: #39B30E;
+  border: solid #39B30E;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.btn-submit:hover {
+  background: #5ed832;
+  border: solid #5ed832;
 }
 
 /* Welcome */
