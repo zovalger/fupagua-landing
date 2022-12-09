@@ -205,27 +205,31 @@
 
   <!--- Sección de videos -->
   <div class="section_video" id="videos">
-
+  
     <!-- Segundo encabezado -->
     <div class="name_fun">
       <nav></nav>
       <div class="container_red">
         <div class="vector_3"></div>
+        <div class="Welcome_red grid">
+
+          <div class="Welcome_content">
+          <h1 class="Welcome_title">¿Que deseas aprender?</h1>
+          <br>
+          <br>
+          <p class="Welcome_description">                   
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            praesentium totam adipisci, odio ratione, vitae perferendis ullam
+            atque, tenetur neque ex minima fugiat dolore dicta tempora illo
+            debitis itaque assumenda!
+          </p>
+          </div>
+              <div class="Welcome_image">
+            <img src="../../public/IMG/20221116_124735.jpg" alt="" class="Welcome_img">
+          </div>
+        </div>
+        </div>
       </div>
-      
-        
-      <div class="Welcome_red">
-        <h1 class="Welcome_title">¿Que deseas aprender?</h1>
-        <br>
-        <br>
-        <p class="Welcome_description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          praesentium totam adipisci, odio ratione, vitae perferendis ullam
-          atque, tenetur neque ex minima fugiat dolore dicta tempora illo
-          debitis itaque assumenda!
-        </p>
-      </div>
-    </div>
 
     <!-- contenedores del contenido "texto" -->
     <section class="services">
@@ -268,6 +272,7 @@
       <br>
   </div>
 
+
   <!--- Sección de libros -->
   <div class="section_book " id="libros">
 
@@ -277,30 +282,43 @@
       <div class="container_green">
         <div class="vector_4"></div>
       </div>
-    
-      <div class="Welcome_green">
-        <h1 class="Welcome_title">Libros populares</h1>
+      <div class="Welcome_green grid">
+
+        <div class="Welcome_content">
+        <h1 class="Welcome_title">¿Que deseas aprender?</h1>
         <br>
         <br>
-        <p class="Welcome_description">
+        <p class="Welcome_description">                   
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
           praesentium totam adipisci, odio ratione, vitae perferendis ullam
           atque, tenetur neque ex minima fugiat dolore dicta tempora illo
           debitis itaque assumenda!
         </p>
+        </div>
+            <div class="Welcome_image">
+          <img src="../../public/IMG/20221116_124735.jpg" alt="" class="Welcome_img">
+        </div>
       </div>
     </div>
 
-
     <!-- contenedores del contenido "texto" -->
-
-    <section class="services">
-      <br>
-      <div class="box-container">
-
+    <div class="services">
+      <div class="book_tabs">
+        <div class="book_button button--flex book_active" data-target='#cuentos'>
+            Cuentos
+        </div>
+        <div class="book_button button--flex " data-target='#educacion'>
+            Educacion
+        </div>
+        <div class="book_button button--flex " data-target='#psicologia'>
+            Psicologia
+        </div>
+      </div>
+      <!--============================= BOOK CONTENT 1 ==============================-->
+      <div class="box-container book_active" data-container id="cuentos">
         <div class="box_libro content">
-          <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
-          <h2 class="service_title">Pediatra</h2>
+          <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
+          <h2 class="service_title">Title video</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
             praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -308,10 +326,9 @@
             debitis itaque assumenda!
           </p>
         </div>
-
         <div class="box_libro content">
-          <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
-          <h2 class="service_title">Terapia</h2>
+          <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
+          <h2 class="service_title">Title video</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
             praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -319,10 +336,9 @@
             debitis itaque assumenda!
           </p>
         </div>
-
         <div class="box_libro content">
-          <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
-          <h3 class="service_title">Tratamiento</h3>
+          <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
+          <h2 class="service_title">Title video</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
             praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -332,8 +348,41 @@
         </div>
       </div>
       <br>
-
-
+      <!--============================= BOOK CONTENT 2 ==============================-->
+      <div class="box-container book_active" data-container id="psicologia">
+        <div class="box_libro content">
+          <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
+          <h2 class="service_title">Discapacidad</h2>
+          <p class="book_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            praesentium totam adipisci, odio ratione, vitae perferendis ullam
+            atque, tenetur neque ex minima fugiat dolore dicta tempora illo
+            debitis itaque assumenda!
+          </p>
+        </div>
+        <div class="box_libro content">
+          <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
+          <h2 class="service_title">Title video</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            praesentium totam adipisci, odio ratione, vitae perferendis ullam
+            atque, tenetur neque ex minima fugiat dolore dicta tempora illo
+            debitis itaque assumenda!
+          </p>
+        </div>
+        <div class="box_libro content">
+          <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
+          <h2 class="service_title">Title video</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            praesentium totam adipisci, odio ratione, vitae perferendis ullam
+            atque, tenetur neque ex minima fugiat dolore dicta tempora illo
+            debitis itaque assumenda!
+          </p>
+        </div>
+      </div>
+      <br>
+    </div>
   </div>
 
   <!--- Sección de libros -->
@@ -345,16 +394,22 @@
         <div class="vector_5"></div>
       </div>
      
-      <div class="Welcome_yellow">
+      <div class="Welcome_yellow grid">
+
+        <div class="Welcome_content">
         <h1 class="Welcome_title">¿Que deseas aprender?</h1>
         <br>
         <br>
-        <p class="Welcome_description">
+        <p class="Welcome_description">                   
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
           praesentium totam adipisci, odio ratione, vitae perferendis ullam
           atque, tenetur neque ex minima fugiat dolore dicta tempora illo
           debitis itaque assumenda!
         </p>
+        </div>
+            <div class="Welcome_image">
+          <img src="../../public/IMG/20221116_124735.jpg" alt="" class="Welcome_img">
+        </div>
       </div>
     </div>
 

@@ -89,12 +89,22 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-/*============================= CHANGE BACKGROUND HEADER ================================*/ 
-function scrollHeader() {
-  const nav =  document.getElementById('header')
+/*================================= BOOKS TABS =====================================*/
+const tabs = document.querySelectorAll('[data-target]'),
+tabContainers = document.querySelectorAll('[data-container]')
 
-  if(this.scrollY >= 800) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target= document.querySelector(tab.dataset.target)
 
-window.addEventListener('scroll', scrollHeader)
-/*============================= SHOW SCROLL UP ================================*/ 
+        tabContainers.forEach(tabContainer =>{
+          tabContainer.classList.remove('book_active')
+        })
+        target.classList.add('book_active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('book_active')
+        })
+        tab.classList.add('book_active')
+    })
+})
