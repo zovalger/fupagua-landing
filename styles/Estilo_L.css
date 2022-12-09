@@ -474,26 +474,22 @@ ul {
  /*=========================================Formulario de Contactos======================================*/
 
  .form {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   background: #313131;
   margin: auto;
-  padding: 70px 380px;
-  font-style: normal;
+  padding: 70px 350px;
+  box-sizing: border-box;
  }
 
  .form .form-header {
   margin-bottom: 20px;
  }
 
-.form .form-header .form-title {
-  font-size: 60px;
+.form .form-header h2 {
+  font-size: 50px;
   color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   text-align: center;
+  margin: 0;
   margin-bottom: 2px;
 }
 
@@ -501,28 +497,26 @@ ul {
   font-size: 18px;
   color: #A0A0A0;
   text-align: center;
-  flex: none;
-  order: 0;
-}
-
-.form .form-label {
-  display: block;
-  font-style: normal;
-  font-size: 20px;
-  color: white;
 }
 
 .form .form-input, .form-textarea {
-  outline: none;
   padding: 12PX;
   width: 100%;
-  background: rgba(255, 255, 255, 0.51);
+  background: rgba(243, 238, 238, 0.51);
   border: 1px solid rgba(0, 0, 0, 0.51);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   margin-bottom: 9px;
   color: rgb(41, 38, 38);
   font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form .form-textarea {
+  min-height: 150px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .btn-submit {
@@ -539,6 +533,7 @@ ul {
 }
 
 .btn-submit:hover {
+  cursor: pointer;
   background: #5ed832;
   border: solid #5ed832;
 }
