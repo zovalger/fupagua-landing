@@ -2,6 +2,11 @@
 @media (max-width: 1040px){
         /* Sección de información */
       
+        /* Header de la sección */
+
+        .vector_container{
+          margin-top: 10px;
+        }
       /* img */
       
         .container_tex_img {
