@@ -3,11 +3,19 @@
 .container_tex {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   flex-direction: row;
   margin-top: 20px;
   padding: 20px;
-  
+}
+
+.container_tex_2{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 /* contenedor de las img en la seccion de información */
@@ -36,6 +44,15 @@
 }
 
 .container_tex img {
+  position: absolute;
+  height: 330px;
+  width: 480px;
+
+  border-radius: 35px;
+  position: 1;
+}
+
+.container_tex_2 img {
   position: absolute;
   height: 330px;
   width: 480px;

@@ -315,6 +315,135 @@ width: 260px;
 
 /* Movil */
 
+@media (max-width:412px){
+  /* Header_logo */
+
+  
+  .nav_logo li {
+    font-size: 12px;
+  }
+
+        /* presentación */
+        .presentation{
+            width: 200px;
+            height: 200px;
+          }
+    
+          .presentation h2{
+          
+          font-size: 22px; 
+           } 
+           
+           .presentation p{
+          
+            font-size: 12px; 
+             } 
+             
+
+    /* Sección de información-header */
+             .name_fun {
+           
+            
+              height: 100vh;
+              
+            }
+
+    /* Sección de información */
+  
+     /* img */
+
+.container_tex{
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.container_section_text {
+
+  width: 100%;
+
+}
+
+     .container_tex_img {
+      
+      margin-top: 20px;
+      background: linear-gradient(
+        90deg,
+        #00a6db 0.03%,
+        rgba(128, 224, 255, 0.54) 100%
+      );
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      height: 200px;
+      width: 300px;
+      border-radius: 35px;
+      margin-right: 30px;
+      transform: rotate(6.88deg);
+    }
+    
+    .container_tex img {
+      position: absolute;
+      height: 200px;
+      width: 300px;
+    
+      border-radius: 35px;
+      position: 1;
+    }
+
+
+    /* lateral derecho */
+
+    .container_tex_2{
+      flex-direction: column-reverse;
+      margin-bottom: 8px;
+      align-items: center;
+    }
+
+    .container_tex_2 img {
+      position: absolute;
+      height: 200px;
+      width: 300px;
+      border-radius: 35px;
+      position: 1;
+    }
+
+.container_tex_img_d {
+  margin-top: 20px;
+  background: linear-gradient(
+    90deg,
+    #00a6db 0.03%,
+    rgba(128, 224, 255, 0.54) 100%
+  );
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  height: 200px;
+  width: 300px;
+  border-radius: 35px;
+  margin-left: 30px;
+  margin-top: 10px;
+
+  transform: rotate(-4.34deg);
+}
+
+
+/* texto */
+
+.container_tex-c {
+
+  width: 100%;
+ 
+}
+
+.container_tex-c h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.container_tex-c p {
+  font-size: 14px;
+  text-align: justify;
+  width: 270px;
+}
+}
+
 /*formulario de contactos*/
 
 @media (max-width:900px) 

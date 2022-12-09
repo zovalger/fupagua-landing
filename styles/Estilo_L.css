@@ -83,7 +83,7 @@ ul {
   border-bottom: 1px solid #ffffff;
 }
 
-
+/*=================================Sección de Información================================= */
 /* Contenedor de todo el contenido textual del inicio */
 .section_presentation {
   background: #d2e7fa;
@@ -241,7 +241,7 @@ align-items: flex-end;
 
 }
 
-.vector_3{
+.vector_2{
   height: 100vh;
   width: 100%;
   background-image: url(/public/Banners/Videos_banner.svg);
@@ -516,6 +516,16 @@ align-items: flex-end;
   max-height: 200px;
   min-width: 100%;
   max-width: 100%;
+  overflow-y: visible;
+}
+
+.form .form-textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form .form-textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00A6DB 0.03%, rgba(19, 173, 224, 0.54) 100%);
+  border-radius: 10px;
 }
 
 .btn-submit {
