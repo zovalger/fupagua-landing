@@ -470,17 +470,19 @@ align-items: flex-end;
 
 
 
- /*=========================================Formulario de Contactos======================================*/
+ /*==Formulario de Contactos==*/
 
  .form-container {
   width: 100%;
   background: #313131;
+  display: inline-flex;
  }
 
  .form-container .form {
+  align-items: center;
   width: 90%;
   margin: auto;
-  padding: 70px 350px;
+  padding: 70px 320px;
   box-sizing: border-box;
  }
 
@@ -549,6 +551,32 @@ align-items: flex-end;
   cursor: pointer;
   background: #5ed832;
   border: solid #5ed832;
+}
+
+/*==redes socilaes==*/
+
+.icon-container {
+  width: 4%;
+  display: flex;
+  margin: auto;
+}
+
+.icon-container ul {
+    list-style: none;
+}
+
+.icon-container li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 45px;
+	height: 45px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Welcome */

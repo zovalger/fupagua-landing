@@ -456,5 +456,8 @@ width: 260px;
   .form-container .form .form-header h2 {
     font-size: 30px;
   }
+  .icon {
+  width: 30px;
+	height: 30px;
 }
-
+}
