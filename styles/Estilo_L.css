@@ -472,19 +472,23 @@ align-items: flex-end;
 
  /*=========================================Formulario de Contactos======================================*/
 
- .form {
+ .form-container {
   width: 100%;
   background: #313131;
+ }
+
+ .form-container .form {
+  width: 90%;
   margin: auto;
   padding: 70px 350px;
   box-sizing: border-box;
  }
 
- .form .form-header {
+ .form-container .form .form-header {
   margin-bottom: 20px;
  }
 
-.form .form-header h2 {
+.form-container .form .form-header h2 {
   font-size: 50px;
   color: #FFFFFF;
   text-align: center;
@@ -492,13 +496,13 @@ align-items: flex-end;
   margin-bottom: 2px;
 }
 
-.form .form-header p {
+.form-container .form .form-header p {
   font-size: 18px;
   color: #A0A0A0;
   text-align: center;
 }
 
-.form .form-input, .form-textarea {
+.form-container .form .form-input, .form-textarea {
   padding: 12PX;
   width: 100%;
   background: rgba(243, 238, 238, 0.51);

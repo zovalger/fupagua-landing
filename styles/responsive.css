@@ -448,12 +448,12 @@ width: 260px;
 
 @media (max-width:900px) 
 {
-  .form {
-    width: 100%;
+  .form-container .form {
+    width: 90%;
     margin:auto;
     padding: 5px 10px;
   }
-  .form .form-header h2 {
+  .form-container .form .form-header h2 {
     font-size: 30px;
   }
 }
