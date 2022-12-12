@@ -26,7 +26,6 @@ body::-webkit-scrollbar-thumb {
 .container {
   width: 100%;
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .Logo_header {
