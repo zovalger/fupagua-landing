@@ -35,12 +35,22 @@ img {
 }
 
 /* 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html{
+  scroll-behavior: smooth;
+}
+
+/* muy probable a borrar */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00A6DB 0.03%, rgba(128, 224, 255, 0.54) 100%);
+  border-radius: 10px;
 } */
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
