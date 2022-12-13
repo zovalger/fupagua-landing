@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import NavLanding from "../components/NavLanding";
+import Section_info from "../components/Section_info";
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
+
 
 
 
@@ -12,7 +14,7 @@ export default function Home() {
 				<title>FUPAGUA</title>
 				<meta
 					name="description"
-					content="fundacion de personas autista del estado guarico"
+					content="Fundación de personas autista del estado guárico"
 				/>
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 				<link rel="icon" href="/logo.jpg" />
@@ -23,7 +25,11 @@ export default function Home() {
 			</header>
 
 			<main className={''}>
-				<section>secciones</section>
+				<section>	<Section_info 
+					contenido_headerI = "Hola mundo"
+				/>
+				</section>
+			
 			</main>
 
 			<footer className={''}></footer>
