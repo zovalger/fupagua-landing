@@ -241,7 +241,6 @@ align-items: flex-end;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .vector_2{
@@ -321,12 +320,10 @@ align-items: flex-end;
 }
 
 .container_green {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background: linear-gradient(72.22deg, #1AB900 1.01%, #7FFF7C 100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: flex-end;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -432,12 +429,10 @@ align-items: flex-end;
 }
 /*================================ NEWS =================================*/
 .container_yellow {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background: linear-gradient(107.56deg, #DBAA00 0%, rgba(219, 170, 0, 0) 100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: flex-end;
   width: 100%;
   height: 100vh;
   background-size: cover;
