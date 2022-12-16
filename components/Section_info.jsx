@@ -1,7 +1,7 @@
 import Info_style from "../styles/seccion_info.module.css";
 import Link from "next/link";
 import Image from "next/image";
-
+import TextContent from "./Section_info/TextContent";
 
 function Section_info(props) {
   return (
@@ -21,6 +21,31 @@ function Section_info(props) {
           </p>
         </div>
       </div>
+
+      <TextContent 
+      content_style = {true}
+      num_img = '1'
+      nombre_img = 'Imagen de prueba'
+      titleInfo = 'Sobre nosotros'
+      Info= 'Somos una fundación..'
+      />
+
+<TextContent 
+      content_style = {false}
+      num_img = '1'
+      nombre_img = 'Imagen de prueba'
+      titleInfo = 'Ubicación'
+      Info= 'Estamos ubicados en ...'
+      />
+
+ <TextContent 
+      content_style = {true}
+      num_img = '1'
+      nombre_img = 'Imagen de prueba'
+      titleInfo = 'Nuestros servicios'
+      Info= 'Ofrecemos ...'
+      />
+    
 
   </div>
   )

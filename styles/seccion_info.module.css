@@ -1,5 +1,6 @@
 .section_presentation {
   background: #d2e7fa;
+  
 }
 
 /* Contendor del segundo encabezado del principio */
@@ -144,7 +145,7 @@ height: 90vh;
 }
 /* contenedor de los textos en la seccion de información */
 
-.container_tex-c {
+.container_tex_c {
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -153,12 +154,12 @@ height: 90vh;
   justify-content: center;
 }
 
-.container_tex-c h2 {
+.container_tex_c h2 {
   font-size: 36px;
   margin-bottom: 15px;
 }
 
-.container_tex-c p {
+.container_tex_c p {
   font-size: 18px;
   text-align: justify;
   width: 400px;
