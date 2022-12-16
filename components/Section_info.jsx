@@ -13,6 +13,7 @@ function Section_info(props) {
         <div className={Info_style.vector_container}>
           <div className={Info_style.vector_1}></div>
         </div>
+        <div className={Info_style.Logo_Info}></div>
         <div className= {Info_style.presentation}>
           <h2 href="">FUPAGUA</h2>
           <p>

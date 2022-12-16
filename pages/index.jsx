@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavLanding from "../components/NavLanding";
+import HeaderLanding from "../components/HeaderLanding";
 import Section_info from "../components/Section_info";
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
 
@@ -21,7 +21,7 @@ export default function Home() {
 			</Head>
 
 			<header>
-				<NavLanding />
+				<HeaderLanding />
 			</header>
 
 			<main className={''}>
