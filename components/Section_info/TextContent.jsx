@@ -1,4 +1,4 @@
-import Info_style from "../../styles/seccion_info.module.css";
+import Info_style from "../../styles/SectionInfo/seccion_info.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

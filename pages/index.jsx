@@ -26,7 +26,7 @@ export default function Home() {
 
 			<main className={''}>
 				<section>	<Section_info 
-					contenido_headerI = "Hola mundo"
+					contenido_headerI = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium totam adipisci, odio ratione, vitae perferendis ullam atque, tenetur neque ex minima fugiat dolore dicta tempora illo debitis itaque assumenda!"
 				/>
 				</section>
 			
