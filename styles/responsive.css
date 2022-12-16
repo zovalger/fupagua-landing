@@ -679,7 +679,7 @@
 
 /*formulario de contactos*/
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   .form-container .form {
     width: 90%;
     margin: auto;
@@ -687,6 +687,12 @@
   }
   .form-container .form .form-header h2 {
     font-size: 30px;
+  }
+  .form-container .form .form-label {
+    font-size: 18px;
+  }
+  .icon-container li {
+    margin-left: 0rem; 
   }
   .icon {
   width: 30px;

@@ -366,6 +366,26 @@ height: 90vh;
   padding: 1rem ;
 }
 
+.button-book {
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  margin-left: 70px;
+  margin-top: 30px;
+  background: #04D600;
+  border: 5px solid #FFFFFF;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.button-book:hover {
+  cursor: pointer;
+  background: #4af748;
+}
+
 /*===================================Contenedor de libros================================= */
 .container_section_libro {
   display: flex;
@@ -484,13 +504,13 @@ height: 90vh;
 
  /*==Formulario de Contactos==*/
 
- .form-container {
+.form-container {
   width: 100%;
   background: #313131;
   display: inline-flex;
  }
 
- .form-container .form {
+.form-container .form {
   align-items: center;
   width: 90%;
   margin: auto;
@@ -498,7 +518,7 @@ height: 90vh;
   box-sizing: border-box;
  }
 
- .form-container .form .form-header {
+.form-container .form .form-header {
   margin-bottom: 20px;
  }
 
@@ -508,6 +528,13 @@ height: 90vh;
   text-align: center;
   margin: 0;
   margin-bottom: 2px;
+}
+
+.form-container .form .form-label {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #A0A0A0;
 }
 
 .form-container .form .form-header p {
@@ -568,8 +595,8 @@ height: 90vh;
 /*==redes socilaes==*/
 
 .icon-container {
-  width: 4%;
-  display: flex;
+  width: 10%;
+  display: inline-flex;
   margin: auto;
 }
 
@@ -578,9 +605,9 @@ height: 90vh;
 }
 
 .icon-container li {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 18rem; 
   display: flex;
-  align-items: center;
 }
 
 .icon {
@@ -588,7 +615,6 @@ height: 90vh;
 	height: 45px;
 	display: inline-flex;
 	justify-content: center;
-	align-items: center;
 }
 
 /* Welcome */
@@ -598,17 +624,17 @@ height: 90vh;
 }
 
 .Welcome_title{
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .Welcome_description{
-  font-size: 36px;
+  font-size: 25px;
   width: 450px;
   text-align: justify;
 }
 
 .Welcome_img{
-  width: 600px;
+  width: 500px;
 }
 
 
