@@ -1,5 +1,6 @@
 .section_presentation {
   background: #d2e7fa;
+  
 }
 
 /* Contendor del segundo encabezado del principio */
@@ -11,58 +12,73 @@
 }
 
 .container_img {
-  position: absolute;
-  background: linear-gradient(0deg,
- rgba(0, 163, 255, 0.52),
-rgba(132, 168, 189, 0.52)),
-  url("/IMG/frontFupaguaImg.jpg");
+position: absolute;
+background: linear-gradient(0deg,
+rgba(98, 197, 255, 0.13),
+rgba(132, 168, 189, 0.24)),
+url(/IMG/20221116_124735.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: flex-end;
-  min-height: 65vh;
+  min-height: 70vh;
   width: 100%;
   z-index: 1;
 }
 
 .vector_container{
   display: flex;
-align-items: flex-end;
-  min-height: 110vh;
-  margin-top: 100px;
+
+height: 90vh;
 }
 
 .vector_1 {
   position: relative;
   min-height: 100%;
   width: 100%;
-  background-image: url("/Banners/primaryBackground.svg");
+  background-image: url(/Banners/Vector2.svg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   z-index: 2;
+  filter: drop-shadow(0px 50px 100px rgba(0, 209, 255, 0.25));
+
+}
+
+.Logo_Info{
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  background-image: url(/Icons/Logo-Fupagua.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  left: 80%;
+  top: 128vh;
+  z-index: 3;
 }
 
 .presentation {
   position: absolute;
   color: rgb(255, 255, 255);
-  width: 300px;
-  height: 300px;
-  margin-left: 50px;
-  top: 150vh;
+  width: 350px;
+  height: 450px;
+  left: 70%;
+  top: 145vh;
   z-index: 3;
 }
 
 .presentation h2 {
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .presentation p {
   font-size: 16px;
   text-align: justify;
 }
+
 
 /* Contenedor de la seccion de información*/
 
@@ -129,7 +145,7 @@ align-items: flex-end;
 }
 /* contenedor de los textos en la seccion de información */
 
-.container_tex-c {
+.container_tex_c {
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -138,12 +154,12 @@ align-items: flex-end;
   justify-content: center;
 }
 
-.container_tex-c h2 {
+.container_tex_c h2 {
   font-size: 36px;
   margin-bottom: 15px;
 }
 
-.container_tex-c p {
+.container_tex_c p {
   font-size: 18px;
   text-align: justify;
   width: 400px;
