@@ -386,6 +386,57 @@ height: 90vh;
   background: #4af748;
 }
 
+/* Seccion de circulo de lectura */
+
+.reading-container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url("/public/IMG/circulo-de-lectura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.reading-container .reading-header {
+  margin: 0;
+}
+
+.reading-container .reading-header .reading-title {
+  font-size: 80px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.reading-content {
+  flex-direction: row;
+}
+
+.reading-section-1 {
+  width: 50%;
+  margin: auto;
+  padding: 30px 30px;
+}
+
+.reading-section-2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px 30px;
+}
+
+.reading-container .reading-subtitle {
+  color: #FFFFFF;
+}
+
+.reading-container .reading-text {
+  color: #FFFFFF;
+}
+
 /*===================================Contenedor de libros================================= */
 .container_section_libro {
   display: flex;
@@ -500,9 +551,7 @@ height: 90vh;
 }
 /* library banner */
 
-
-
- /*==Formulario de Contactos==*/
+ /* Formulario de Contactos */
 
 .form-container {
   width: 100%;
@@ -522,7 +571,7 @@ height: 90vh;
   margin-bottom: 20px;
  }
 
-.form-container .form .form-header h2 {
+.form-container .form .form-header .form-title {
   font-size: 50px;
   color: #FFFFFF;
   text-align: center;
@@ -537,7 +586,7 @@ height: 90vh;
   color: #A0A0A0;
 }
 
-.form-container .form .form-header p {
+.form-container .form .form-header .form-text {
   font-size: 18px;
   color: #A0A0A0;
   text-align: center;
@@ -600,11 +649,11 @@ height: 90vh;
   margin: auto;
 }
 
-.icon-container ul {
+.icon-container .form-list {
     list-style: none;
 }
 
-.icon-container li {
+.icon-container .form-list-icon {
   margin-bottom: 3rem;
   margin-left: 18rem; 
   display: flex;
@@ -618,6 +667,7 @@ height: 90vh;
 }
 
 /* Welcome */
+
 .Welcome_content{
   padding: 0%;
   width: 550px;
@@ -633,8 +683,12 @@ height: 90vh;
   text-align: justify;
 }
 
+.Welcome_imgage {
+  width:100%;
+  display: inline-flex;
+} 
+
 .Welcome_img{
-  width: 500px;
+  width: 450px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
 }
-
-
