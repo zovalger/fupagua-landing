@@ -17,7 +17,7 @@ export default function Home() {
 					content="Fundación de personas autista del estado guárico"
 				/>
 				{/* <link rel="icon" href="/favicon.ico" /> */}
-				<link rel="icon" href="/logo.jpg" />
+				<link rel="icon" href="/logo.jpg"/>
 			</Head>
 
 			<header>
@@ -25,7 +25,8 @@ export default function Home() {
 			</header>
 
 			<main className={''}>
-				<section>	<Section_info 
+				<section>	
+					<Section_info 
 					contenido_headerI = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium totam adipisci, odio ratione, vitae perferendis ullam atque, tenetur neque ex minima fugiat dolore dicta tempora illo debitis itaque assumenda!"
 				/>
 				</section>

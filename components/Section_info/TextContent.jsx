@@ -23,7 +23,10 @@ function TextContent(props) {
               <div className={Info_style.container_tex_c}>
                   <h2>{props.titleInfo}</h2>
                   <p>
-                      {props.Info}
+                      {props.Info}<br></br><br></br>
+                      <Link href= {(`${props.Link}`)}>
+                      {props.Link_name}
+                      </Link>
                   </p>
                 </div>
               </div>
@@ -34,7 +37,10 @@ function TextContent(props) {
             <div className={Info_style.container_tex_c}>
               <h2>{props.titleInfo}</h2>
               <p>
-              {props.Info}
+              {props.Info}<br></br><br></br>
+              <Link target='_blank' href= {(`${props.Link}`)}>
+                      {props.Link_name}
+                      </Link>
               </p>
             </div>
             <div className={Info_style.container_section_text}>
