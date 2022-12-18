@@ -36,8 +36,8 @@ export function HeaderLanding() {
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#noticias" class="nav_link">
-              Noticias
+            <Link href="#eventos" class="nav_link">
+              Eventos
             </Link>
           </li>
 
