@@ -9,7 +9,7 @@ function TextContent(props) {
   
         if(direccion === true){
           return(
-            <div className={Info_style.container_tex} id="sobre_nosotros">
+            <div className={Info_style.container_tex}>
               <div className={Info_style.container_section_text}>
               <div className={Info_style.container_tex_img}></div>
               <Image 

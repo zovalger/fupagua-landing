@@ -19,8 +19,8 @@ function Section_info(props) {
                 <div className={Info_style.Logo_Info}>
                   <Image
                   src= '/Icons/Logo-Fupagua.png'
-                  height={300}
-                  width={280}
+                  height={120}
+                  width={100}
                   alt='Logo de la Fundación'
                   />
                 </div>
@@ -37,32 +37,33 @@ function Section_info(props) {
       
         
       </div>
-
-      <TextContent 
-      content_style = {true}
-      num_img = '1'
-      nombre_img = 'Imagen de prueba'
-      titleInfo = 'Sobre nosotros'
-      Info= 'Somos una fundación..'
-      />
-
-      <TextContent 
-      content_style = {false}
-      num_img = '1'
-      nombre_img = 'Imagen de prueba'
-      titleInfo = '¿Donde nos ubicamos?'
-      Info= 'Estamos ubicados en la Urb. Rómulos gallegos. Av principal, sector al lado de Hidro Páez.'
-      Link = 'https://goo.gl/maps/R74jdScH687DfmTD8'
-      Link_name = 'Ubicanos en Google Map'
-      />
-
-      <TextContent 
-      content_style = {true}
-      num_img = '1'
-      nombre_img = 'Imagen de prueba'
-      titleInfo = 'Nuestros servicios'
-      Info= 'Ofrecemos ...'
-      />
+      <div id='sobre_nosotros'>
+        <TextContent 
+        content_style = {true}
+        num_img = '1'
+        nombre_img = 'Imagen de prueba'
+        titleInfo = 'Sobre nosotros'
+        Info= 'Somos una fundación..'
+        />
+      </div>
+        <TextContent 
+        content_style = {false}
+        num_img = '1'
+        nombre_img = 'Imagen de prueba'
+        titleInfo = '¿Donde nos ubicamos?'
+        Info= 'Estamos ubicados en la Urb. Rómulos gallegos. Av principal, sector al lado de Hidro Páez.'
+        Link = 'https://goo.gl/maps/R74jdScH687DfmTD8'
+        Link_name = 'Ubicanos en Google Map'
+        />
+      <div id="servicios">
+        <TextContent 
+        content_style = {true}
+        num_img = '1'
+        nombre_img = 'Imagen de prueba'
+        titleInfo = 'Nuestros servicios'
+        Info= 'Ofrecemos ...'
+        />
+      </div>
       <div className={services_style.container_services}>
         <Services
         num_img = "1"
@@ -79,23 +80,13 @@ function Section_info(props) {
         title_service = "Tratamiento"
         description = "Hola mundo, esto es un texto de prueba para ver un ejemplo del diseño"
         />
-         <Services
-        num_img = "1"
+          <Services
+        num_img = "3"
         title_service = "Tratamiento"
         description = "Hola mundo, esto es un texto de prueba para ver un ejemplo del diseño"
         />
           <Services
-        num_img = "1"
-        title_service = "Tratamiento"
-        description = "Hola mundo, esto es un texto de prueba para ver un ejemplo del diseño"
-        />
-          <Services
-        num_img = "1"
-        title_service = "Tratamiento"
-        description = "Hola mundo, esto es un texto de prueba para ver un ejemplo del diseño"
-        />
-          <Services
-        num_img = "1"
+        num_img = "3"
         title_service = "Tratamiento"
         description = "Hola mundo, esto es un texto de prueba para ver un ejemplo del diseño"
         />
