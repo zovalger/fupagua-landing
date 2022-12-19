@@ -52,16 +52,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo img {
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 380px;
   margin: auto;
 
   border-radius: 30px;
-}
-
-.logo h1 {
-  color: rgb(255, 255, 255);
-  font-size: 48px;
 }
 
 ul {
@@ -108,43 +103,57 @@ url("/public/IMG/20221116_124735.jpg");
   background-position: center;
   background-repeat: no-repeat;
   justify-content: flex-end;
-  min-height: 65vh;
+  min-height: 70vh;
   width: 100%;
   z-index: 1;
 }
 
 .vector_container{
   display: flex;
-align-items: flex-end;
-  min-height: 110vh;
-  margin-top: 40px;
+
+height: 90vh;
 }
 
 .vector_1 {
   position: relative;
   min-height: 100%;
   width: 100%;
-  background-image: url(/public/Banners/primaryBackground.svg);
+  background-image: url(/public/Banners/Vector2.svg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   z-index: 2;
+  filter: drop-shadow(0px 50px 100px rgba(0, 209, 255, 0.25));
+
+}
+
+.Logo_Info{
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  background-image: url(/public/Icons/Logo-Fupagua.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  left: 80%;
+  top: 128vh;
+  z-index: 3;
 }
 
 .presentation {
   position: absolute;
   color: rgb(255, 255, 255);
-  width: 300px;
-  height: 300px;
-  margin-left: 50px;
-  top: 130vh;
+  width: 350px;
+  height: 450px;
+  left: 70%;
+  top: 145vh;
   z-index: 3;
 }
 
 .presentation h2 {
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .presentation p {
@@ -246,7 +255,6 @@ align-items: flex-end;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .vector_2{
@@ -326,12 +334,10 @@ align-items: flex-end;
 }
 
 .container_green {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background: linear-gradient(72.22deg, #1AB900 1.01%, #7FFF7C 100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: flex-end;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -358,6 +364,77 @@ align-items: flex-end;
   margin-left: 50px;
   z-index: 3;
   padding: 1rem ;
+}
+
+.button-book {
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  margin-left: 70px;
+  margin-top: 30px;
+  background: #04D600;
+  border: 5px solid #FFFFFF;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.button-book:hover {
+  cursor: pointer;
+  background: #4af748;
+}
+
+/* Seccion de circulo de lectura */
+
+.reading-container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url("/public/IMG/circulo-de-lectura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.reading-container .reading-header {
+  margin: 0;
+}
+
+.reading-container .reading-header .reading-title {
+  font-size: 80px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.reading-content {
+  flex-direction: row;
+}
+
+.reading-section-1 {
+  width: 50%;
+  margin: auto;
+  padding: 30px 30px;
+}
+
+.reading-section-2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px 30px;
+}
+
+.reading-container .reading-subtitle {
+  color: #FFFFFF;
+}
+
+.reading-container .reading-text {
+  color: #FFFFFF;
 }
 
 /*===================================Contenedor de libros================================= */
@@ -437,12 +514,10 @@ align-items: flex-end;
 }
 /*================================ NEWS =================================*/
 .container_yellow {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background: linear-gradient(107.56deg, #DBAA00 0%, rgba(219, 170, 0, 0) 100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: flex-end;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -476,17 +551,15 @@ align-items: flex-end;
 }
 /* library banner */
 
+ /* Formulario de Contactos */
 
-
- /*==Formulario de Contactos==*/
-
- .form-container {
+.form-container {
   width: 100%;
   background: #313131;
   display: inline-flex;
  }
 
- .form-container .form {
+.form-container .form {
   align-items: center;
   width: 90%;
   margin: auto;
@@ -494,11 +567,11 @@ align-items: flex-end;
   box-sizing: border-box;
  }
 
- .form-container .form .form-header {
+.form-container .form .form-header {
   margin-bottom: 20px;
  }
 
-.form-container .form .form-header h2 {
+.form-container .form .form-header .form-title {
   font-size: 50px;
   color: #FFFFFF;
   text-align: center;
@@ -506,7 +579,14 @@ align-items: flex-end;
   margin-bottom: 2px;
 }
 
-.form-container .form .form-header p {
+.form-container .form .form-label {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #A0A0A0;
+}
+
+.form-container .form .form-header .form-text {
   font-size: 18px;
   color: #A0A0A0;
   text-align: center;
@@ -564,19 +644,19 @@ align-items: flex-end;
 /*==redes socilaes==*/
 
 .icon-container {
-  width: 4%;
-  display: flex;
+  width: 10%;
+  display: inline-flex;
   margin: auto;
 }
 
-.icon-container ul {
+.icon-container .form-list {
     list-style: none;
 }
 
-.icon-container li {
-  margin-bottom: 1rem;
+.icon-container .form-list-icon {
+  margin-bottom: 3rem;
+  margin-left: 18rem; 
   display: flex;
-  align-items: center;
 }
 
 .icon {
@@ -584,27 +664,31 @@ align-items: flex-end;
 	height: 45px;
 	display: inline-flex;
 	justify-content: center;
-	align-items: center;
 }
 
 /* Welcome */
+
 .Welcome_content{
   padding: 0%;
   width: 550px;
 }
 
 .Welcome_title{
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .Welcome_description{
-  font-size: 36px;
+  font-size: 25px;
   width: 450px;
   text-align: justify;
 }
 
+.Welcome_imgage {
+  width:100%;
+  display: inline-flex;
+} 
+
 .Welcome_img{
-  width: 600px;
+  width: 450px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
 }
-
-
