@@ -50,7 +50,8 @@ function Section_info(props) {
         num_img = '1'
         nombre_img = 'Imagen de prueba'
         titleInfo = 'Origenes de FUPAGUA'
-        Info= 'Surge entre un pequeño grupo de padres, familiares y profesionales, dispuestos a trabajar por el bienestar Autismo y otros trastornos del desarrollo, que se veían en la necesidad de trasladarse a las ciudades de Caracas y/o Maracay en busca de ayuda para sus hijos. El esfuerzo comienza a ver sus frutos el cuatro de noviembre de mil novecientos noventa y siete, cuando nace como una fundación sin fines de lucro, bajo la tutela de la señora María Antonieta Nuzzo; es entonces cuando comienzan las conversaciones con el Ministerio de Infraestructura y se consigue la sede en calidad de comodato para abrir sus puertas casi un año después, un dieciséis de Octubre como Centro de Diagnóstico y Tratamiento “Lcda. Nora Díaz”.'
+        Info= 'Surge entre un pequeño grupo de padres, familiares y profesionales, dispuestos a trabajar por el bienestar Autismo y otros trastornos del desarrollo, que se veían en la necesidad de trasladarse a las ciudades de Caracas y/o Maracay en busca de ayuda para sus hijos.'
+        Info_2= 'El esfuerzo comienza a ver sus frutos el cuatro de noviembre de mil novecientos noventa y siete, cuando nace como una fundación sin fines de lucro, bajo la tutela de la señora María Antonieta Nuzzo; es entonces cuando comienzan las conversaciones con el Ministerio de Infraestructura y se consigue la sede en calidad de comodato para abrir sus puertas casi un año después, un dieciséis de Octubre como Centro de Diagnóstico y Tratamiento “Lcda. Nora Díaz”.'
         />
          <TextContent 
         content_style = {true}
