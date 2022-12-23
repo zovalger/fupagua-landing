@@ -18,6 +18,9 @@ export default function Home() {
 				/>
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 				<link rel="icon" href="/logo.jpg"/>
+				<link rel="preconnect" href="https://fonts.googleapis.com"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+				<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
 			</Head>
 
 			<header>
@@ -27,7 +30,7 @@ export default function Home() {
 			<main className={''}>
 				<section>	
 					<Section_info 
-					contenido_headerI = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium totam adipisci, odio ratione, vitae perferendis ullam atque, tenetur neque ex minima fugiat dolore dicta tempora illo debitis itaque assumenda!"
+					contenido_headerI = 'En la Fundación de Personas Autistas del estado Guárico, trabajamos por el bienestar, integración y una mejor calidad de vida de las personas con autismo y otros trastornos del desarrollo.'
 				/>
 				</section>
 			
