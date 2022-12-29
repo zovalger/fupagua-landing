@@ -45,14 +45,13 @@
     align-items: center;
     padding: 18px 10px;
     margin: auto;
-    margin-left: 15px;
+    margin-left: 16px;
     margin-top: 40px;
     border-bottom: 2px solid #ffffff;
     transition: 0.9s;
   }
 
   .nav_logo li:hover {
- 
     color: rgb(167, 255, 251);
     border-bottom: 0px;
     font-size: 1.7rem;
