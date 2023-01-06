@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import HeaderLanding from "../components/HeaderLanding";
 import Section_info from "../components/Section_info";
+import Section_learning from "../components/Section_learning";
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
 
 
@@ -32,8 +33,13 @@ export default function Home() {
 					<Section_info 
 					contenido_headerI = 'En la Fundación de Personas Autistas del estado Guárico, trabajamos por el bienestar, integración y una mejor calidad de vida de las personas con autismo y otros trastornos del desarrollo.'
 				/>
-				</section>
+				</	section>
 			
+				<section>	
+					<Section_learning 
+					contenido_headerI = 'learning.'
+				/>
+				</section>
 			</main>
 
 			<footer className={''}></footer>
