@@ -1,21 +1,21 @@
-import Info_style from "../styles/SectionLearning/seccion_learning.module.css";
-import videos_style from "../styles/SectionLearning/services_learning.module.css";
+import Info_style from "../styles/SectionBook/seccion_book.module.css";
+import libros_style from "../styles/SectionBook/services_book.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import TextContent from "./Section_info/TextContent";
-import Videos from "./Section_videos/Videos";
+import Libros from "./Section_books/Libros";
 
 
-function Section_learning(props) {
+function Section_book(props) {
   return (
 
-    <div className={Info_style.section_video}>
+    <div className={Info_style.section_book}>
       
       <div className={Info_style.name_fun}>
-        <div className={Info_style.container_video}></div>
+        <div className={Info_style.container_book}></div>
         <div className={Info_style.vector_container}>
-          <div className={Info_style.vector_2}>
-            <div className={Info_style.welcome_red}>
+          <div className={Info_style.vector_3}>
+            <div className={Info_style.welcome_green}>
       
               <div className= {Info_style.welcome_content}>
                 <h1 >¿Que deseas aprender?</h1>
@@ -26,7 +26,7 @@ function Section_learning(props) {
                     debitis itaque assumenda!
                   </p>
               </div>
-              <div className={Info_style.video_Info}>
+              <div className={Info_style.libro_Info}>
                   <Image
                   src= '/IMG/Libro.png'
                   height={120}
@@ -43,36 +43,36 @@ function Section_learning(props) {
 
 </div>
     
-      <div className={videos_style.container_services}>
+      <div className={libros_style.container_services}>
 
-        <Videos
+        <Libros
         num_img = '1'
-        title_video = 'Evaluación Integral'
+        title_libro = 'Evaluación Integral'
         description = 'Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
           />
-         <Videos
+         <Libros
         num_img = '2'
-        title_video = 'Psicopedagogía'
+        title_libro = 'Psicopedagogía'
         description = 'Ofrecemos tratamiento de los problemas de aprendizaje.'
           />
-         <Videos
+         <Libros
         num_img = '3'
-        title_video = 'Terapia del Lenguaje'
+        title_libro = 'Terapia del Lenguaje'
         description = 'Nos encargamos de la prevención y la rehabilitación de las alteraciones en las diversas áreas de la comunicación: lenguaje, audición, voz y habla.'
           />
-          <Videos
+          <Libros
         num_img = '3'
-        title_video = 'Fisioterapia'
+        title_libro = 'Fisioterapia'
         description = 'Prevención, habilitación y rehabilitación de las alteraciones en las áreas motoras, mediante la aplicación de tratamientos a través de medios físicos y ejercicios terapéuticos.'
          />
-         <Videos
+         <Libros
         num_img = '3'
-        title_video = 'Terapia ocupacional'
+        title_libro = 'Terapia ocupacional'
         description = 'Promovemos la participación eficaz y satisfactoria en actividades significativas del diario vivir en personas con o sin discapacidad, mediante la prevención, habilitación y rehabilitación de los procesos comprometidos.'
          />
-          <Videos
+          <Libros
         num_img = '3'
-        title_video = 'Intervención conductual'
+        title_libro = 'Intervención conductual'
         description = 'Enseñamos a las personas involucradas con niños que presentan excesos conductuales, un conjunto de técnicas basadas en los principios del aprendizaje y de la psicología cognitiva en forma teórica y practica.'
          />
 
@@ -81,4 +81,4 @@ function Section_learning(props) {
   )
 }
 
-export default Section_learning
+export default Section_book

@@ -1,4 +1,4 @@
-.section_video {
+.section_libro {
     background: #FFEFEF;
 }
 
@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 
-.container_video {
+.container_book {
   position: absolute;
     background: linear-gradient(107.56deg, #D61010 0%, rgba(214, 16, 16, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -20,7 +20,7 @@
     background-repeat: no-repeat;
   }
 
-  .vector_2{
+  .vector_3{
     position: relative;
     height: 80vh;
     width: 100%;
@@ -37,7 +37,7 @@
 
   }
 
-  .welcome_red {
+  .welcome_green {
     display: flex;
     width: 50%;
     height: 100%;
@@ -48,7 +48,7 @@
     margin-bottom: 5%;
   }
 
-  .video_Info img{
+  .libro_Info img{
     width: 300px;
     height: 400px;
    }
