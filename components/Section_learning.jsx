@@ -17,8 +17,8 @@ function Section_learning(props) {
           <div className={Info_style.vector_2}>
             <div className={Info_style.welcome_red}>
       
-              <div className= {Info_style.welcome_content}>
-                <h1 >¿Que deseas aprender?</h1>
+              <div className= {Info_style.welcome_content} id= "videos">
+                <h1 >Aprendizaje</h1>
                   <p>                   
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                     praesentium totam adipisci, odio ratione, vitae perferendis ullam

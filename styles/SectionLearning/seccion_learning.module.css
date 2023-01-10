@@ -57,8 +57,9 @@
     display: inline-flex;
     color: rgb(255, 255, 255);
     width: 400px;
-    height: 250px;
-    padding: 20px;
+    height: 450px;
+    padding: 30px;
+    gap: 5px;
     flex-direction: column;
   }
 
@@ -70,7 +71,7 @@
   }
   
   .welcome_content h1{
-    font-size: 50px;
+    font-size: 68px;
     width: 550px;
     text-align: justify;
     color: rgb(255, 255, 255);

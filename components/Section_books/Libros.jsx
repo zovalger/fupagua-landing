@@ -4,16 +4,16 @@ import Link from "next/link";
 
 function Libros (props) {
     return(
-        <div className={libros_style.box_video}>
+        <div className={libros_style.box_libro}>
          <div className={libros_style.service_img}>
              <Image 
-             src={(`/Icons/Services/icon_${props.num_img}.svg`)}
+             src='/IMG/Libro.png'
              height={100}
              width={100}
              alt='Icono'
              />
          </div>
-         <div className={libros_style.description_libros}>
+         <div className={libros_style.description_libro}>
              <h2>
                  {props.title_libro}
              </h2>

@@ -4,6 +4,7 @@ import HeaderLanding from "../components/HeaderLanding";
 import Section_info from "../components/Section_info";
 import Section_learning from "../components/Section_learning";
 import Section_book from "../components/Section_book";
+import Section_reading from "../components/Reading_circle";
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
 
 
@@ -45,6 +46,11 @@ export default function Home() {
 				<section>	
 					<Section_book 
 					contenido_headerI= 'book.'
+				/>
+				</section>
+				<section>	
+					<Section_reading
+					contenido_headerI= 'reading.'
 				/>
 				</section>
 			</main>

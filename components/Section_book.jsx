@@ -2,8 +2,8 @@ import Info_style from "../styles/SectionBook/seccion_book.module.css";
 import libros_style from "../styles/SectionBook/services_book.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import TextContent from "./Section_info/TextContent";
 import Libros from "./Section_books/Libros";
+import Section_reading from "../components/Reading_circle";
 
 
 function Section_book(props) {
@@ -17,18 +17,20 @@ function Section_book(props) {
           <div className={Info_style.vector_3}>
             <div className={Info_style.welcome_green}>
       
-              <div className= {Info_style.welcome_content}>
-                <h1 >¿Que deseas aprender?</h1>
+              <div className= {Info_style.welcome_content} id='libros'>
+                <h1 >Biblioteca</h1>
+                <h2 >"Nombre de la Biblioteca"</h2>
                   <p>                   
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                     praesentium totam adipisci, odio ratione, vitae perferendis ullam
                     atque, tenetur neque ex minima fugiat dolore dicta tempora illo
                     debitis itaque assumenda!
                   </p>
+                  <button class="button-book">Ver catalogo</button>
               </div>
               <div className={Info_style.libro_Info}>
                   <Image
-                  src= '/IMG/Libro.png'
+                  src= {(`/public/IMG/biblioteca.svg`)}
                   height={120}
                   width={100}
                   alt='imagen de learning'
@@ -39,39 +41,30 @@ function Section_book(props) {
           
         </div>
       </div>
-<div className="selector_video">
-
-</div>
+      
     
       <div className={libros_style.container_services}>
-
         <Libros
-        num_img = '1'
         title_libro = 'Evaluación Integral'
         description = 'Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
           />
          <Libros
-        num_img = '2'
         title_libro = 'Psicopedagogía'
         description = 'Ofrecemos tratamiento de los problemas de aprendizaje.'
           />
          <Libros
-        num_img = '3'
         title_libro = 'Terapia del Lenguaje'
         description = 'Nos encargamos de la prevención y la rehabilitación de las alteraciones en las diversas áreas de la comunicación: lenguaje, audición, voz y habla.'
           />
           <Libros
-        num_img = '3'
         title_libro = 'Fisioterapia'
         description = 'Prevención, habilitación y rehabilitación de las alteraciones en las áreas motoras, mediante la aplicación de tratamientos a través de medios físicos y ejercicios terapéuticos.'
          />
          <Libros
-        num_img = '3'
         title_libro = 'Terapia ocupacional'
         description = 'Promovemos la participación eficaz y satisfactoria en actividades significativas del diario vivir en personas con o sin discapacidad, mediante la prevención, habilitación y rehabilitación de los procesos comprometidos.'
          />
           <Libros
-        num_img = '3'
         title_libro = 'Intervención conductual'
         description = 'Enseñamos a las personas involucradas con niños que presentan excesos conductuales, un conjunto de técnicas basadas en los principios del aprendizaje y de la psicología cognitiva en forma teórica y practica.'
          />
