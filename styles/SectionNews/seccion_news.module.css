@@ -1,5 +1,5 @@
-.section_video {
-    background: #FFEFEF;
+.section_news {
+  background: #FFF8E2;
 }
 
 .name_fun {
@@ -9,9 +9,9 @@
     flex-direction: column;
 }
 
-.container_video {
-  position: absolute;
-    background: linear-gradient(107.56deg, #D61010 0%, rgba(214, 16, 16, 0) 100%);
+.container_news {
+    position: absolute;
+    background: linear-gradient(107.56deg, #DBAA00 0%, rgba(219, 170, 0, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 100%;
     height: 80vh;
@@ -20,24 +20,19 @@
     background-repeat: no-repeat;
   }
 
-  .vector_2{
+  .vector_3{
     position: relative;
     height: 80vh;
     width: 100%;
-    background-image: url(/Banners/Videos_banner.svg);
+    background-image: url(/Banners/Activities_banner.svg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    z-index: 2;
+    z-index: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    filter: linear-gradient(228.83deg, #9A0000 0.41%, rgba(154, 0, 0, 0) 72.93%, rgba(214, 16, 16, 0.07) 72.94%);
-    
-
   }
 
-  .welcome_red {
+  .welcome_yellow {
     display: flex;
     width: 50%;
     height: 100%;
@@ -48,19 +43,15 @@
     margin-bottom: 5%;
   }
 
-  .video_Info img{
-    width: 300px;
-    height: 400px;
-   }
-
   .welcome_content {
     display: inline-flex;
     color: rgb(255, 255, 255);
     width: 400px;
-    height: 450px;
+    height: 300px;
     padding: 30px;
     gap: 5px;
     flex-direction: column;
+    
   }
 
   .welcome_content p{
@@ -76,3 +67,11 @@
     text-align: justify;
     color: rgb(255, 255, 255);
   }
+
+  .welcome_content h2{
+    font-size: 48px;
+    width: 550px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+  }
+

@@ -5,6 +5,7 @@ import Section_info from "../components/Section_info";
 import Section_learning from "../components/Section_learning";
 import Section_book from "../components/Section_book";
 import Section_reading from "../components/Reading_circle";
+import Section_news from "../components/Section_news";
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
 
 
@@ -51,6 +52,11 @@ export default function Home() {
 				<section>	
 					<Section_reading
 					contenido_headerI= 'reading.'
+				/>
+				</section>
+				<section>	
+					<Section_news
+					contenido_headerI= 'news.'
 				/>
 				</section>
 			</main>

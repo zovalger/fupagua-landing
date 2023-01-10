@@ -28,7 +28,7 @@ function Section_learning(props) {
               </div>
               <div className={Info_style.video_Info}>
                   <Image
-                  src= '/IMG/Libro.png'
+                  src= {(`/IMG/stock.svg`)}
                   height={120}
                   width={100}
                   alt='imagen de learning'

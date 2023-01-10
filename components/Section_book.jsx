@@ -30,9 +30,9 @@ function Section_book(props) {
               </div>
               <div className={Info_style.libro_Info}>
                   <Image
-                  src= {(`/public/IMG/biblioteca.svg`)}
-                  height={120}
-                  width={100}
+                  src= {(`/IMG/biblioteca.svg`)}
+                  height={360}
+                  width={300}
                   alt='imagen de learning'
                   />
                 </div>

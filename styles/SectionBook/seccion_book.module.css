@@ -24,7 +24,7 @@
     position: relative;
     height: 80vh;
     width: 100%;
-    background-image: url(/public/Banners/Library_banner.svg);
+    background-image: url(/Banners/Library_banner.svg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
