@@ -45,6 +45,20 @@ function Section_info(props) {
         titleInfo = 'Sobre nosotros'
         Info= 'FUPAGUA, Fundación de personas autistas del Guárico es una fundación sin animo de lucro con personal dispuestos a trabajar por el bienestar, integración y una mejor calidad de vida de las personas con Autismo y otros trastornos del desarrollo. Nuestro objetivo es atender a los niños y adolescentes con autismo de San Juan de los Morros y zonas adyacentes, en la búsqueda de su integración a la comunidad.'
         />
+        <div className= {Info_style.Container_working_hours}>
+          <div className= {Info_style.Img_hours}>
+            <h2>Horario Laboral</h2>
+            <Image 
+            src= {(`/IMG/Info_2.png`)}
+            width={600}
+            height={400}
+            alt= {props.nombre_img}
+            ></ Image>
+          </div>
+          <div className={Info_style.Text_hours}>
+            <p>Nuestro horario laboral es de Lunes a Viernes. Trabajamos desde las 8:00 Am hasta las 12:00 Pm y de 1:00 Pm a 4:00 PM.</p>
+          </div>
+        </div>
          <TextContent 
         content_style = {false}
         num_img = '1'
@@ -53,16 +67,9 @@ function Section_info(props) {
         Info= 'Surge entre un pequeño grupo de padres, familiares y profesionales, dispuestos a trabajar por el bienestar Autismo y otros trastornos del desarrollo, que se veían en la necesidad de trasladarse a las ciudades de Caracas y/o Maracay en busca de ayuda para sus hijos.'
         Info_2= 'El esfuerzo comienza a ver sus frutos el cuatro de noviembre de mil novecientos noventa y siete, cuando nace como una fundación sin fines de lucro, bajo la tutela de la señora María Antonieta Nuzzo; es entonces cuando comienzan las conversaciones con el Ministerio de Infraestructura y se consigue la sede en calidad de comodato para abrir sus puertas casi un año después, un dieciséis de Octubre como Centro de Diagnóstico y Tratamiento “Lcda. Nora Díaz”.'
         />
-         <TextContent 
-        content_style = {true}
-        num_img = '1'
-        nombre_img = 'Imagen de prueba'
-        titleInfo = 'Horario'
-        Info= 'Nuestro horario laboral es de Lunes a Viernes. Trabajamos desde las 8:00 Am hasta las 12:00 Pm y de 1:00 Pm a 4:00 PM'
-        />
       </div>
         <TextContent 
-        content_style = {false}
+        content_style = {true}
         num_img = '1'
         nombre_img = 'Imagen de prueba'
         titleInfo = '¿Donde nos ubicamos?'
@@ -72,7 +79,7 @@ function Section_info(props) {
         />
       <div id="servicios">
         <TextContent 
-        content_style = {true}
+        content_style = {false}
         num_img = '1'
         nombre_img = 'Imagen de prueba'
         titleInfo = 'Nuestros servicios'

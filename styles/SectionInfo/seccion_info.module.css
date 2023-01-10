@@ -162,6 +162,7 @@ height: 90vh;
   text-align: justify;
   width: 500px;
 }
+
 .container_tex_c a {
   color: #00a6db;
   transition: 1.5s;
@@ -194,6 +195,55 @@ animation-iteration-count:infinite;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
   transform: rotate(-5.00deg);
+}
+
+            /*********** Horario laboral ********/
+
+.Container_working_hours{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.Img_hours{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Img_hours h1{
+ font-size: 2rem;
+ align-self: center;
+ margin-bottom: 10px;
+ font-weight: 800;
+}
+
+.Img_hours img{
+  height: 400px;
+  width: 600px;
+}
+
+.Text_hours{
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  margin-top: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.Text_hours p{
+  font-size: 1.35rem;
+  text-align: justify;
+  font-style: italic;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 

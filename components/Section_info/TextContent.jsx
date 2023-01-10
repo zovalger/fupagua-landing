@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function TextContent(props) {
           
-  const direccion = props. content_style
+  const direccion = props.content_style
   
         if(direccion === true){
           return(
