@@ -1,11 +1,21 @@
 import services_style from "../../styles/SectionInfo/services_info.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { use, useState } from "react";
+import Modal from "./services_modal/Modal";
 
-function Services(props) {
+
+
+function Services(props){
+
+    const [showModal, setShowModal] = useState(false);
+
+    const Show = () =>{
+        setShowModal(true)
+    }
     return(
        <div className={services_style.box_service}>
-        <div className={services_style.service_img}>
+        <div className={services_style.service_img}  onClick={Show}>
             <Image 
             src={(`/Icons/Services/icon_${props.num_img}.svg`)}
             height={100}
@@ -22,6 +32,7 @@ function Services(props) {
             </p>
         </div>
        </div>
+        
     )
 }
 

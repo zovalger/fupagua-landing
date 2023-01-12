@@ -24,7 +24,7 @@ function TextContent(props) {
                   <h2>{props.titleInfo}</h2>
                   <p>
                       {props.Info}<br /><br />
-                      <Link href= {(`${props.Link}`)}>
+                      <Link target='_blank' href= {(`${props.Link}`)}>
                       {props.Link_name}
                       </Link>
                   </p>
