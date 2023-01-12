@@ -5,11 +5,11 @@ import Link from "next/link";
 function Videos (props) {
     return(
         <div className={videos_style.box_video}>
-         <div className={videos_style.service_img}>
+         <div className={videos_style.video_img}>
              <Image 
-             src={(`/Icons/Services/icon_${props.num_img}.svg`)}
-             height={100}
-             width={100}
+             src={('/IMG/20221116_124735.jpg')}
+             height={160}
+             width={300}
              alt='Icono'
              />
          </div>

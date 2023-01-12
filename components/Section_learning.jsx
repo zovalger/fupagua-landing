@@ -2,7 +2,7 @@ import Info_style from "../styles/SectionLearning/seccion_learning.module.css";
 import videos_style from "../styles/SectionLearning/services_learning.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import TextContent from "./Section_info/TextContent";
+import Welcome_style from "../styles/welcome_style.module.css"
 import Videos from "./Section_videos/Videos";
 
 
@@ -15,9 +15,9 @@ function Section_learning(props) {
         <div className={Info_style.container_video}></div>
         <div className={Info_style.vector_container}>
           <div className={Info_style.vector_2}>
-            <div className={Info_style.welcome_red}>
+          <div className={Welcome_style.welcome_red}>
       
-              <div className= {Info_style.welcome_content} id= "videos">
+             <div className= {Welcome_style.welcome_content} id= "videos">
                 <h1 >Aprendizaje</h1>
                   <p>                   
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
