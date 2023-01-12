@@ -1,20 +1,20 @@
-import Info_style from "../styles/SectionNews/seccion_news.module.css";
+import News_style from "../styles/SectionNews/seccion_news.module.css";
 import noticias_style from "../styles/SectionNews/services_news.module.css";
 import Welcome_style from "../styles/welcome_style.module.css"
 import Link from "next/link";
-import Image from "next/image";
-import Noticias from "./Section_videos/Videos";
+import Image from  "next/image";
+import Noticias from "./Section_news/Noticias";
 
 
 function Section_news(props) {
   return (
 
-    <div className={Info_style.section_news}>
+    <div className={News_style.section_news}>
       
-      <div className={Info_style.name_fun}>
-        <div className={Info_style.container_news}></div>
-        <div className={Info_style.vector_container}>
-          <div className={Info_style.vector_3}>
+      <div className={News_style.name_fun}>
+        <div className={News_style.container_news}></div>
+        <div className={News_style.vector_container}>
+          <div className={News_style.vector_3}>
             <div className={Welcome_style.welcome_yellow}>
       
               <div className= {Welcome_style.welcome_content} id= "eventos">
@@ -26,7 +26,7 @@ function Section_news(props) {
                     debitis itaque assumenda!
                   </p>
               </div>
-              <div className={Info_style.news_Info}>
+              <div className={News_style.news_Info}>
                   <Image
                   src= {(`/IMG/stock.svg`)}
                   height={400}
@@ -39,12 +39,12 @@ function Section_news(props) {
           
         </div>
       </div>
-<div className={noticias_style.container_services}>
+<div className={noticias_style.container_services} >
         <Noticias
         title_news = 'Evaluación Integral'
-        description = 'Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
-          />
-      </div>
+        description= 'Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
+          /> 
+  </div>
   </div>
   )
 }
