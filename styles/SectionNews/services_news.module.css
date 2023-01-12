@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 
-.box_libro{
+.box_news{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@
   object-fit: cover
   }
     
-.description_libro{
+.description_news{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,13 +46,13 @@
     width: 300px;
 }
 
-.description_libro h2{
+.description_news h2{
     font-size: 1.30rem;
     margin-bottom: 8px;
     text-align: center;
 }
 
-.description_libro p{
+.description_news p{
     font-size: 1.08rem;
     text-align: justify;
     padding: 0 0.5rem;
