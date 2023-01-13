@@ -2,14 +2,13 @@ import Info_style from "../../styles/SectionInfo/seccion_info.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-
 function TextContent(props) {
           
-  const direccion = props.content_style
-  
+  const direccion = props.content_style;  
+
         if(direccion === true){
           return(
-            <div className={Info_style.container_tex}>
+            <div className={Info_style.container_tex_2}>
               <div className={Info_style.container_section_text}>
               <div className={Info_style.container_tex_img}></div>
               <Image 
@@ -41,10 +40,10 @@ function TextContent(props) {
               {props.Info_2}<br /><br />
               <Link target='_blank' href= {(`${props.Link}`)}>
                       {props.Link_name}
-                      </Link>
+              </Link>
               </p>
             </div>
-            <div className={Info_style.container_section_text}>
+            <div className={Info_style.container_section_text}> 
               <div className={Info_style.container_tex_img_d}></div>
               <Image 
                 src= {(`/IMG/Info_${props.num_img}.jpg`)}

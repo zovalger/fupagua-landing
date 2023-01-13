@@ -84,6 +84,7 @@
   flex-direction: row;
   margin-top: 40px;
   padding: 10px;
+  transition: 8s;
 }
 
 .container_tex_2 {
@@ -93,7 +94,19 @@
   flex-direction: row;
   margin-top: 40px;
   padding: 20px;
+  transition: 0.5s;
 }
+
+/* Animación del los contenedores de la seccion de información */
+
+.container_tex_o{
+  display: none;
+}
+
+.container_tex_2_o{
+  display: none;
+}
+
 
 /* contenedor de las img en la seccion de información */
 
@@ -145,6 +158,7 @@
   position: 1;
   border: 1px solid rgba(128, 224, 255, 0.54);
 }
+
 
 /* contenedor de los textos en la seccion de información */
 
