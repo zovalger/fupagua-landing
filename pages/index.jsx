@@ -6,9 +6,8 @@ import Section_learning from "../components/Section_learning";
 import Section_book from "../components/Section_book";
 import Section_reading from "../components/Reading_circle";
 import Section_news from "../components/Section_news";
+import Section_form from "../components/Section_form";
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
-
-
 
 
 export default function Home() {
@@ -58,6 +57,9 @@ export default function Home() {
 					<Section_news
 					contenido_headerI= 'news.'
 				/>
+				</section>
+				<section> 
+					<Section_form />
 				</section>
 			</main>
 

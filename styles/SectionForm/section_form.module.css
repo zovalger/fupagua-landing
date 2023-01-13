@@ -1,0 +1,89 @@
+/* Formulario de Contactos */
+
+.form_container {
+  width: 100%;
+  background: #313131;
+  display: inline-flex;
+ }
+
+.form_container .form {
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 70px 320px;
+  box-sizing: border-box;
+ }
+
+.form_container .form .form_header {
+  margin-bottom: 20px;
+ }
+
+.form_container .form .form_header .form_title {
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.form_container .form .form_label {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #A0A0A0;
+}
+
+.form_container .form .form_header .form_text {
+  font-size: 18px;
+  color: #A0A0A0;
+  text-align: center;
+}
+
+.form_container .form .form_input, .form_textarea {
+  padding: 12PX;
+  width: 100%;
+  background: rgba(243, 238, 238, 0.51);
+  border: 1px solid rgba(0, 0, 0, 0.51);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-bottom: 9px;
+  color: rgb(41, 38, 38);
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form .form_textarea {
+  min-height: 150px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-y: visible;
+}
+
+.form .form_textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form .form_textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00A6DB 0.03%, rgba(19, 173, 224, 0.54) 100%);
+  border-radius: 10px;
+}
+
+.btn_submit {
+  align-items: center;
+  color:white;
+  width: 100%;
+  box-sizing: border-box;
+  background: #39B30E;
+  border: solid #39B30E;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.btn_submit:hover {
+  cursor: pointer;
+  background: #5ed832;
+  border: solid #5ed832;
+}
