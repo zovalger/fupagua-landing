@@ -1,17 +1,28 @@
 import style from "../styles/HeaderLanding/HeaderLanding.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 export function HeaderLanding() {
-	return (
-		<div className={style.Logo_header} id="header">
-      <div className={style.logo}>
-		<Image 
-		src='/Icons/Logo-Fupagua.png'
-		width={200}
-		height={200}
-		alt='Logo de Fupagua'
-		></Image>
+  //// Scroll_animation////
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true
+    });
+  }, []);
+
+  return (
+    <div className={style.Logo_header} id="header">
+      <div data-aos= 'fade-down' className={style.logo}>
+        <Image
+          src='/Icons/Logo-Fupagua.png'
+          width={200}
+          height={200}
+          alt='Logo de Fupagua'
+        ></Image>
       </div>
       <nav className={style.nav_logo}>
         <ul>
@@ -49,7 +60,7 @@ export function HeaderLanding() {
         </ul>
       </nav>
     </div>
-	);
+  );
 }
 
 export default HeaderLanding;

@@ -1,14 +1,24 @@
 import Info_style from "../../styles/SectionInfo/seccion_info.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS  from "aos";
+import 'aos/dist/aos.css'
 
 function TextContent(props) {
-          
+    //// Scroll_animation////
+    useEffect(() =>{
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+    }, []);
+
   const direccion = props.content_style;  
 
         if(direccion === true){
           return(
-            <div className={Info_style.container_tex_2}>
+            <div data-aos= {props.data_aos} className={Info_style.container_tex}>
               <div className={Info_style.container_section_text}>
               <div className={Info_style.container_tex_img}></div>
               <Image 
@@ -32,7 +42,7 @@ function TextContent(props) {
             )
         } else {
           return(
-            <div className={Info_style.container_tex_2}>
+            <div data-aos={props.data_aos} className={Info_style.container_tex_2}>
             <div className={Info_style.container_tex_c}>
               <h2>{props.titleInfo}</h2>
               <p>
