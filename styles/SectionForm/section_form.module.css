@@ -87,3 +87,28 @@
   background: #5ed832;
   border: solid #5ed832;
 }
+
+/* Redes sociales */
+
+.icon_container {
+  width: 10%;
+  display: inline-flex;
+  margin: auto;
+}
+
+.icon_container .form_list {
+    list-style: none;
+}
+
+.icon_container .form_list_icon {
+  margin-bottom: 3rem;
+  margin-left: 18rem; 
+  display: flex;
+}
+
+.icon {
+  width: 45px;
+	height: 45px;
+	display: inline-flex;
+	justify-content: center;
+}

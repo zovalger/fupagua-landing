@@ -58,12 +58,12 @@ export default function Home() {
 					contenido_headerI= 'news.'
 				/>
 				</section>
-				<section> 
-					<Section_form />
-				</section>
+				
 			</main>
 
-			<footer className={''}></footer>
+			<footer className={''}>
+				<Section_form />
+			</footer>
 		</div>
 	);
 }
