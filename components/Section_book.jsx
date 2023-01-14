@@ -1,6 +1,6 @@
 import Info_style from "../styles/SectionBook/seccion_book.module.css";
 import libros_style from "../styles/SectionBook/services_book.module.css";
-import Link from "next/link";
+import Welcome_style from "../styles/welcome_style.module.css"
 import Image from "next/image";
 import Libros from "./Section_books/Libros";
 import Section_reading from "../components/Reading_circle";
@@ -15,9 +15,9 @@ function Section_book(props) {
         <div className={Info_style.container_book}></div>
         <div className={Info_style.vector_container}>
           <div className={Info_style.vector_3}>
-            <div className={Info_style.welcome_green}>
+          <div className={Welcome_style.welcome_yellow}>
       
-              <div className= {Info_style.welcome_content} id='libros'>
+            <div className= {Welcome_style.welcome_content} id='libros'>
                 <h1 >Biblioteca</h1>
                 <h2 >"Nombre de la Biblioteca"</h2>
                   <p>                   
