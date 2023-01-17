@@ -43,7 +43,7 @@
     margin-bottom: 5%;
   }
 
-  .button-book {
+  .button_book {
     box-sizing: border-box;
     width: 250px;
     height: 50px;
@@ -51,14 +51,14 @@
     margin-top: 30px;
     background: #04D600;
     border: 5px solid #FFFFFF;
-  
-    border-radius: 30px;
+    color: #ffffff;
+    border-radius: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
   }
   
-  .button-book:hover {
+  .button_book:hover {
     cursor: pointer;
     background: #4af748;
   }

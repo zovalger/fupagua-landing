@@ -26,7 +26,7 @@ function Section_book(props) {
                     atque, tenetur neque ex minima fugiat dolore dicta tempora illo
                     debitis itaque assumenda!
                   </p>
-                  <button class="button-book">Ver catalogo</button>
+                  <button className={Info_style.button_book}>Ver catalogo</button>
               </div>
               <div className={Info_style.libro_Info}>
                   <Image

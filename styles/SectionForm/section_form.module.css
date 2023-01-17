@@ -112,3 +112,26 @@
 	display: inline-flex;
 	justify-content: center;
 }
+
+/* Responsive */
+
+@media (max-width: 940px) {
+  .form_container .form {
+    width: 90%;
+    margin: auto;
+    padding: 5px 10px;
+  }
+  .form_container .form .form_header .form_title {
+    font-size: 30px;
+  }
+  .form_container .form .form_label {
+    font-size: 18px;
+  }
+  .icon_container .form_list_icon {
+    margin-left: 0rem; 
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+}
+}
