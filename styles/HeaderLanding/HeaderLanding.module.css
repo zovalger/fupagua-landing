@@ -1,4 +1,3 @@
-
 .Logo_header {
     display: flex;
     flex-direction: column;
@@ -23,41 +22,44 @@
   
   .logo img {
     width: 380px;
-    height: 400px;
+    height: 410px;
     margin: auto;
   
     border-radius: 30px;
   }
-   
+
+  /* Nav del header */
   .nav_logo {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     min-width: 100%;
-    padding: 10px;
+    flex-basis: 80%;
     align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px
   }
   
   .nav_logo li {
     font-size: 1.6rem;
-    font-style: italic;
     display: inline-flex;
     color: rgb(255, 255, 255);
     align-items: center;
-    padding: 18px 10px;
+    padding: 10px 10px;
     margin: auto;
     margin-left: 16px;
     margin-top: 40px;
     border-bottom: 2px solid #ffffff;
-    transition: 0.9s;
+    transition: 0.95s;
   }
 
   .nav_logo li:hover {
     color: rgb(167, 255, 251);
     border-bottom: 0px;
-    font-size: 1.7rem;
+    font-size: 1.61rem;
     border: 2px solid #ffffff;
     border-radius: 2em;
-    padding: 10px;
+    padding: 10px 9px;
   }
 
   /* RESPONSIVE */
@@ -67,12 +69,12 @@
 
 /* nav */
 .nav_logo li {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
  
 }
 
 .nav_logo li:hover {
-  font-size: 1.5rem;
+  font-size: 1.36rem;
 }
 
  }
@@ -86,12 +88,12 @@
 
 
   .nav_logo li {
-    font-size: 1.2rem;
+    font-size: 1.21rem;
    
   }
   
   .nav_logo li:hover {
-    font-size: 1.3rem;
+    font-size: 1.22rem;
   }
 }
 
@@ -100,7 +102,7 @@
 
   .logo img {
     width: 340px;
-    height: 360px;
+    height: 370px;
   }
    
 
@@ -118,7 +120,7 @@
 
   .logo img {
     width: 320px;
-    height: 340px;
+    height: 350px;
   }
    
 
@@ -137,7 +139,7 @@
 
   .logo img {
     width: 320px;
-    height: 340px;
+    height: 350px;
   }
    
 
