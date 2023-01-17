@@ -17,6 +17,7 @@ function Section_info(props) {
     once: true
   });
 }, []);
+
   return (
 
     <div className={Info_style.section_presentation}>
@@ -68,7 +69,7 @@ function Section_info(props) {
               ></ Image>
             </div>
             <div className={Info_style.Text_hours}>
-              <p>Nuestro horario laboral es de Lunes a Viernes. Trabajamos desde las 8:00 Am hasta las 12:00 Pm y de 1:00 Pm a 4:00 PM.</p>
+              <p>Nuestro horario laboral es de Lunes a Viernes.<br />Trabajamos desde las 8:00 Am hasta las 12:00 Pm y de 1:00 Pm a 4:00 PM.</p>
             </div>
           </div>
           <TextContent
@@ -102,7 +103,7 @@ function Section_info(props) {
         />
       </div>
 
-      <div id="modal_services"></div>
+      
       
       <div className={services_style.container_services}>
         <Services
