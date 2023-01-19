@@ -19,7 +19,7 @@ function Section_book(props) {
       
             <div className= {Welcome_style.welcome_content} id='libros'>
                 <h1 >Biblioteca</h1>
-                <h2 >"Nombre de la Biblioteca"</h2>
+                <h2>"Nombre de la Biblioteca"</h2>
                   <p>                   
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                     praesentium totam adipisci, odio ratione, vitae perferendis ullam

@@ -35,7 +35,7 @@ function Section_info(props) {
                   alt='Logo de la Fundación'
                 />
               </div>
-              <div className={Info_style.presentation} data-aos= 'fade-up' data-aos-duration= '2500'>
+              <div className={Info_style.presentation} data-aos= 'fade-up' data-aos-duration= '1800'>
 
                 <p>
                   {props.contenido_headerI}

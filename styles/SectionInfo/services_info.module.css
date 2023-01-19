@@ -7,9 +7,9 @@
     justify-content: space-evenly;
     margin-top: 30px;
     padding: 5px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 50px;
-    
+    overflow-x: scroll;
 }
 
 .box_service{
@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 33.33%;
+  
 }
 
 .service_img{
