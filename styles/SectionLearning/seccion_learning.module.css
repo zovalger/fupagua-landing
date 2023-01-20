@@ -47,8 +47,9 @@
   }
 
   .video_Info img{
-    width: 300px;
+    width: 400px;
     height: 400px;
+    object-fit: cover
    }
 
   .welcome_content {
@@ -73,4 +74,13 @@
     width: 550px;
     text-align: justify;
     color: rgb(255, 255, 255);
+  }
+
+  @media (max-width: 300px) {
+    /* Header_logo */
+    .video_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
   }

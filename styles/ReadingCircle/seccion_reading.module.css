@@ -49,3 +49,25 @@
   .reading_container .reading_text {
     color: #FFFFFF;
   }
+
+  @media (max-width: 300px) {
+    /* Header_logo */
+    .reading_container .reading_header .reading_title {
+        font-size: 1.50rem;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .reading_subtitle{
+      font-size: 1rem;
+    }
+
+    .reading_text{
+      font-size: 0.8rem;
+    }
+    
+    .reading_section_1 {
+      width: 280px;
+      padding: 10px 10px;
+    }
+  }

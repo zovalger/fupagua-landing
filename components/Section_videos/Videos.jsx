@@ -7,9 +7,9 @@ function Videos (props) {
         <div className={videos_style.box_video}>
          <div className={videos_style.video_img}>
              <Image 
-             src={('/IMG/20221116_124735.jpg')}
-             height={160}
-             width={300}
+             src='/IMG/20221116_124735.jpg'
+             height={100}
+             width={100}
              alt='Icono'
              />
          </div>

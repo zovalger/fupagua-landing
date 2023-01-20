@@ -29,8 +29,8 @@ function Section_learning(props) {
               <div className={Info_style.video_Info}>
                   <Image
                   src= {(`/IMG/stock.svg`)}
-                  height={120}
-                  width={100}
+                  height={460}
+                  width={400}
                   alt='imagen de learning'
                   />
                 </div>
@@ -46,32 +46,26 @@ function Section_learning(props) {
       <div className={videos_style.container_services}>
 
         <Videos
-        num_img = '1'
         title_video = 'Evaluación Integral'
         description = 'Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
           />
          <Videos
-        num_img = '2'
         title_video = 'Psicopedagogía'
         description = 'Ofrecemos tratamiento de los problemas de aprendizaje.'
           />
          <Videos
-        num_img = '3'
         title_video = 'Terapia del Lenguaje'
         description = 'Nos encargamos de la prevención y la rehabilitación de las alteraciones en las diversas áreas de la comunicación: lenguaje, audición, voz y habla.'
           />
           <Videos
-        num_img = '3'
         title_video = 'Fisioterapia'
         description = 'Prevención, habilitación y rehabilitación de las alteraciones en las áreas motoras, mediante la aplicación de tratamientos a través de medios físicos y ejercicios terapéuticos.'
          />
          <Videos
-        num_img = '3'
         title_video = 'Terapia ocupacional'
         description = 'Promovemos la participación eficaz y satisfactoria en actividades significativas del diario vivir en personas con o sin discapacidad, mediante la prevención, habilitación y rehabilitación de los procesos comprometidos.'
          />
           <Videos
-        num_img = '3'
         title_video = 'Intervención conductual'
         description = 'Enseñamos a las personas involucradas con niños que presentan excesos conductuales, un conjunto de técnicas basadas en los principios del aprendizaje y de la psicología cognitiva en forma teórica y practica.'
          />
