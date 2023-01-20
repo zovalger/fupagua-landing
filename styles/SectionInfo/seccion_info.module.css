@@ -668,6 +668,14 @@
     position: 1;
   }
 
+  .map {
+    position: absolute;
+    height: 300px;
+    width: 420px;
+    border-radius: 35px;
+    position: 1;
+  }
+
   /* lateral derecho */
 
   .container_tex_2 {

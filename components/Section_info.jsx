@@ -26,7 +26,7 @@ function Section_info(props) {
   useEffect(() => {
    const handleScrollPrev = () => {
     const div = divRef.current
-    const { y } = div.getBoundingClientReact();
+    const { y } = div.getBoundingClientRect();
     console.log(y);
    
    }
