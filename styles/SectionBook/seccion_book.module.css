@@ -84,3 +84,61 @@
     }
 
   }
+
+  @media (max-width: 390px) {
+    /* Header_logo */
+    .libro_Info{
+      padding-top: 20%;
+    }
+
+     .libro_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
+     .button_book {
+      width: 120px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+    .vector_3{
+      margin-top: 0px;
+      min-height: 70vh;
+    }
+
+  }
+
+  @media (max-width: 412px) {
+    /* Header_logo */
+    .libro_Info{
+      padding-top: 50%;
+    }
+
+     .libro_Info img{
+      width: 135px;
+      height: 135px;
+    
+     }
+  
+     .button_book {
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    .vector_3{
+        margin-top: 0px;
+        min-height: 90vh;
+      }
+    
+
+  }
+
+  @media (max-width: 850px) {
+    /* Header_logo */
+     .libro_Info img{
+      width: 325px;
+      height: 325px;
+     }
+  }

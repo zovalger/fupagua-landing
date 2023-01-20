@@ -46,3 +46,40 @@
      }
   
   }
+
+  @media (max-width: 390px) {
+    /* Header_logo */
+
+    .news_Info{
+      padding-top: 20%;
+       }
+
+    .news_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
+  }
+
+  @media (max-width: 412px) {
+    /* Header_logo */
+
+    .news_Info{
+      padding-top: 30%;
+       }
+
+    .news_Info img{
+      width: 135px;
+      height: 135px;
+     }
+  
+  }
+
+  @media (max-width: 850px) {
+    /* Header_logo */
+    .news_Info img{
+      width: 325px;
+      height: 325px;
+     }
+  
+  }

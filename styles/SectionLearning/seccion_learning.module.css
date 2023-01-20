@@ -84,3 +84,42 @@
      }
   
   }
+
+  @media (max-width: 390px) {
+    /* Header_logo */
+    .video_Info {
+      padding-top: 20%;
+       }
+
+    .video_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
+  }
+
+  @media (max-width: 412px) {
+    /* Header_logo */
+    .video_Info {
+    padding-top: 30%;
+     }
+    
+    .video_Info img{
+      width: 135px;
+      height: 135px;
+     }
+  
+     .vector_2{
+      margin-top: 0px;
+      min-height: 50vh;
+    }
+  }
+
+  @media (max-width: 850px) {
+    /* Header_logo */
+    .video_Info img{
+      width: 325px;
+      height: 325px;
+     }
+  
+  }
