@@ -4,7 +4,7 @@ import Image from "next/image";
 import TextContent from "./Section_info/TextContent";
 import TextContentTwo from "./Section_info/TextContentTwo";
 import Services from "./Section_info/Services";
-import { useEffect } from "react";
+import { useState ,useEffect, useRef } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
@@ -17,6 +17,27 @@ function Section_info(props) {
     once: true
   });
 }, []);
+
+  //// Scroll Servicios////
+
+  const [scrollX, SetScrollX] = useState(0);
+  const divRef = useRef();
+
+  useEffect(() => {
+   const handleScrollPrev = () => {
+    const div = divRef.current
+    const { y } = div.getBoundingClientReact();
+    console.log(y);
+   
+   }
+
+   window.addEventListener('scroll', handleScrollPrev)
+   window.removeEventListener('scroll', handleScrollPrev)
+  }, []);
+
+// scrollleft -= 300
+// scrollleft += 300
+
 
   return (
 
@@ -38,7 +59,7 @@ function Section_info(props) {
               <div className={Info_style.presentation} data-aos= 'fade-up' data-aos-duration= '1800'>
 
                 <p>
-                  {props.contenido_headerI}
+                 En la <strong>Fundación de Personas Autistas del estado Guárico</strong>, trabajamos por el bienestar, integración y una mejor calidad de vida de las personas con autismo y otros trastornos del desarrollo.
                 </p>
               </div>
             </div>
@@ -105,61 +126,62 @@ function Section_info(props) {
 
       
       
-      <div className={services_style.container_services}>
+      <div className={services_style.container_services} ref={divRef}>
+        <button className={services_style.prev}>{'<'}</button>
         <Services
           num_img='1'
           title_service='Evaluación Integral'
-          description='Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
+          // description='Nuestro equipo interdisciplinario constituido por psicólogo, psicopedagogo, fisioterapeuta y terapista ocupacional y terapista de lenguaje evalúa al niño y establece el diagnostico para orientarle respecto a los programas de apoyo que le corresponden.'
         />
         <Services
           num_img='2'
           title_service='Psicopedagogía'
-          description='Ofrecemos tratamiento de los problemas de aprendizaje.'
+          // description='Ofrecemos tratamiento de los problemas de aprendizaje.'
 
         />
         <Services
           num_img='3'
           title_service='Terapia del Lenguaje'
-          description='Nos encargamos de la prevención y la rehabilitación de las alteraciones en las diversas áreas de la comunicación: lenguaje, audición, voz y habla.'
+          // description='Nos encargamos de la prevención y la rehabilitación de las alteraciones en las diversas áreas de la comunicación: lenguaje, audición, voz y habla.'
 
         />
         <Services
           num_img='3'
           title_service='Fisioterapia'
-          description='Prevención, habilitación y rehabilitación de las alteraciones en las áreas motoras, mediante la aplicación de tratamientos a través de medios físicos y ejercicios terapéuticos.'
+          // description='Prevención, habilitación y rehabilitación de las alteraciones en las áreas motoras, mediante la aplicación de tratamientos a través de medios físicos y ejercicios terapéuticos.'
 
         />
         <Services
           num_img='3'
           title_service='Terapia ocupacional'
-          description='Promovemos la participación eficaz y satisfactoria en actividades significativas del diario vivir en personas con o sin discapacidad, mediante la prevención, habilitación y rehabilitación de los procesos comprometidos.'
+          // description='Promovemos la participación eficaz y satisfactoria en actividades significativas del diario vivir en personas con o sin discapacidad, mediante la prevención, habilitación y rehabilitación de los procesos comprometidos.'
 
         />
         <Services
           num_img='3'
           title_service='Intervención conductual'
-          description='Enseñamos a las personas involucradas con niños que presentan excesos conductuales, un conjunto de técnicas basadas en los principios del aprendizaje y de la psicología cognitiva en forma teórica y practica.'
+          // description='Enseñamos a las personas involucradas con niños que presentan excesos conductuales, un conjunto de técnicas basadas en los principios del aprendizaje y de la psicología cognitiva en forma teórica y practica.'
 
         />
         <Services
           num_img='3'
           title_service='Entrenamiento de destrezas sociales'
-          description='Ayudamos a desarrollar en los niños las habilidades sociales necesarias para el funcionamiento efectivo en los diferentes ambientes sociales, a través del juego y actividades de la vida diaria.'
+          // description='Ayudamos a desarrollar en los niños las habilidades sociales necesarias para el funcionamiento efectivo en los diferentes ambientes sociales, a través del juego y actividades de la vida diaria.'
 
         />
         <Services
           num_img='3'
           title_service='Actividades dirigidas'
-          description='Hacemos actividades dirigidas en su modalidad individual o pequeños grupos, dependiendo de las necesidades, funcionamiento intelectual y pedagógico del niño, ofrece una programación que abarca el aspecto pedagógico y brinda orientación sobre hábitos de trabajo, métodos de estudio, destrezas de participación en grupo, terapia de lenguaje y actividades recreativas.'
+          // description='Hacemos actividades dirigidas en su modalidad individual o pequeños grupos, dependiendo de las necesidades, funcionamiento intelectual y pedagógico del niño, ofrece una programación que abarca el aspecto pedagógico y brinda orientación sobre hábitos de trabajo, métodos de estudio, destrezas de participación en grupo, terapia de lenguaje y actividades recreativas.'
 
         />
         <Services
           num_img='3'
           title_service='Asesoría'
-          description='Hacemos asesoría a docentes e instituciones educativas en el proceso de integración escolar de alumnos con trastornos del desarrollo; así como servicio de asesoramiento a personas interesadas en el estudio del Espectro Autista.'
+          // description='Hacemos asesoría a docentes e instituciones educativas en el proceso de integración escolar de alumnos con trastornos del desarrollo; así como servicio de asesoramiento a personas interesadas en el estudio del Espectro Autista.'
 
         />
-
+    <button className={services_style.next}>{'>'}</button>
       </div>
 
     </div>

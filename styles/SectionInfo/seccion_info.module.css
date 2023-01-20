@@ -65,17 +65,21 @@
 .presentation {
   display: inline-flex;
   color: rgb(255, 255, 255);
-  width: 400px;
+  width: 500px;
   height: 250px;
   flex-direction: column;
 }
 
 .presentation p {
-  margin-top: 5px;
-  font-size: 1.2rem;
+  margin-top: 20px;
+  font-size: 1.22rem;
   text-align: justify;
 }
 
+.presentation p strong{
+ color: #494949;
+ font-weight: bold;
+}
 /* Contenedor de la seccion de información*/
 
 .container_tex {

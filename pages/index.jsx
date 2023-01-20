@@ -11,6 +11,7 @@ import Section_form from "../components/Section_form";
 
 
 export default function Home() {
+const salto_l = <br />
 	return (
 		<div className={''}>
 			<Head>
@@ -32,9 +33,7 @@ export default function Home() {
 
 			<main className={''}>
 				<section>	
-					<Section_info 
-					contenido_headerI = 'En la Fundación de Personas Autistas del estado Guárico, trabajamos por el bienestar, integración y una mejor calidad de vida de las personas con autismo y otros trastornos del desarrollo.'
-				/>
+					<Section_info />
 				</	section>
 			
 				<section>	

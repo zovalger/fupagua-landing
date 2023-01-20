@@ -27,33 +27,33 @@ export function HeaderLanding() {
       <nav className={style.nav_logo}>
         <ul>
           <li className={style.nav_item}>
-            <Link href="#sobre_nosotros" class="nav_link active-link">
+            <Link href="#sobre_nosotros">
               Sobre nosotros
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#servicios" class="nav_link">
+            <Link href="#servicios">
               Servicios
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#videos" class="nav_link">
+            <Link href="#videos">
               Aprendizaje
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#libros" class="nav_link">
+            <Link href="#libros">
               Nuestros Libros
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#eventos" class="nav_link">
+            <Link href="#eventos">
               Eventos
             </Link>
           </li>
 
           <li className={style.nav_item}>
-            <Link href="#contactame" class="nav_link">
+            <Link href="#contactame">
               Contactanos
             </Link>
           </li>

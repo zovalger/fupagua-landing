@@ -2,24 +2,51 @@
     display: flex;
     min-width: 100%;
     min-height: 100vh;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-evenly;
     margin-top: 30px;
-    padding: 5px;
-    flex-wrap: nowrap;
+    padding: 20px;
     margin-bottom: 50px;
+    position: relative;
+    align-items: center;
     overflow-x: scroll;
 }
 
+.prev{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    border-radius: 5em;
+    background-color: rgba(0, 0, 0, 0.082);
+    color: rgba(255, 255, 255, 0.746);
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.next{
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    border-radius: 5em;
+    background-color: rgba(0, 0, 0, 0.042);
+    color: rgba(255, 255, 255, 0.707);
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .box_service{
-    display: inline-flex;
-    height: 420px;
+    display: flex;
+    height: auto;
     width: 300px;
+    flex-direction: column;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .service_img{

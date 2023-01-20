@@ -8,14 +8,10 @@ import Modal from "./services_modal/Modal";
 
 function Services(props){
 
-    const [showModal, setShowModal] = useState(false);
 
-    const Show = () =>{
-        setShowModal(true)
-    }
     return(
        <div className={services_style.box_service}>
-        <div className={services_style.service_img}  onClick={Show}>
+        <div className={services_style.service_img}>
             <Image 
             src={(`/Icons/Services/icon_${props.num_img}.svg`)}
             height={100}
