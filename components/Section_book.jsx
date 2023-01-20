@@ -15,11 +15,12 @@ function Section_book(props) {
         <div className={Info_style.container_book}></div>
         <div className={Info_style.vector_container}>
           <div className={Info_style.vector_3}>
-          <div className={Welcome_style.welcome_yellow}>
+          <div className={Welcome_style.welcome_green}>
       
             <div className= {Welcome_style.welcome_content} id='libros'>
-                <h1 >Biblioteca</h1>
-                <h2>"Nombre de la Biblioteca"</h2>
+                <h1>Biblioteca</h1>
+                <h2>Juana Milano de Diaz</h2>
+
                   <p>                   
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                     praesentium totam adipisci, odio ratione, vitae perferendis ullam
@@ -31,8 +32,8 @@ function Section_book(props) {
               <div className={Info_style.libro_Info}>
                   <Image
                   src= {(`/IMG/biblioteca.svg`)}
-                  height={360}
-                  width={300}
+                  height={460}
+                  width={400}
                   alt='imagen de learning'
                   />
                 </div>

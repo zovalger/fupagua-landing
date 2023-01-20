@@ -29,8 +29,8 @@ function Section_news(props) {
               <div className={News_style.news_Info}>
                   <Image
                   src= {(`/IMG/stock.svg`)}
-                  height={400}
-                  width={300}
+                  height={460}
+                  width={400}
                   alt='imagen de learning'
                   />
                 </div>

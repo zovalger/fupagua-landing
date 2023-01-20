@@ -17,7 +17,7 @@
     width: 400px;
     height: 450px;
     padding: 30px;
-    gap: 5px;
+    gap: 3px;
     flex-direction: column;
   }
 
@@ -41,3 +41,139 @@
     text-align: justify;
     color: rgb(255, 255, 255);
   }
+
+/*---------*/
+
+@media (max-width: 300px) {
+  /* Header_logo */
+.welcome_red,
+.welcome_green,
+.welcome_yellow {
+    width: 10%;
+    height: 0%;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  
+  .welcome_content {
+    width: 70%;
+    height: 200px;
+    gap: 5px;
+    flex-direction: column;
+  }
+  
+  .welcome_content p{
+    font-size: 0.8rem;
+    width: 250px;
+  }
+  
+  .welcome_content h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .welcome_content h2{
+      font-size: 1rem;
+      margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 390px) {
+  /* Header_logo */
+.welcome_red,
+.welcome_green,
+.welcome_yellow {
+    width: 10%;
+    height: 0%;
+    display: flex;
+    gap: 75%;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.welcome_content {
+  width: 70%;
+  height: 200px;
+  gap: 5px;
+}
+
+  .welcome_content p{
+    font-size: 0.8rem;
+    width: 220px;
+  }
+  
+  .welcome_content h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .welcome_content h2{
+      font-size: 1rem;
+      margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 412px) {
+  /* Header_logo */
+.welcome_red,
+.welcome_green,
+.welcome_yellow {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    gap: 60%;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
+  
+  .welcome_content {
+    width: 45%;
+    height: 200px;
+    gap: 0px;
+    flex-direction: column;
+  }
+  
+  .welcome_content p{
+    font-size: 1rem;
+    width: 200px;
+  }
+  
+  .welcome_content h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .welcome_content h2{
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+  }
+}
+@media (max-width: 850px) {
+  /* Header_logo */
+.welcome_red,
+.welcome_green,
+.welcome_yellow {
+    gap: 25%;
+  }
+
+  .welcome_content h1{
+    font-size: 48px;
+    margin-bottom: 5px;
+  }
+
+  .welcome_content h2{
+      font-size: 36px;
+      margin-bottom: 5px;
+  }
+
+  .welcome_content p{
+    font-size: 1.20rem;
+    width: 400px;
+  }
+}

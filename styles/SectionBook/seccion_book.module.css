@@ -63,40 +63,82 @@
     background: #4af748;
   }
 
-  .libro_Img img{
-    width: 300px;
+  .libro_Info img{
+    width: 400px;
     height: 400px;
     object-fit: cover;
    }
 
-  .welcome_content {
-    display: inline-flex;
-    color: rgb(255, 255, 255);
-    width: 400px;
-    height: 450px;
-    padding: 30px;
-    gap: 5px;
-    flex-direction: column;
-  }
+  @media (max-width: 300px) {
+    /* Header_logo */
 
-  .welcome_content p{
-    margin-top: 5px;
-    font-size: 1.20rem;
-    width: 500px;
-    text-align: justify;
-  }
+     .libro_Info img{
+      width: 100px;
+      height: 100px;
+     }
   
-  .welcome_content h1{
-    font-size: 68px;
-    width: 550px;
-    text-align: justify;
-    color: rgb(255, 255, 255);
+     .button_book {
+      width: 120px;
+      height: 30px;
+      font-size: 18px;
+    }
+
   }
 
-  .welcome_content h2{
-    font-size: 48px;
-    width: 550px;
-    text-align: justify;
-    color: rgb(255, 255, 255);
+  @media (max-width: 390px) {
+    /* Header_logo */
+    .libro_Info{
+      padding-top: 20%;
+    }
+
+     .libro_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
+     .button_book {
+      width: 120px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+    .vector_3{
+      margin-top: 0px;
+      min-height: 70vh;
+    }
+
   }
 
+  @media (max-width: 412px) {
+    /* Header_logo */
+    .libro_Info{
+      padding-top: 50%;
+    }
+
+     .libro_Info img{
+      width: 135px;
+      height: 135px;
+    
+     }
+  
+     .button_book {
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    .vector_3{
+        margin-top: 0px;
+        min-height: 90vh;
+      }
+    
+
+  }
+
+  @media (max-width: 850px) {
+    /* Header_logo */
+     .libro_Info img{
+      width: 325px;
+      height: 325px;
+     }
+  }
