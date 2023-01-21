@@ -231,11 +231,29 @@
         </div>
         </div>
       </div>
+      
+      <div class="services">
+        <h2 class="title_section">¿Que deseas aprender?</h2>
+        <div class="tab">
+          <a class="tab_button button_flex video_active" href="#general"> 
+            Información general
+          </a>
+          <a class="tab_button button_flex video_hover" href="#tratamientos">
+            Tratamientos
+          </a>
+          <a class="tab_button button_flex video_hover" href='#psicología_video'>
+            Psicología
+          </a>
+          <a class="tab_button button_flex video_hover" href='#recomendaciones'>
+            Recomendaciones
+          </a>
+        </div>
+      </div>
 
     <!-- contenedores del contenido "texto" -->
     <section class="services">
       <br>
-      <div class="box-container">
+      <div class="box-container video_active" data-container id="general">
 
         <div class="box_video content">
           <img src="../../public/IMG/20221116_124735.jpg" alt="" class="imagen_video">
@@ -306,19 +324,26 @@
 
     <!-- contenedores del contenido "texto" -->
     <div class="services">
-      <div class="book_tabs">
-        <div class="book_button button--flex book_active" data-target='#cuentos'>
-            Cuentos
-        </div>
-        <div class="book_button button--flex " data-target='#educacion'>
-            Educacion
-        </div>
-        <div class="book_button button--flex " data-target='#psicologia'>
-            Psicologia
-        </div>
+
+      <h2 class="title_section">Titulos recomendados</h2>
+
+      <div class="tab">
+        <a class="tab_button button_flex book_active" href="#populares">
+          Más populares
+        </a>
+        <a class="tab_button button_flex book_hover" href="#educación">
+          Educación
+        </a>
+        <a class="tab_button button_flex book_hover" href="#psicología_libro">
+          Psicología
+        </a>
+        <a class="tab_button button_flex book_hover" href="#cuentos">
+          Cuentos
+        </a>
       </div>
+
       <!--============================= BOOK CONTENT 1 ==============================-->
-      <div class="box-container book_active" data-container id="cuentos">
+      <div class="box-container book_active" data-container id="populares">
         <div class="box_libro content">
           <img src="../../public/IMG/Libro.png" alt="" class="imagen_libro">
           <h2 class="service_title">Title video</h2>
@@ -442,6 +467,10 @@
       </div>
     </div>
 
+    <div class="services">
+      <h2 class="title_section">Actividades y eventos</h2>
+    </div>
+
     <!-- contenedores del contenido "texto" -->
     <section class="services">
       <br>
@@ -489,19 +518,29 @@
         <div class="icon-container">
           <ul class="form-list">
             <li class="form-list-icon">
-              <img src = "/public/logos/facebook.svg" alt="facebook" class="icon"/>
+              <a href="#facebook">
+                <img src ="/public/logos/facebook.svg" alt="facebook" class="icon"/>
+              </a>
             </li>
             <li class="form-list-icon">
-              <img src = "/public/logos/instagram.svg" alt="instagram" class="icon"/>
+              <a href="#instagram">
+                <img src ="/public/logos/instagram.svg" alt="instagram" class="icon"/>
+              </a>  
             </li>
             <li class="form-list-icon">
-              <img src = "/public/logos/twitter.svg" alt="twitter" class="icon"/>
+              <a href="#twitter">
+                <img src ="/public/logos/twitter.svg" alt="twitter" class="icon"/>
+              </a>
             </li>
             <li class="form-list-icon">
-              <img src = "/public/logos/telegram.svg" alt="telegram" class="icon"/>
+              <a href="#telegram">
+                <img src ="/public/logos/telegram.svg" alt="telegram" class="icon"/>
+              </a>   
             </li>
             <li class="form-list-icon">
-              <img src = "/public/logos/whatsapp.svg" alt="whatsapp" class="icon"/>
+              <a href="#whatsapp">
+                <img src ="/public/logos/whatsapp.svg" alt="whatsapp" class="icon"/>
+              </a>
             </li>
           </ul>
         </div>
@@ -513,7 +552,7 @@
             <p class="form-text"> Pronto te atenderemos </p>
           </div>
       
-      <label for="" class="form-label" >Nombre</label>
+      <label for="" class="form-label">Nombre</label>
       <input type="text" id="nombre" class="form-input" placeholder="Nombre">
 
       <label for="" class="form-label">Numero de Teléfono</label>
