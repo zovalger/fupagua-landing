@@ -776,13 +776,13 @@
     margin: auto;
     padding: 5px 10px;
   }
-  .form-container .form .form-header h2 {
+  .form-container .form .form-header .form-title {
     font-size: 30px;
   }
   .form-container .form .form-label {
     font-size: 18px;
   }
-  .icon-container li {
+  .icon-container .form-list-icon {
     margin-left: 0rem; 
   }
   .icon {
