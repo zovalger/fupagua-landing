@@ -1,51 +1,57 @@
 .container_services{
-    display: flex;
+    display: flex;    
     min-width: 100%;
     min-height: 100vh;
     margin-top: 30px;
-    padding: 20px;
     margin-bottom: 50px;
     position: relative;
     align-items: center;
-    overflow-x: scroll;
+    justify-content: center;
+
 }
 
-.prev{
-    position: absolute;
-    top: 45%;
-    left: 2%;
-    border-radius: 5em;
-    background-color: rgba(0, 0, 0, 0.082);
-    color: rgba(255, 255, 255, 0.746);
-    width: 60px;
-    height: 60px;
+.back{
     font-size: 2rem;
-    cursor: pointer;
+    position: absolute;
+    left: 2%;
+    top: 48%;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 2em;
+    background-color: #269aff2b;
+    z-index: 2;
 }
 
 .next{
-    position: absolute;
-    top: 45%;
-    right: 2%;
-    border-radius: 5em;
-    background-color: rgba(0, 0, 0, 0.042);
-    color: rgba(255, 255, 255, 0.707);
-    width: 60px;
-    height: 60px;
     font-size: 2rem;
-    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 48%;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 2em;
+    background-color: #269aff2b;
+    z-index: 2;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    overflow-x: hidden;
+    
 }
 
 .box_service{
     display: flex;
     height: auto;
-    width: 300px;
-    flex-direction: column;
+    min-width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    z-index: 1;
 
 }
 
@@ -70,7 +76,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 200px;
 
 }
 
@@ -83,49 +89,4 @@
 .description_service p{
     font-size: 1.08rem;
     text-align: center;
-}
-
-@media (max-width: 960px) {
-    .description_service{
-        width: 280px;
-    }
-    .description_service h2{
-        font-size: 1.28rem;
-        margin-bottom: 8px;
-    }
-    
-    .description_service p{
-        font-size: 1.06rem;
-    }
-  }
-  
-
-@media (max-width: 870px) {
-     /*Boton */   
-     .box_service{
-        height: 380px;
-        width: 260px;
-    }
-    
-    .service_img{
-        height: 140px;
-        width: 140px;
-       
-    }
-
-    /* Texto */
-    .description_service{
-        width: 200px;
-    }
-    .description_service h2{
-        font-size: 1.24rem;
-        margin-bottom: 8px;
-    }
-    
-    .description_service p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 660px) {
 }

@@ -1,7 +1,15 @@
-import Info_style_two from "../../styles/SectionInfo/seccion_info.module.css";
+// React Elements //
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
+
+// componentes //
+import Info_style_two from "../../styles/SectionInfo/seccion_info.module.css";
+
+// Estilos //
+
+
+// Librerias de funcionalidades //
 import AOS from "aos";
 import 'aos/dist/aos.css'
 

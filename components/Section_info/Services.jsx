@@ -1,8 +1,16 @@
-import services_style from "../../styles/SectionInfo/services_info.module.css";
+// React Elements //
 import Image from "next/image";
-import Link from "next/link";
-import { use, useState } from "react";
+import Link from "next/link"
+
+// componentes //
 import Modal from "./services_modal/Modal";
+
+// Estilos //
+import services_style from "../../styles/SectionInfo/services_info.module.css";
+// Librerias de funcionalidades //
+
+
+
 
 
 
@@ -28,7 +36,6 @@ function Services(props){
             </p>
         </div>
        </div>
-        
     )
 }
 

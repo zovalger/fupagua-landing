@@ -1,10 +1,17 @@
-import Info_style from "../styles/SectionInfo/seccion_info.module.css";
-import services_style from "../styles/SectionInfo/services_info.module.css";
-import Image from "next/image";
+// React Elements //
+import {useEffect} from "react";
+import Image from "next/image"; 
+
+// componentes //
 import TextContent from "./Section_info/TextContent";
 import TextContentTwo from "./Section_info/TextContentTwo";
 import Services from "./Section_info/Services";
-import { useState ,useEffect, useRef } from "react";
+
+// Estilos //
+import Info_style from "../styles/SectionInfo/seccion_info.module.css";
+import services_style from "../styles/SectionInfo/services_info.module.css";
+
+// Librerias de funcionalidades //
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
@@ -17,26 +24,18 @@ function Section_info(props) {
     once: true
   });
 }, []);
-
-  //// Scroll Servicios////
-
-  const [scrollX, SetScrollX] = useState(0);
-  const divRef = useRef();
-
-  useEffect(() => {
-   const handleScrollPrev = () => {
-    const div = divRef.current
-    const { y } = div.getBoundingClientRect();
-    console.log(y);
+  // scroll Servicios
+  const sliderLeft = () => {
+    let slider = document.getElementById('slide');
+    slider.scrollLeft = slider.scrollLeft - 500;
    
-   }
+  }
 
-   window.addEventListener('scroll', handleScrollPrev)
-   window.removeEventListener('scroll', handleScrollPrev)
-  }, []);
-
-// scrollleft -= 300
-// scrollleft += 300
+  const sliderRight = () => {
+    let slider = document.getElementById('slide');
+    slider.scrollLeft = slider.scrollLeft + 500;
+ 
+  }
 
 
   return (
@@ -125,9 +124,10 @@ function Section_info(props) {
       </div>
 
       
-      
-      <div className={services_style.container_services} ref={divRef}>
-        <button className={services_style.prev}>{'<'}</button>
+
+      <div className={services_style.container_services}>
+    <button className={services_style.back} onClick={sliderLeft}>{`<`}</button>
+        <div className={services_style.slide} id="slide">
         <Services
           num_img='1'
           title_service='Evaluación Integral'
@@ -179,9 +179,9 @@ function Section_info(props) {
           num_img='3'
           title_service='Asesoría'
           // description='Hacemos asesoría a docentes e instituciones educativas en el proceso de integración escolar de alumnos con trastornos del desarrollo; así como servicio de asesoramiento a personas interesadas en el estudio del Espectro Autista.'
-
         />
-    <button className={services_style.next}>{'>'}</button>
+   <button className={services_style.next} onClick={sliderRight}>{`>`}</button>
+        </div>
       </div>
 
     </div>

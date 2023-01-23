@@ -1,3 +1,7 @@
+// React Elements
+// componentes
+// Estilos
+// Librerias de funcionalidades
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
