@@ -27,13 +27,13 @@ function Section_info(props) {
   // scroll Servicios
   const sliderLeft = () => {
     let slider = document.getElementById('slide');
-    slider.scrollLeft = slider.scrollLeft - 500;
+    slider.scrollLeft = slider.scrollLeft - 250;
    
   }
 
   const sliderRight = () => {
     let slider = document.getElementById('slide');
-    slider.scrollLeft = slider.scrollLeft + 500;
+    slider.scrollLeft = slider.scrollLeft + 250;
  
   }
 

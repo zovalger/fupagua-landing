@@ -39,9 +39,11 @@
 .slide{
     display: flex;
     flex-direction: row;
-    max-width: 90%;
+    max-width: 100%;
     overflow-x: hidden;
-    
+    scroll-behavior: smooth;
+    padding: 20px;
+    opacity: 1;
 }
 
 .box_service{
@@ -90,3 +92,48 @@
     font-size: 1.08rem;
     text-align: center;
 }
+
+
+             /********** Responsive ***********/
+
+@media (max-width: 680px) {
+   
+    
+    .service_img{
+        height: 120px;
+        width: 120px;
+    }
+    
+  }
+
+  @media (max-width: 560px) {
+    .box_service{
+        min-width: 60%;
+    }
+    
+    .service_img{
+        height: 120px;
+        width: 120px;
+    }
+    
+  }
+
+
+  @media (max-width: 420px) {
+    .box_service{
+        min-width: 80%;
+    }
+    
+    .service_img{
+        height: 115px;
+        width: 115px;
+    }
+    
+    .description_service{
+        width: 180px;
+    }
+
+    .description_service h2{
+        font-size: 1.20rem;
+    }
+  }

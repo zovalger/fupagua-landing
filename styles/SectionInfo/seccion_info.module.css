@@ -211,7 +211,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -335,6 +335,8 @@
     text-align: justify;
     width: 400px;
   }
+
+
 }
 
 @media (max-width: 920px) {
@@ -392,15 +394,30 @@
   }
 
   .container_tex_c p {
-    font-size: 14px;
+    font-size: 1.2rem;
     text-align: justify;
     width: 400px;
   }
 
   /*  Horario */
+  
   .Img_hours img {
-    height: 380px;
-    width: 580px;
+    height: 360px;
+    width: 560px;
+  }
+  
+  .Text_hours {
+  
+    width: 100%;
+    height: 300px;
+  
+    
+  }
+  
+  .Text_hours p {
+ 
+    font-size: 1.38rem;
+
   }
 }
 
@@ -469,10 +486,29 @@
   }
 
   .container_tex_c p {
-    font-size: 12px;
+    font-size: 1.0rem;
     text-align: justify;
     width: 300px;
   }
+
+  /* Horario Laboral */
+  .Img_hours h1 {
+    font-size: 1.80rem;
+
+  }
+  
+  .Img_hours img {
+    height: 350px;
+    width: 550px;
+  }
+  
+  
+  .Text_hours p {
+ 
+    font-size: 1.36rem;
+
+  }
+
 }
 
 @media (max-width: 790px) {
@@ -483,7 +519,7 @@
 
   /* presentación */
   .presentation {
-    width: 250px;
+    width: 290px;
     height: 250px;
   }
 
@@ -492,19 +528,17 @@
   }
 
   .presentation p {
-    font-size: 14px;
+    font-size: 1.2rem;
   }
 
   
-
-
 
   /* Sección de información */
 
   /* texto */
 
   .container_tex_c p {
-    font-size: 12px;
+    font-size: 1rem;
     text-align: justify;
     width: 260px;
   }
@@ -512,8 +546,8 @@
   /* Horario */
 
   .Img_hours img {
-    height: 360px;
-    width: 560px;
+    height: 340px;
+    width: 540px;
   }
 
   
@@ -553,15 +587,15 @@
 
   .container_tex img {
     margin-top: 20px;
-    height: 300px;
-    width: 420px;
+    height: 280px;
+    width: 400px;
   
   }
 
   .map {
  
-    height: 300px;
-    width: 420px;
+    height: 280px;
+    width: 400px;
   
   }
 
@@ -708,6 +742,21 @@
     text-align: justify;
     width: 450px;
   }
+  
+  /* Horario Laboral */
+
+  .Img_hours img {
+    height: 380px;
+    width: 400px;
+  }
+
+
+  .Text_hours p {
+    
+    font-size: 1.28rem;
+    
+  }
+
 }
 
 @media (max-width: 414px) {
@@ -826,6 +875,21 @@
     text-align: justify;
     width: 270px;
   }
+
+    
+  /* Horario Laboral */
+
+  .Img_hours img {
+    height: 300px;
+    width: 350px;
+  }
+
+
+  .Text_hours p {
+    
+    font-size: 1.20rem;
+    
+  }
 }
 
 @media (max-width: 375px) {
@@ -843,6 +907,7 @@
   .Logo_Info {
     height: 16vh;
     width: 50%;
+    margin-left: 5%;
   }
 
   /* presentación */
@@ -929,14 +994,28 @@
   }
 
   .container_tex_c h2 {
-    font-size: 18px;
+    font-size: 1rem;
     margin-bottom: 12px;
   }
 
   .container_tex_c p {
-    font-size: 12px;
+    font-size: 0.8rem;
     text-align: justify;
-    width: 220px;
+    width: 280px;
+  }
+
+  /* Horario Laboral */
+
+  .Img_hours img {
+    height: 240px;
+    width: 260px;
+  }
+
+
+  .Text_hours p {
+    
+    font-size: 1rem;
+    
   }
 }
 
@@ -954,7 +1033,10 @@
     height: 25vh;
     width: 15%;
   }
-
+  .Logo_Info img {
+    width: 50px;
+    height: 60px;
+  }
   .presentation {
     width: 140px;
   }
@@ -966,6 +1048,7 @@
 
   .presentation p {
     font-size: 0.4rem;
+    margin-top: 5px;
   }
 }
 

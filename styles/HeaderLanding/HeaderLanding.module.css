@@ -1,7 +1,7 @@
 .Logo_header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
     background: linear-gradient(0deg,
     rgba(4, 14, 20, 0.199),
@@ -24,8 +24,6 @@
     width: 380px;
     height: 410px;
     margin: auto;
-  
-    border-radius: 30px;
   }
 
   /* Nav del header */
@@ -69,12 +67,12 @@
 
 /* nav */
 .nav_logo li {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
  
 }
 
 .nav_logo li:hover {
-  font-size: 1.36rem;
+  font-size: 1.27rem;
 }
 
  }
@@ -82,27 +80,27 @@
 @media (max-width: 900px){
 
   .logo img {
-    width: 360px;
-    height: 380px;
+    width: 350px;
+    height: 370px;
   }
 
 
   .nav_logo li {
-    font-size: 1.21rem;
+    font-size: 1.16rem;
    
   }
   
   .nav_logo li:hover {
-    font-size: 1.22rem;
+    font-size: 1.18rem;
   }
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 830px){
 
   .logo img {
-    width: 340px;
-    height: 370px;
+    width: 320px;
+    height: 335px;
   }
    
 
@@ -116,11 +114,11 @@
   }
 }
 
-@media (max-width: 710px){
+@media (max-width: 760px){
 
   .logo img {
-    width: 320px;
-    height: 350px;
+    width: 280px;
+    height: 310px;
   }
    
 
@@ -135,11 +133,11 @@
   
 }
 
-@media (max-width: 620px){
+@media (max-width: 660px){
 
   .logo img {
-    width: 320px;
-    height: 350px;
+    width: 250px;
+    height: 270px;
   }
    
 
@@ -153,4 +151,89 @@
   }
 }
 
+/* movil */
 
+@media (max-width: 550px){
+
+  .logo img {
+    width: 230px;
+    height: 250px;
+  }
+   
+
+  .nav_logo li {
+    font-size: 0.48rem;
+   
+  }
+  
+  .nav_logo li:hover {
+    font-size: 0.52rem;
+  }
+}
+
+@media (max-width: 480px){
+
+  .logo img {
+    width: 200px;
+    height: 230px;
+  }
+   
+
+  .nav_logo li {
+    font-size: 0.30rem;
+   
+  }
+  
+  .nav_logo li:hover {
+    font-size: 0.32rem;
+  }
+}
+
+@media (max-width: 390px){
+
+  .logo img {
+    width: 160px;
+    height: 180px;
+  }
+   
+
+  .nav_logo li {
+    font-size: 0.20rem;
+   
+  }
+  
+  .nav_logo li:hover {
+    font-size: 0.22rem;
+  }
+}
+
+@media (max-width: 290px){
+
+  .logo img {
+    width: 140px;
+    height: 150px;
+  }
+   
+
+  .nav_logo li {
+    font-size: 0.10rem;
+   
+  }
+  
+  .nav_logo li:hover {
+    font-size: 0.12srem;
+  }
+}
+
+
+
+
+
+@media (max-height: 300px){
+
+  .logo img {
+    width: 80px;
+    height: 100px;
+  }
+   
+}
