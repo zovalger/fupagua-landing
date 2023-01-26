@@ -537,7 +537,62 @@
     text-align: justify;
     width: 270px;
   }
-}
+
+  /*service*/
+  .services .box-container .box {
+
+    width: 200px;
+    height: 371px;
+  }
+
+  .circle_services {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+
+    /*Welcome*/
+    .Welcome_red,
+    .Welcome_green,
+    .Welcome_yellow{
+      display: inline-flex;
+      align-items: center;
+      margin-left: 0;
+
+    }
+
+    .Welcome_image{
+      position: absolute;
+      padding-bottom: 35%;
+    }
+
+    .Welcome_content{
+      padding-top: 40%;
+      position: relative;
+      text-align: center;
+       position: inline-flex;
+       width: 250px; 
+       align-content: center;
+    }
+  
+    .Welcome_title{
+      font-size: 30px;
+      width: 380px;
+      text-justify: initial;
+    }
+
+    .Welcome_description{
+      font-size: 24px;
+      max-width: 380px;
+      text-align: justify;
+    }
+  
+    .Welcome_img{
+      width: 380px
+    }
+  }
+
 
 @media (max-width: 300px) {
   /* Header_logo */
@@ -671,6 +726,46 @@
     text-align: justify;
     width: 220px;
   }
+
+
+  /*Welcome*/
+  .Welcome_red,
+  .Welcome_green,
+  .Welcome_yellow{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .Welcome_image{
+    position: absolute;
+    padding-bottom: 12%;
+  }
+
+  .Welcome_content{
+    padding-top: 25%;
+    position: relative;
+    text-align: center;
+     position: inline-flex;
+     width: 250px; 
+     align-content: center;
+  }
+
+  .Welcome_title{
+    font-size: 14px;
+    width: 260px;
+    text-justify: initial;
+  }
+
+  .Welcome_description{
+    font-size: 11px;
+    max-width: 260px;
+    text-align: justify;
+  }
+
+  .Welcome_img{
+    width: 260px
+  }
 }
 
 /*formulario de contactos*/
@@ -681,13 +776,13 @@
     margin: auto;
     padding: 5px 10px;
   }
-  .form-container .form .form-header h2 {
+  .form-container .form .form-header .form-title {
     font-size: 30px;
   }
   .form-container .form .form-label {
     font-size: 18px;
   }
-  .icon-container li {
+  .icon-container .form-list-icon {
     margin-left: 0rem; 
   }
   .icon {

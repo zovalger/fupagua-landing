@@ -1,55 +1,66 @@
 import style from "../styles/HeaderLanding/HeaderLanding.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 export function HeaderLanding() {
-	return (
-		<div className={style.Logo_header} id="header">
-      <div className={style.logo}>
-		<Image 
-		src='/Icons/Logo-Fupagua.png'
-		width={200}
-		height={200}
-		alt='Logo de Fupagua'
-		></Image>
+  //// Scroll_animation////
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true
+    });
+  }, []);
+
+  return (
+    <div className={style.Logo_header} id="header">
+      <div data-aos= 'fade-down' className={style.logo}>
+        <Image
+          src='/Icons/Logo-Fupagua.png'
+          width={200}
+          height={200}
+          alt='Logo de Fupagua'
+        ></Image>
       </div>
       <nav className={style.nav_logo}>
         <ul>
           <li className={style.nav_item}>
-            <Link href="#sobre_nosotros" class="nav_link active-link">
+            <Link href="#sobre_nosotros">
               Sobre nosotros
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#servicios" class="nav_link">
+            <Link href="#servicios">
               Servicios
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#videos" class="nav_link">
+            <Link href="#videos">
               Aprendizaje
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#libros" class="nav_link">
+            <Link href="#libros">
               Nuestros Libros
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href="#eventos" class="nav_link">
+            <Link href="#eventos">
               Eventos
             </Link>
           </li>
 
           <li className={style.nav_item}>
-            <Link href="#contactame" class="nav_link">
+            <Link href="#contactame">
               Contactanos
             </Link>
           </li>
         </ul>
       </nav>
     </div>
-	);
+  );
 }
 
 export default HeaderLanding;

@@ -363,7 +363,7 @@ height: 90vh;
   gap: 300px;
   margin-left: 50px;
   z-index: 3;
-  padding: 1rem ;
+  padding: 1rem;
 }
 
 .button-book {
@@ -480,38 +480,73 @@ height: 90vh;
   width: 300px;
 }
 
-.book_tabs{
+/*===================================Contenedor de libros================================= */
+
+/* Tabs */
+
+.title_section{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 65px;
+  line-height: 112px;
+  color: #111111;
+}
+
+.tab{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2rem;
 }
 
-.book_button{
+.button_flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+.tab_button{
+  text-decoration: none;
+  color: #111111;
   font-size: 1,25rem;
   font-weight: 500px;
   cursor: pointer;
 }
 
-.book_button:hover{
-  color: red;
-}
+/* video */
 
-.book [data-content]{
-  display: none;
-}
-
-.book_active[data-content]{
+.video_active [data-content]{
   display: flex
 }
 
-.book_button.book_active{
+.video [data-content]{
+  display: flex
+}
+
+.tab_button.video_active{
+  color: red;
+}
+
+.video_hover:hover{
+  color: red;
+}
+
+/* book */
+
+.book_active [data-content]{
+  display: flex
+}
+
+.book [data-content]{
+  display: flex
+}
+
+.tab_button.book_active{
   color: green;
 }
 
-.button--flex{
-  display: inline-flex;
-  align-items: center;
+.book_hover:hover{
+  color: green;
 }
+
 /*================================ NEWS =================================*/
 .container_yellow {
   display: flex;
@@ -549,7 +584,33 @@ height: 90vh;
   z-index: 3;
   padding: 1rem ;
 }
-/* library banner */
+
+/* Formulario */
+
+/* Redes socilaes */
+
+.icon-container {
+  width: 10%;
+  display: inline-flex;
+  margin: auto;
+}
+
+.icon-container .form-list {
+  list-style: none;
+}
+
+.icon-container .form-list-icon {
+  margin-bottom: 3rem;
+  margin-left: 18rem; 
+  display: flex;
+}
+
+.icon {
+  width: 45px;
+	height: 45px;
+	display: inline-flex;
+	justify-content: center;
+}
 
  /* Formulario de Contactos */
 
@@ -563,8 +624,8 @@ height: 90vh;
   align-items: center;
   width: 90%;
   margin: auto;
-  padding: 70px 320px;
   box-sizing: border-box;
+  padding: 70px 320px;
  }
 
 .form-container .form .form-header {
@@ -639,31 +700,6 @@ height: 90vh;
   cursor: pointer;
   background: #5ed832;
   border: solid #5ed832;
-}
-
-/*==redes socilaes==*/
-
-.icon-container {
-  width: 10%;
-  display: inline-flex;
-  margin: auto;
-}
-
-.icon-container .form-list {
-    list-style: none;
-}
-
-.icon-container .form-list-icon {
-  margin-bottom: 3rem;
-  margin-left: 18rem; 
-  display: flex;
-}
-
-.icon {
-  width: 45px;
-	height: 45px;
-	display: inline-flex;
-	justify-content: center;
 }
 
 /* Welcome */

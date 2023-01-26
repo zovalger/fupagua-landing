@@ -1,0 +1,157 @@
+/*==============Navbar news==============*/
+
+
+/*==============nwes item==============*/
+.container_services{
+  display: flex;
+  min-width: 100%;
+  min-height: 85vh;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 5px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box_news{
+display: flex;
+flex-direction:inherit;
+align-items: flex-end;
+position: absolute;
+background: url(/IMG/20221116_124735.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  width: 80%;
+  z-index: 1;
+}
+
+.description_news{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  min-height: 30vh;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.description_news h2{
+  font-size: 1.30rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.description_news p{
+  font-size: 1.08rem;
+  text-align: justify;
+  padding: 0 0.5rem;
+  padding-top: 1rem;
+}
+
+/* 
+
+position: absolute;
+height: 273px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+
+background: rgba(0, 0, 0, 0.6);
+
+
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+position: absolute;
+width: 1494px;
+height: 126px;
+left: 205px;
+top: 91px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+
+
+ 
+
+position: absolute;
+width: 288px;
+height: 47px;
+left: 271px;
+top: 23px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+
+
+color: #FFFFFF;
+*/
+
+
+
+/*.container_section_video {
+  display: flex;
+  width: 50%;
+}
+
+.container_video {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.container_tex {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.box_video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+  width: 430px;
+  height: 420px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.imagen_video {
+  width: 328px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.content {
+  padding: 0 1.5rem;
+  padding-top: 1rem;
+}*/

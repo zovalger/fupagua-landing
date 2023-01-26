@@ -1,8 +1,22 @@
-import services_style from "../../styles/SectionInfo/services_info.module.css";
+// React Elements //
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"
 
-function Services(props) {
+// componentes //
+import Modal from "./services_modal/Modal";
+
+// Estilos //
+import services_style from "../../styles/SectionInfo/services_info.module.css";
+// Librerias de funcionalidades //
+
+
+
+
+
+
+function Services(props){
+
+
     return(
        <div className={services_style.box_service}>
         <div className={services_style.service_img}>

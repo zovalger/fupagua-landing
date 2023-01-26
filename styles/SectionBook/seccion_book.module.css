@@ -1,0 +1,144 @@
+.section_libro {
+    background: #FFEFEF;
+}
+
+.name_fun {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container_book {
+  position: absolute;
+  background: linear-gradient(72.22deg, #1AB900 1.01%, #7FFF7C 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .vector_3{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url(/Banners/Library_banner.svg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: flex;
+  }
+
+  .welcome_green {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 75%;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
+
+  .button_book {
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: 30px;
+    background: #04D600;
+    border: 5px solid #FFFFFF;
+    color: #ffffff;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .button_book:hover {
+    cursor: pointer;
+    background: #4af748;
+  }
+
+  .libro_Info img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+   }
+
+  @media (max-width: 300px) {
+    /* Header_logo */
+
+     .libro_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
+     .button_book {
+      width: 120px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+  }
+
+  @media (max-width: 390px) {
+    /* Header_logo */
+    .libro_Info{
+      padding-top: 20%;
+    }
+
+     .libro_Info img{
+      width: 100px;
+      height: 100px;
+     }
+  
+     .button_book {
+      width: 120px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+    .vector_3{
+      margin-top: 0px;
+      min-height: 70vh;
+    }
+
+  }
+
+  @media (max-width: 412px) {
+    /* Header_logo */
+    .libro_Info{
+      padding-top: 50%;
+    }
+
+     .libro_Info img{
+      width: 135px;
+      height: 135px;
+    
+     }
+  
+     .button_book {
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    .vector_3{
+        margin-top: 0px;
+        min-height: 90vh;
+      }
+    
+
+  }
+
+  @media (max-width: 850px) {
+    /* Header_logo */
+     .libro_Info img{
+      width: 325px;
+      height: 325px;
+     }
+  }
