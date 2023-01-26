@@ -11,7 +11,6 @@ import Section_form from "../components/Section_form";
 
 
 export default function Home() {
-const salto_l = <br />
 	return (
 		<div className={''}>
 			<Head>
