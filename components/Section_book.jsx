@@ -41,8 +41,32 @@ function Section_book(props) {
           
         </div>
       </div>
-      
-    
+
+      <div className={Info_style.services}>
+        <h2 className={Info_style.title_section}>Titulos recomendados</h2>
+        <div className={Info_style.tab}>
+          <b>
+            <a className={Info_style.tab_button_active} href="#general"> 
+            Más populares
+            </a>
+          </b> 
+          <b>
+          <a className={Info_style.tab_button} href="#populares">
+            Educación
+          </a>
+          </b> 
+          <b>
+          <a className={Info_style.tab_button} href="#educación">
+            Psicología
+          </a>
+          </b>
+         <b>
+          <a className={Info_style.tab_button} href="#cuentos">
+            Cuentos
+          </a>
+        </b>
+        </div>
+      </div>
       <div className={libros_style.container_services}>
         <Libros
         title_libro = 'Evaluación Integral'

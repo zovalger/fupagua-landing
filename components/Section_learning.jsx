@@ -39,6 +39,33 @@ function Section_learning(props) {
           
         </div>
       </div>
+
+      <div className={Info_style.services}>
+        <h2 className={Info_style.title_section}>¿Que deseas aprender?</h2>
+        <div className={Info_style.tab}>
+          <b>
+            <a className={Info_style.tab_button_active} href="#general"> 
+            Información general
+            </a>
+          </b> 
+          <b>
+          <a className={Info_style.tab_button} href="#tratamientos">
+            Tratamientos
+          </a>
+          </b> 
+          <b>
+          <a className={Info_style.tab_button} href="#psicología_video">
+            Psicología
+          </a>
+          </b>
+         <b>
+          <a className={Info_style.tab_button} href="#recomendaciones">
+            Recomendaciones
+          </a>
+        </b>
+        </div>
+      </div>
+
 <div className="selector_video">
 
 </div>
