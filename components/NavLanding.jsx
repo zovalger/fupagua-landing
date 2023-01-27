@@ -27,7 +27,7 @@ export function NavLanding() {
 					<Link href="/">biblioteca</Link>
 				</li>
 				<li>
-					<Link href="/">noticias</Link>
+					<Link href="/">Actividades</Link>
 				</li>
 				<li>
 					<Link href="/">contacto</Link>

@@ -1,11 +1,28 @@
+// Funciones de Reat/Next
 import Head from "next/head";
 import Image from "next/image";
-import NavLanding from "../components/NavLanding";
+
+//CSS
+
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
 
 
+// Componentes
+
+import NavLanding from "../components/NavLanding";
+import HeaderLanding from "../components/HeaderLanding";
+
+// Librerias
+
+
+
+/////*** ******////
 
 export default function Home() {
+	const sliderImagenes = [
+		'/1.jpg',
+		'/2.jpg'
+	]
 	return (
 		<div className={''}>
 			<Head>
@@ -19,11 +36,15 @@ export default function Home() {
 			</Head>
 
 			<header>
-				<NavLanding />
+
 			</header>
 
 			<main className={''}>
-				<section>secciones</section>
+				<section>
+					<HeaderLanding 
+					imagenes={sliderImagenes}
+					/>
+				</section>
 			</main>
 
 			<footer className={''}></footer>
