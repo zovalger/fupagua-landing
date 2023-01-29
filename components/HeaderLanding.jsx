@@ -17,20 +17,19 @@ import style from '../styles/HeaderLanding/Headerlanding.module.css'
 export default function HeaderLanding({imagenes}){
     return(
         <div className={style.contenedor}>
-          
+            <div className={style.slider}>
+                <button className={style.back}>{`<`}</button>
             {imagenes.map((imagen, index)=>{
                 return <Image 
                 key={index}
-                src={(`/public/IMG${imagen}`)}
+                src={imagen}
                 alt="FUPAGUA"
-                width={400}
-                height={400}
+                width={800}
+                height={800}
                 />
             })}
-     
-           	
-
-  
+            <button className={style.next}>{`>`}</button>
+      </div>
         </div>
     )
 }
