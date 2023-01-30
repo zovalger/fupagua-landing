@@ -21,7 +21,9 @@ import HeaderLanding from "../components/HeaderLanding";
 export default function Home() {
 	const sliderImagenes = [
 		'/IMG/1.jpg',
-		'/IMG/2.jpg'
+		'/IMG/2.jpg',
+		'/IMG/1.jpg',
+		'/IMG/Libro.png'
 	]
 	return (
 		<div className={''}>
