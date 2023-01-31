@@ -11,6 +11,7 @@ import Image from "next/image";
 
 import NavLanding from "../components/NavLanding";
 import HeaderLanding from "../components/HeaderLanding";
+import SliderHeader from "../components/SliderHeader";
 
 // Librerias
 
@@ -42,11 +43,11 @@ export default function Home() {
 			</header>
 
 			<main className={''}>
+	
 				<section>
-					<HeaderLanding 
-					imagenes={sliderImagenes}
-					/>
+					<SliderHeader />
 				</section>
+				
 			</main>
 
 			<footer className={''}></footer>
