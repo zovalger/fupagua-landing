@@ -1,6 +1,7 @@
-// Funciones de Reat/Next
+// Funciones de React/Next
 import Head from "next/head";
 import Image from "next/image";
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 
 //CSS
 
@@ -32,7 +33,7 @@ export default function Home() {
 			</Head>
 
 			<header>
-
+				<NavLanding /> 
 			</header>
 
 			<main className={''}>
