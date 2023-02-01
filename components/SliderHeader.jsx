@@ -6,6 +6,8 @@ import { useState } from "react";
 
 import style from '../styles/HeaderLanding/SliderHeader.module.css' 
 
+
+
 export default function SliderHeader(){
     const imagenes = [
 		'1.jpg',
@@ -16,9 +18,11 @@ export default function SliderHeader(){
 
     const [selectedIndex,setSelectedIndex] = useState(0);
     const [selectedImage,setSelectedImage] = useState(imagenes[0]);
+    const [loaded, setLoaded] = useState(false)
 
 
     const selectNexImage = ( index, imagenes , next = true) => {
+            setLoaded(false);
             const condition = next ? selectedIndex < imagenes.length - 1 : selectedIndex > 0; 
             const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : (condition ? selectedIndex - 1 : imagenes.length - 1); 
             setSelectedImage(imagenes[nextIndex]);
@@ -56,6 +60,7 @@ export default function SliderHeader(){
             width={800}
             height={800}
             alt="FUPAGUA"
+            onLoad={() => setLoaded(true)}
             />
             <button onClick={next} className={style.next}>{`>`}</button>
         </div>    
