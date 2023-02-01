@@ -10,7 +10,6 @@ import Image from "next/image";
 // Componentes
 
 import NavLanding from "../components/NavLanding";
-import HeaderLanding from "../components/HeaderLanding";
 import SliderHeader from "../components/SliderHeader";
 
 // Librerias
@@ -20,12 +19,6 @@ import SliderHeader from "../components/SliderHeader";
 /////*** ******////
 
 export default function Home() {
-	const sliderImagenes = [
-		'/IMG/1.jpg',
-		'/IMG/2.jpg',
-		'/IMG/1.jpg',
-		'/IMG/Libro.png'
-	]
 	return (
 		<div className={''}>
 			<Head>
@@ -47,7 +40,7 @@ export default function Home() {
 				<section>
 					<SliderHeader />
 				</section>
-				
+
 			</main>
 
 			<footer className={''}></footer>
