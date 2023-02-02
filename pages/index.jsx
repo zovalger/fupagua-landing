@@ -12,6 +12,7 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 
 import NavLanding from "../components/NavLanding";
 import SliderHeader from "../components/SliderHeader";
+import FormLanding from "../components/FormLading";
 
 // Librerias
 
@@ -40,6 +41,10 @@ export default function Home() {
 	
 				<section>
 					<SliderHeader />
+				</section>
+
+				<section>
+				   
 				</section>
 
 			</main>
