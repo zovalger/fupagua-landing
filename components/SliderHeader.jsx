@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 // estilos 
@@ -8,7 +8,7 @@ import style from '../styles/HeaderLanding/SliderHeader.module.css'
 
 
 
-export default function SliderHeader(){
+export default function SliderHeader(props, {autoplay}){
     const imagenes = [
 		'1.jpg',
 		'2.jpg',
@@ -21,26 +21,38 @@ export default function SliderHeader(){
     const [loaded, setLoaded] = useState(false)
 
 
-    const selectNexImage = ( index, imagenes , next = true) => {
+    const selectNewImage = ( index, imagenes , next = true) => {
             setLoaded(false);
-            const condition = next ? selectedIndex < imagenes.length - 1 : selectedIndex > 0; 
-            const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : (condition ? selectedIndex - 1 : imagenes.length - 1); 
-            setSelectedImage(imagenes[nextIndex]);
-            setSelectedIndex(nextIndex);
+            setTimeout(()=>{
+                const condition = next ? selectedIndex < imagenes.length - 1 : selectedIndex > 0; 
+                const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : (condition ? selectedIndex - 1 : imagenes.length - 1); 
+                setSelectedImage(imagenes[nextIndex]);
+                setSelectedIndex(nextIndex);
+            }, 550)
+           
     }
+
+    useEffect(()=>{
+        if(props.autoplay){
+            const interval = setInterval(() => {
+                selectNewImage(selectedIndex, imagenes);
+            }, 6000);
+            return () => clearInterval(interval);
+        }  
+    });
 
     const previos = () =>{
     
 
-        selectNexImage(selectedIndex, imagenes, false)
+        selectNewImage(selectedIndex, imagenes, false)
     }
     
     const next = () =>{
       
 
-        selectNexImage(selectedIndex, imagenes)
+        selectNewImage(selectedIndex, imagenes)
     }
-
+  
 
     return (
   
@@ -48,21 +60,27 @@ export default function SliderHeader(){
             <div className={style.logo}>
                 <Image 
                 src={'/Icons/logo.jpg'}
-                width={80}
-                height={100}
+                width={200}
+                height={200}
                 alt={'Logo de FUPAGUA'}
+                loading="lazy"
                 />
             </div>
+
             <button onClick={previos} className={style.back}>{`<`}</button>
+
             <Image 
-            className={style.imgSlider}
+            className={`${style.imgSlider} ${loaded ? style.loaded : ""}`}
             src={require(`/public/IMG/${selectedImage}`).default}
-            width={800}
-            height={800}
+            width={600}
+            height={400}
             alt="FUPAGUA"
             onLoad={() => setLoaded(true)}
+            loading="lazy"
             />
+
             <button onClick={next} className={style.next}>{`>`}</button>
+
         </div>    
  
     )

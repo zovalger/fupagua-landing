@@ -4,18 +4,22 @@
     height: 100vh;
     position: relative;
     z-index: 0;
-
-
-
+    background-color: rgba(237, 237, 237, 0.878);
 }
 
 
 .imgSlider{
     min-width: 100%;
-   height: 100%;
-   filter: brightness(70%);
-   
+    height: 100%;
+    filter: brightness(70%);
+    opacity: 0;
+    transition: 0.8s;
 }
+
+.loaded{
+    opacity: 1;
+}
+
 
 .logo{
     display: flex;
@@ -37,7 +41,7 @@
 
 .back{
     position: absolute;
-    left: 4%;
+    left: 3%;
     top: 50%;
     z-index: 2;
     border: none;
@@ -53,7 +57,7 @@
 
 .next{
     position: absolute;
-    right: 4%;
+    right: 3%;
     top: 50%;
     z-index: 2;
     border: none;

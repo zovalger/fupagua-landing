@@ -13,6 +13,8 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 import NavLanding from "../components/NavLanding";
 import SliderHeader from "../components/SliderHeader";
 import FormLanding from "../components/FormLading";
+import SliderHeader_V2 from "../components/SliderHeader_v2";
+import InfoLanding from "../components/InfoLanding";
 
 // Librerias
 
@@ -34,17 +36,23 @@ export default function Home() {
 			</Head>
 
 			<header>
-				<NavLanding /> 
+				<NavLanding />
 			</header>
 
 			<main className={''}>
 	
 				<section>
-					<SliderHeader />
+					<SliderHeader 
+					autoplay = {true}
+					/>
 				</section>
 
 				<section>
-				   
+				   <SliderHeader_V2 />
+				</section>
+
+				<section>
+			
 				</section>
 
 			</main>
