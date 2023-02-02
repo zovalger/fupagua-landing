@@ -9,6 +9,7 @@ export function Section_form() {
       
       <div className={style.icon_container}>
         <ul className={style.form_list}>
+          <a> 
           <li className={style.form_list_icon}>
           <Image
             src={("/logos/facebook.svg")}
@@ -16,7 +17,9 @@ export function Section_form() {
             width={50}
             alt="facebook" 
             className={style.icon} />
-          </li>
+          </li> 
+          </a>
+          <a> 
           <li className={style.form_list_icon}>
           <Image
             src={("/logos/instagram.svg")}
@@ -25,6 +28,8 @@ export function Section_form() {
             alt="instagram" 
             className={style.icon} />
           </li>
+          </a>
+          <a> 
           <li className={style.form_list_icon}>
           <Image
             src={("/logos/twitter.svg")}
@@ -33,6 +38,8 @@ export function Section_form() {
             alt="twitter" 
             className={style.icon} />
           </li>
+          </a>
+          <a> 
           <li className={style.form_list_icon}>
           <Image
             src={("/logos/whatsapp.svg")}
@@ -41,6 +48,7 @@ export function Section_form() {
             alt="whatsapp" 
             className={style.icon} />
           </li>
+          </a>
           </ul>
       </div>
 
