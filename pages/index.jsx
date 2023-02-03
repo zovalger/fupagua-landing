@@ -15,6 +15,8 @@ import SliderHeader from "../components/SliderHeader";
 import FormLanding from "../components/FormLading";
 import SliderHeader_V2 from "../components/SliderHeader_v2";
 import InfoLanding from "../components/InfoLanding";
+import VideoLanding from "../components/VideoLanding";
+
 
 // Librerias
 
@@ -52,7 +54,7 @@ export default function Home() {
 				</section>
 
 				<section>
-			
+					<VideoLanding />
 				</section>
 
 			</main>
