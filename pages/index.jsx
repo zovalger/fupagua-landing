@@ -54,6 +54,10 @@ export default function Home() {
 				</section>
 
 				<section>
+					
+				</section>
+
+				<section>
 					<VideoLanding />
 				</section>
 
