@@ -16,12 +16,22 @@ export function HeaderLanding() {
 
   return (
     <div className={style.Logo_header} id="header">
+      <div className={style.Font_header}>
+        <Image 
+        src={'/IMG/frontFupaguaImg.jpg'}
+        width={800}
+        height={800}
+        alt= "FUPAGUA"
+        loading="lazy"
+        />
+      </div>
       <div data-aos= 'fade-down' className={style.logo}>
         <Image
           src='/Icons/Logo-Fupagua.png'
           width={200}
           height={200}
           alt='Logo de Fupagua'
+          loading="lazy"
         ></Image>
       </div>
       <nav className={style.nav_logo}>

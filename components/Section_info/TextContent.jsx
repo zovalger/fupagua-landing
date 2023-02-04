@@ -34,6 +34,7 @@ function TextContent(props) {
             src={(`/IMG/Info_${props.num_img}.jpg`)}
             width={300}
             height={200}
+            loading="lazy"
             alt={props.nombre_img}
           ></Image>
         </div>
@@ -69,6 +70,7 @@ function TextContent(props) {
             src={(`/IMG/Info_${props.num_img}.jpg`)}
             width={300}
             height={200}
+            loading="lazy"
             alt={props.nombre_img}
           ></Image>
         </div>

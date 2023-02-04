@@ -22,9 +22,10 @@ function Services(props){
         <div className={services_style.service_img}>
             <Image 
             src={(`/Icons/Services/icon_${props.num_img}.svg`)}
-            height={100}
-            width={100}
+            height={150}
+            width={150}
             alt='Icono'
+            loading="lazy"
             />
         </div>
         <div className={services_style.description_service}>

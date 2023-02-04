@@ -3,26 +3,37 @@
     flex-direction: column;
     min-width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg,
-    rgba(4, 14, 20, 0.199),
-    rgba(0, 0, 0, 0.199)),
-      url(/IMG/frontFupaguaImg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
   }
   
+.Font_header{
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.Font_header img{
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  filter: brightness(70%);
+}
+
+
   .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+    z-index: 1;
   }
   
   .logo img {
-    width: 380px;
-    height: 410px;
+    width: 230px;
+    height: 260px;
     margin: auto;
   }
 
@@ -35,29 +46,30 @@
     align-items: center;
     align-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px
+    margin-top: 20px;
+    z-index: 1;
   }
   
   .nav_logo li {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     display: inline-flex;
     color: rgb(255, 255, 255);
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 15px;
     margin: auto;
     margin-left: 16px;
     margin-top: 40px;
     border-bottom: 2px solid #ffffff;
-    transition: 0.95s;
+    transition: 0.95s all ease-in-out;
   }
 
   .nav_logo li:hover {
     color: rgb(167, 255, 251);
     border-bottom: 0px;
-    font-size: 1.61rem;
+    font-size: 1.52rem;
     border: 2px solid #ffffff;
     border-radius: 2em;
-    padding: 10px 9px;
+    padding: 10px 14.5px;
   }
 
   /* RESPONSIVE */
@@ -77,30 +89,30 @@
 
  }
 
-@media (max-width: 900px){
+@media (max-width: 950px){
 
   .logo img {
-    width: 350px;
-    height: 370px;
+    width: 230px;
+    height: 260px;
   }
 
 
   .nav_logo li {
-    font-size: 1.16rem;
+    font-size: 1.15rem;
    
   }
   
   .nav_logo li:hover {
-    font-size: 1.18rem;
+    font-size: 1.17rem;
   }
 }
 
 
-@media (max-width: 830px){
+@media (max-width: 880px){
 
   .logo img {
-    width: 320px;
-    height: 335px;
+    width: 200px;
+    height: 240px;
   }
    
 
@@ -114,11 +126,11 @@
   }
 }
 
-@media (max-width: 760px){
+@media (max-width: 790px){
 
   .logo img {
-    width: 280px;
-    height: 310px;
+    width: 200px;
+    height: 240px;
   }
    
 
@@ -133,11 +145,11 @@
   
 }
 
-@media (max-width: 660px){
+@media (max-width: 700px){
 
   .logo img {
-    width: 250px;
-    height: 270px;
+    width: 180px;
+    height: 200px;
   }
    
 
@@ -153,14 +165,13 @@
 
 /* movil */
 
-@media (max-width: 550px){
+@media (max-width: 600px){
 
   .logo img {
-    width: 230px;
-    height: 250px;
+    width: 160px;
+    height: 180px;
   }
    
-
   .nav_logo li {
     font-size: 0.48rem;
    
@@ -171,11 +182,11 @@
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 540px){
 
   .logo img {
-    width: 200px;
-    height: 230px;
+    width: 130px;
+    height: 150px;
   }
    
 
@@ -189,11 +200,11 @@
   }
 }
 
-@media (max-width: 390px){
+@media (max-width: 440px){
 
   .logo img {
-    width: 160px;
-    height: 180px;
+    width: 100px;
+    height: 120px;
   }
    
 
@@ -207,11 +218,11 @@
   }
 }
 
-@media (max-width: 290px){
+@media (max-width: 390px){
 
   .logo img {
-    width: 140px;
-    height: 150px;
+    width: 90px;
+    height: 110px;
   }
    
 
@@ -221,7 +232,25 @@
   }
   
   .nav_logo li:hover {
-    font-size: 0.12srem;
+    font-size: 0.12rem;
+  }
+}
+
+@media (max-width: 350px){
+
+  .logo img {
+    width: 70px;
+    height: 90px;
+  }
+   
+
+  .nav_logo li {
+    font-size: 0.06rem;
+   
+  }
+  
+  .nav_logo li:hover {
+    font-size: 0.08rem;
   }
 }
 

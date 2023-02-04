@@ -43,16 +43,26 @@ function Section_info(props) {
     <div className={Info_style.section_presentation}>
 
       <div className={Info_style.name_fun}>
-        <div className={Info_style.container_img}></div>
+        <div className={Info_style.container_img}>
+          <Image 
+          src={'/IMG/frontFupaguaImg.jpg'}
+          width={800}
+          height={800}
+          alt="FUPAGUA"
+          loading="lazy"
+          />
+        </div>
         <div className={Info_style.vector_container}>
           <div className={Info_style.vector_1}>
+
             <div className={Info_style.container_P}>
               <div className={Info_style.Logo_Info} data-aos= 'fade-up'>
                 <Image
                   src='/Icons/Logo-Fupagua.png'
-                  height={120}
-                  width={100}
-                  alt='Logo de la Fundación'
+                  height={200}
+                  width={200}
+                  alt='Logo de FUPAGUA'
+                  loading = 'lazy'
                 />
               </div>
               <div className={Info_style.presentation} data-aos= 'fade-up' data-aos-duration= '1800'>
@@ -83,7 +93,7 @@ function Section_info(props) {
               <h2>Horario Laboral</h2>
               <Image
                 src={(`/IMG/Info_2.png`)}
-                width={600}
+                width={400}
                 height={400}
                 alt={props.nombre_img}
               ></ Image>
@@ -113,18 +123,7 @@ function Section_info(props) {
       </div>
 
       <div id="servicios">
-        <TextContent
-          content_style={false}
-          num_img='1'
-          nombre_img='Imagen de prueba'
-          titleInfo='Nuestros servicios'
-          Info='Ofrecemos ...'
-          data_aos = 'fade-left'
-        />
-      </div>
-
-      
-
+    
       <div className={services_style.container_services}>
     <button className={services_style.back} onClick={sliderLeft}>{`<`}</button>
         <div className={services_style.slide} id="slide">
@@ -184,6 +183,7 @@ function Section_info(props) {
         </div>
       </div>
 
+    </div>
     </div>
   )
 }
