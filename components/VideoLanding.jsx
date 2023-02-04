@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Image from "next/image";
+import style from '../styles/VideosLanding/VideosLanding.module.css' 
 
 function VideoLanding() {
   return (
- <Container>
+ <div className={style.bg}>
 
-  </Container>
+  </div>
   );
 }
 
