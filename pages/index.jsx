@@ -16,6 +16,8 @@ import FormLanding from "../components/FormLading";
 import SliderHeader_V2 from "../components/SliderHeader_v2";
 import InfoLanding from "../components/InfoLanding";
 import VideoLanding from "../components/VideoLanding";
+import BookLanding from "../components/BookLanding";
+import ActivityLanding from "../components/ActivityLanding";
 
 
 // Librerias
@@ -59,6 +61,14 @@ export default function Home() {
 
 				<section>
 					<VideoLanding />
+				</section>
+
+				<section>
+					<BookLanding />
+				</section>
+
+				<section>
+					<ActivityLanding />
 				</section>
 
 			</main>

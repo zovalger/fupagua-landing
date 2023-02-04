@@ -1,0 +1,26 @@
+.bg_video {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/Banners/Videos_banner.svg);
+    background-size: cover;
+    display: flex;
+}
+
+.bg_book {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/Banners/Library_banner.svg);
+    background-size: cover;
+    display: flex;
+}
+
+.bg_activity {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/Banners/Activities_banner.svg);
+    background-size: cover;
+    display: flex;
+}

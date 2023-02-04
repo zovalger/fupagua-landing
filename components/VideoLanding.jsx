@@ -1,10 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Image from "next/image";
-import style from '../styles/VideosLanding/VideosLanding.module.css' 
+import style from '../styles/BannerLanding/BannerLanding.module.css' 
 
 function VideoLanding() {
   return (
- <div className={style.bg}>
+ <div className={style.bg_video}>
 
   </div>
   );
