@@ -10,10 +10,9 @@ import style from '../styles/HeaderLanding/SliderHeader.module.css'
 
 export default function SliderHeader(props, {autoplay}){
     const imagenes = [
-		'1.jpg',
-		'2.jpg',
-		'1.jpg',
-		'Libro.png'
+		'frontFupaguaImg.jpg',
+		'Info_1.jpg'
+		
 	]
 
     const [selectedIndex,setSelectedIndex] = useState(0);
@@ -59,7 +58,7 @@ export default function SliderHeader(props, {autoplay}){
         <div className={style.containerSlider}>
             <div className={style.logo}>
                 <Image 
-                src={'/Icons/logo.jpg'}
+                src={'/Icons/Logo-Fupagua.png'}
                 width={200}
                 height={200}
                 alt={'Logo de FUPAGUA'}
@@ -72,8 +71,8 @@ export default function SliderHeader(props, {autoplay}){
             <Image 
             className={`${style.imgSlider} ${loaded ? style.loaded : ""}`}
             src={require(`/public/IMG/${selectedImage}`).default}
-            width={600}
-            height={400}
+            width={800}
+            height={800}
             alt="FUPAGUA"
             onLoad={() => setLoaded(true)}
             loading="lazy"

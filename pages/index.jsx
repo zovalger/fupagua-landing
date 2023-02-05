@@ -11,13 +11,20 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 // Componentes
 
 import NavLanding from "../components/NavLanding";
+
 import SliderHeader from "../components/SliderHeader";
-import FormLanding from "../components/FormLading";
+
 import SliderHeader_V2 from "../components/SliderHeader_v2";
+
 import InfoLanding from "../components/InfoLanding";
+
 import VideoLanding from "../components/VideoLanding";
+
 import BookLanding from "../components/BookLanding";
+
 import ActivityLanding from "../components/ActivityLanding";
+
+import FormLanding from "../components/FormLading";
 
 
 // Librerias
@@ -56,7 +63,7 @@ export default function Home() {
 				</section>
 
 				<section>
-					
+					<InfoLanding />
 				</section>
 
 				<section>

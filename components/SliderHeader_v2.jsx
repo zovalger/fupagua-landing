@@ -7,16 +7,16 @@ function SliderHeader_V2() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={'/IMG/1.jpg'}
+          src={'/IMG/frontFupaguaImg.jpg'}
           alt="First slide"
-          width={600}
-          height={600}
+          width={800}
+          height={800}
         />
         <Carousel.Caption>
             <Image
-            src={'/Icons/logo.jpg'}
-            width={300}
-            height={300}
+            src={'/Icons/Logo-Fupagua.png'}
+            width={200}
+            height={200}
             alt='FUPAGUA_logo'
             />
         </Carousel.Caption>
@@ -25,16 +25,16 @@ function SliderHeader_V2() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={'/IMG/2.jpg'}
+          src={'/IMG/Info_1.jpg'}
           alt="First slide"
-          width={600}
-          height={600}
+          width={800}
+          height={800}
         />
         <Carousel.Caption>
             <Image
-            src={'/Icons/logo.jpg'}
-            width={300}
-            height={300}
+            src={'/Icons/Logo-Fupagua.png'}
+            width={200}
+            height={200}
             alt='FUPAGUA_logo'
             />
         </Carousel.Caption>
