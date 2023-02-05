@@ -7,7 +7,6 @@ import Image from "next/image";
 
 export function NavLanding() {
   return (
-    <Container>
     <Navbar bg="primary" expand="lg" variant="dark" fixed="top">
       <Container fluid>
       <Navbar.Brand href="#home">
@@ -34,7 +33,6 @@ export function NavLanding() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </Container>
   );
 }
 export default NavLanding;
