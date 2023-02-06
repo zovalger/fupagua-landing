@@ -16,7 +16,7 @@ function SliderHeader() {
         />
         <Carousel.Caption>
         <Image
-            src={'/Icons/Logo-Fupagua.png'}
+            src={'/logo/logo_extended.svg'}
             width={200}
             height={200}
             alt='FUPAGUA_logo'
@@ -37,7 +37,7 @@ function SliderHeader() {
         />
         <Carousel.Caption>
             <Image
-            src={'/Icons/Logo-Fupagua.png'}
+            src={'/logo/logo_extended.svg'}
             width={200}
             height={200}
             alt='FUPAGUA_logo'
