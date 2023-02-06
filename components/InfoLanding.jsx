@@ -96,10 +96,19 @@ export default function InfoLanding(){
 }
 
 
-function Services(){
+function Services(props){
     return(
         <div>
             <h2>Servicios</h2>
+            <div>
+                <div>
+                    <button>
+                        {/*insert image*/}
+                    </button>
+                    <h2>{props.titulo}</h2>
+                </div>
+            </div>
+
         </div>
     )
 }
