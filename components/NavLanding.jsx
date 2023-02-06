@@ -7,16 +7,15 @@ import Image from "next/image";
 
 export function NavLanding() {
   return (
-    <Container>
     <Navbar bg="primary" expand="lg" variant="dark" fixed="top">
       <Container fluid>
       <Navbar.Brand href="#home">
             <img
-              src="Icons/logo.jpg"
+              src="logo/logo.svg"
               width="30"
               height="30"
               className="d-inline-block align-top"
-              alt="logo de fupagua"
+              alt="logo_FUPAGUA"
             />
           </Navbar.Brand>
         <Navbar.Brand href="#">FUPAGUA</Navbar.Brand>
@@ -28,13 +27,13 @@ export function NavLanding() {
             navbarScroll
           >
             <Nav.Link href="#action1">Sobre nosotros</Nav.Link>
+            <Nav.Link href="#action2">Contactanos</Nav.Link>
             <Nav.Link href="#action2">Biblioteca</Nav.Link>
             <Nav.Link href="#action2">Videos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </Container>
   );
 }
 export default NavLanding;
