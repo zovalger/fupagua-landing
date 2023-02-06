@@ -14,8 +14,6 @@ import NavLanding from "../components/NavLanding";
 
 import SliderHeader from "../components/SliderHeader";
 
-import SliderHeader_V2 from "../components/SliderHeader_v2";
-
 import InfoLanding from "../components/InfoLanding";
 
 import VideoLanding from "../components/VideoLanding";
@@ -44,6 +42,15 @@ export default function Home() {
 				/>
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 				<link rel="icon" href="/logo.jpg" />
+
+				<link rel="preconnect" href="https://fonts.googleapis.com"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+				<link 
+				href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" 
+				rel="stylesheet"
+				/>
+
+
 			</Head>
 
 			<header>
@@ -53,15 +60,9 @@ export default function Home() {
 			<main className={''}>
 	
 				<section>
-					<SliderHeader 
-					autoplay = {true}
-					/>
+					<SliderHeader />
 				</section>
-
-				<section>
-				   <SliderHeader_V2 />
-				</section>
-
+			
 				<section>
 					<InfoLanding />
 				</section>
