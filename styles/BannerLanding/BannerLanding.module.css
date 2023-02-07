@@ -1,4 +1,5 @@
 .bg_video {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-image: url(/Banners/Videos_banner.svg);
@@ -8,6 +9,7 @@
 }
 
 .bg_book {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-image: url(/Banners/Library_banner.svg);
@@ -17,6 +19,7 @@
 }
 
 .bg_activity {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-image: url(/Banners/Activities_banner.svg);
@@ -25,8 +28,8 @@
     align-items: center;
 }
 
-.text {
-    flex-basis: 50%;
+.container_text {
+    flex-basis: 40%;
     padding-left: 40px;
     overflow: hidden;
     color: #fff;
@@ -37,24 +40,33 @@
 }
 
 .subtitle {
-    font-size: 25px;
+    font-size: 40px;
+}
+
+.text {
+    font-size: 20px;
     font-weight: 500px;
 }
 
-.image {
-    flex-basis: 50%;
+.container_img {
+    flex-basis: 60%;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
-    .bg_activity .bg_book .bg_video {
+    .bg_activity,
+    .bg_book,
+    .bg_video
+     {
         flex-direction: column-reverse;
+        height: auto;
     }
 
-    .text{
+    .container_text{
         display: flex;
+        flex-direction: column;
         padding-left: 0;
         flex-direction: cover;
         justify-content: center;
@@ -64,14 +76,18 @@
     }
 
     .title{
-        font-size: 40px;
+        font-size: 50px;
     }
 
-    .subtitle{
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .text{
         font-size: 20px;
     }
 
-    .image {
+    .container_img {
         flex-basis: 60%;
         width: 100%;
         display: flex;
@@ -80,7 +96,20 @@
     }
 
     .img {
-        height: 90%;
+        height: 80%;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+
+    .container_text{
+        justify-content: flex-start;
+        flex-basis: 40%;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
 }
