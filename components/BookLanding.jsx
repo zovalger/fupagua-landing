@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "../styles/BannerLanding/BannerLanding.module.css";
 
 function BookLanding() {
