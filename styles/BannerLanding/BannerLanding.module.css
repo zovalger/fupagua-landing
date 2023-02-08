@@ -5,6 +5,7 @@
     background-image: url(/Banners/Videos_banner.svg);
     background-size: cover;
     display: flex;
+    align-items: center;
 }
 
 .bg_book {
@@ -14,6 +15,7 @@
     background-image: url(/Banners/Library_banner.svg);
     background-size: cover;
     display: flex;
+    align-items: center;
 }
 
 .bg_activity {
@@ -23,4 +25,143 @@
     background-image: url(/Banners/Activities_banner.svg);
     background-size: cover;
     display: flex;
+    align-items: center;
+}
+
+.container_text {
+    flex-basis: 40%;
+    padding-left: 40px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.title {
+    font-size: 80px;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.container_img {
+    flex-basis: 60%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/****************Responsive*************/
+
+@media screen and (max-width: 1024px) {
+    .bg_activity,
+    .bg_book,
+    .bg_video {
+        height: 70vh;
+    }
+    .container_text {
+        flex-basis: 60%;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .subtitle {
+        font-size: 40px;
+    }
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bg_activity,
+    .bg_book,
+    .bg_video {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .container_text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        flex-direction: cover;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 40%;
+        text-align: center;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .subtitle {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .container_img {
+        flex-basis: 60%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container_text {
+        justify-content: flex-start;
+        flex-basis: 40%;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .container_img {
+        flex-basis: 60%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .title {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 23px;
+    }
+    .text {
+        font-size: 17px;
+        font-weight: 500px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container_text {
+        justify-content: flex-start;
+        flex-basis: 40%;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 15px;
+        font-weight: 500px;
+    }
 }

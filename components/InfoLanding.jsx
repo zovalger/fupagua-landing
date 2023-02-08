@@ -119,23 +119,32 @@ export default function InfoLanding(){
 
             <div className={styleService.container}>
                 	<h2>Servicios</h2>
+                    <Carousel 
+                    containerClass="carousel-container"
+                    ssr={true}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                    responsive={responsive}
+                    >
 
-					<Carousel responsive={responsive}>
-
-                            <div>item 1</div>
-                            <div>item 2</div>
-                            <div>item 3</div>
+                        <Services 
+                        titulo="Fisioterapia"
+                        />
+                        <Services 
+                        titulo="titulo prueba"
+                        />
+                        <Services 
+                        titulo="Terapia"
+                        />
+                        <Services 
+                        titulo="Terapia del habla"
+                        />
+                      
 
                      </Carousel>
 
 					</div>
-                    <Carousel responsive={responsive}>
 
-                        <div>item 1</div>
-                        <div>item 2</div>
-                        <div>item 3</div>
-
-                    </Carousel>
 
         </div>
 
