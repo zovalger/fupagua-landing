@@ -7,8 +7,37 @@ import style from '../styles/InfoLanding/Info.module.css';
 
 import styleService from '../styles/InfoLanding/Services.module.css';
 
+// Librerias
+
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 export default function InfoLanding(){
+
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+    }
+    
+
     return(
+
         <div className={style.container}>
 
             <h2>Información</h2>
@@ -86,49 +115,33 @@ export default function InfoLanding(){
 
                     </div>
 
-            </div>
-            
+            </div>      
+
             <div className={styleService.container}>
-                <h2>Servicios</h2>
+                	<h2>Servicios</h2>
 
-                <div className={styleService.container__slide}>
+					<Carousel responsive={responsive}>
 
-                        <Services 
-                        titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                        />
-                        <Services 
-                           titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                           />
-                        <Services 
-                           titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                           />
-                            <Services 
-                           titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                           />
-                            <Services 
-                           titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                           />
-                            <Services 
-                           titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                           />
-                            <Services 
-                           titulo = "Este es un texto de prueba para medir el tamaño que debe tener el contenedor de texto"
-                           />
-                    
-                    
-            
+                            <div>item 1</div>
+                            <div>item 2</div>
+                            <div>item 3</div>
 
-                </div>
+                     </Carousel>
 
-            </div>
+					</div>
+                    <Carousel responsive={responsive}>
+
+                        <div>item 1</div>
+                        <div>item 2</div>
+                        <div>item 3</div>
+
+                    </Carousel>
 
         </div>
 
-
-       
-  
     )
 }
+
 
 //Servicios
 function Services(props){
@@ -153,3 +166,4 @@ function Services(props){
 }
 
 //Modal de los servicios
+

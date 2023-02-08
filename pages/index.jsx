@@ -5,6 +5,7 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 
 //CSS
 
+
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
 
 
@@ -26,6 +27,8 @@ import FormLanding from "../components/FormLading";
 
 
 // Librerias
+
+import "react-multi-carousel/lib/styles.css";
 
 
 
