@@ -6,10 +6,7 @@ import NavLanding from "../components/NavLanding";
 
 function FormularioLanding() {
     return (  
-      //header temporal
-      <><header>
-        <NavLanding /> 
-      </header><div className={style.bg_form}>
+  <div className={style.bg_form}>
           <div className={style.icon_container}>
             <ul>
               <a>
@@ -79,7 +76,7 @@ function FormularioLanding() {
 
             </form>
           </div>
-        </div></> 
+        </div>
     );
   }
   
