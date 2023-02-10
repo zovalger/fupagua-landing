@@ -46,6 +46,7 @@
 .text {
     font-size: 20px;
     font-weight: 500px;
+    margin: 20px 0;
 }
 
 .container_img {
@@ -53,6 +54,32 @@
     position: relative;
     text-align: center;
     overflow: hidden;
+}
+
+.button_book,
+.button_video {
+    display: inline-block;
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.button_video:hover {
+    background: rgb(241, 115, 115);
+    color: #fff;
+}
+
+.button_book:hover {
+    background: rgb(111, 243, 111);
+    color: #fff;
 }
 
 /****************Responsive*************/

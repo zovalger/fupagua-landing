@@ -7,6 +7,16 @@
 
 .logo {
     margin-bottom: 60px;
+    animation: animate ease-in 1s infinite alternate;
+}
+
+@Keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.02);
+    }
 }
 
 .title {

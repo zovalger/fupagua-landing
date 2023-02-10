@@ -12,7 +12,8 @@ function SliderHeader() {
           alt="FUPAGUA"
           width={800}
           height={800}
-          loading='lazy'
+          priority
+          quality={40}
         />
         <Carousel.Caption>  
         <div className={style.container_img}>
@@ -22,6 +23,8 @@ function SliderHeader() {
             width={"400"}
             height={"400"}
             alt='FUPAGUA_logo'
+            priority
+            quality={40}
             />
         </div>   
             <h3 className={style.title}>Bienvenido</h3>
@@ -36,7 +39,8 @@ function SliderHeader() {
           alt="FUPAGUA_2"
           width={800}
           height={800}
-          loading='lazy'
+          priority
+          quality={40}
         />
         <Carousel.Caption>
         <div className={style.container_img}>
@@ -46,9 +50,10 @@ function SliderHeader() {
             width={"400"}
             height={"400"}
             alt='FUPAGUA_logo'
+            quality={40}
             /> 
          </div>   
-             <h3 className={style.title}>Bienvenido</h3>
+         <h3 className={style.title}>Bienvenido</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
