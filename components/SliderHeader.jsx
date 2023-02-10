@@ -1,10 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from "next/image";
-
+import style from "../styles/SliderHeader/SliderHeader.module.css";
 
 function SliderHeader() {
   return (
-    <Carousel fade>
+    <Carousel>
       <Carousel.Item>
         <Image
           className="d-block w-100"
@@ -15,16 +15,20 @@ function SliderHeader() {
           priority
           quality={40}
         />
-        <Carousel.Caption>
+        <Carousel.Caption>  
+        <div className={style.container_img}>
         <Image
+            className={style.logo}
             src={'/logo/logo_extended.svg'}
-            width={200}
-            height={200}
+            width={"400"}
+            height={"400"}
             alt='FUPAGUA_logo'
             priority
             quality={40}
             />
-             <h2>Bienvenido</h2>
+        </div>   
+            <h3 className={style.title}>Bienvenido</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -39,15 +43,18 @@ function SliderHeader() {
           quality={40}
         />
         <Carousel.Caption>
+        <div className={style.container_img}>
             <Image
+            className={style.logo}
             src={'/logo/logo_extended.svg'}
-            width={200}
-            height={200}
+            width={"400"}
+            height={"400"}
             alt='FUPAGUA_logo'
-            priority
             quality={40}
-            />
-             <h2>Bienvenido</h2>
+            /> 
+         </div>   
+         <h3 className={style.title}>Bienvenido</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

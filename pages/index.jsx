@@ -24,8 +24,6 @@ import BookLanding from "../components/BookLanding";
 
 import ActivityLanding from "../components/ActivityLanding";
 
-import FormularioLanding from "../components/FormularioLanding";
-
 
 // Librerias
 
@@ -84,7 +82,7 @@ export default function Home() {
 			</main>
 
 			<footer className={''}>
-				<FormularioLanding/>
+			
 			</footer>
 		</div>
 	);

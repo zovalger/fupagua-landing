@@ -13,9 +13,8 @@
 .container h2 {
     display: flex;
     text-align: center;
-    font-size: 2rem;
-    justify-content: center;
-   
+    font-size: 60px;
+    justify-content: center; 
 }
 
 /* Contenedores de servicios */
@@ -36,8 +35,8 @@
     border-radius: 5rem;
     height: 140px;
     width: 140px;
-    background-color: rgb(19, 161, 226);
-   border: 2px solid rgb(32, 80, 255);
+    background-color: rgb(20, 115, 238);
+    border: 3px solid rgb(18, 90, 184);
 }
 
 .container__text {
