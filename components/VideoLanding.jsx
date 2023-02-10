@@ -14,7 +14,7 @@ function VideoLanding() {
     atque, tenetur neque ex minima fugiat dolore dicta tempora illo
     debitis itaque assumenda!
     </p> 
-    <a href="#" className="button">
+    <a href="videos" className="button">
       Ver videos
     </a> 
     </div>

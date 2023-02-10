@@ -1,0 +1,33 @@
+.container_img {
+    flex-basis: 60%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .container_img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 80%;
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-size: 40px;
+    } 
+}

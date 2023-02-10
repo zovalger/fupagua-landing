@@ -1,8 +1,10 @@
 import Image from "next/image";
-import style from "../styles/BannerLanding/BannerLanding.module.css";
+import style from "../styles/FormLanding/FormLanding.module.css";
+import Container from 'react-bootstrap/Container';
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 
 function FormularioLanding() {
-    return (
+    return (   
     <div className={style.bg_form}>  
     <div className={style.icon_container}>
         <ul>

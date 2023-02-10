@@ -9,7 +9,7 @@ export function NavLanding() {
   return (
     <Navbar bg="primary" expand="lg" variant="dark" fixed="top">
       <Container fluid>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
             <img
               src="logo/logo.svg"
               width="30"
@@ -18,7 +18,7 @@ export function NavLanding() {
               alt="logo_FUPAGUA"
             />
           </Navbar.Brand>
-        <Navbar.Brand href="#">FUPAGUA</Navbar.Brand>
+        <Navbar.Brand href="/">FUPAGUA</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -26,10 +26,10 @@ export function NavLanding() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Sobre nosotros</Nav.Link>
-            <Nav.Link href="#action2">Contactanos</Nav.Link>
-            <Nav.Link href="#action2">Biblioteca</Nav.Link>
-            <Nav.Link href="#action2">Videos</Nav.Link>
+            <Nav.Link href="/">Sobre nosotros</Nav.Link>
+            <Nav.Link href="formulario">Contactanos</Nav.Link>
+            <Nav.Link href="biblioteca">Biblioteca</Nav.Link>
+            <Nav.Link href="videos">Videos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

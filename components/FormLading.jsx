@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 function FormLanding() {
   return (
-    <Container>
+   
     <Form variant="dark">
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -21,7 +21,7 @@ function FormLanding() {
         Enviar
       </Button>
     </Form>
-    </Container>
+    
   );
 }
 

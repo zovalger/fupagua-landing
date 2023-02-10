@@ -17,7 +17,7 @@ function BookLanding() {
     atque, tenetur neque ex minima fugiat dolore dicta tempora illo
     debitis itaque assumenda!
     </p> 
-    <a href="#" className="button">
+    <a href="biblioteca" className="button">
       Ver catalogo
     </a> 
     </div>
