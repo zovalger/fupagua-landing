@@ -17,16 +17,6 @@
     justify-content: center;
    
 }
-/* 
-.container__slide{
-    display: flex;
-    max-width: 100%;
-    flex-direction: row;
-    padding: 20px;
-    overflow-x: scroll;
-    align-items: center;
-} */
-
 
 /* Contenedores de servicios */
 
@@ -47,7 +37,7 @@
     height: 140px;
     width: 140px;
     background-color: rgb(19, 161, 226);
-   
+   border: 2px solid rgb(32, 80, 255);
 }
 
 .container__text {

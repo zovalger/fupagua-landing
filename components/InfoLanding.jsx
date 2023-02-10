@@ -1,5 +1,6 @@
 // React/Next
 import Image from 'next/image';
+import React, { useState } from 'react';
 
 // CSS
 
@@ -7,13 +8,24 @@ import style from '../styles/InfoLanding/Info.module.css';
 
 import styleService from '../styles/InfoLanding/Services.module.css';
 
+import styleModal from '../styles/InfoLanding/Modal.module.css';
+
 // Librerias
 
-
+    //React-multi-carousel//
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+
+    //Bootstrap//
+   
+    import Button from 'react-bootstrap/Button';
+    import Modal from 'react-bootstrap/Modal';
+
+
 export default function InfoLanding(){
+
+
 
     const responsive = {
         superLargeDesktop: {
@@ -52,6 +64,7 @@ export default function InfoLanding(){
                         height={600}
                         alt="FUPAGUA"
                         loading='lazy'
+                        quality={40}
                         />
 
                     </div>
@@ -83,6 +96,7 @@ export default function InfoLanding(){
                     height={600}
                     alt="FUPAGUA"
                     loading='lazy'
+                    quality={40}
                     />
 
                 </div>
@@ -129,21 +143,29 @@ export default function InfoLanding(){
 
                         <Services 
                         titulo="Fisioterapia"
+                        descripcion="Este es el primer boton"
+                        contenido="El primero es de los mejores"
                         />
                         <Services 
                         titulo="titulo prueba"
+                        descripcion="Este es el segundo boton"
+                        contenido="Es la segunda vez que me abres"
                         />
                         <Services 
                         titulo="Terapia"
+                        descripcion="Este es el penultimo boton"
+                        contenido="Solo queda uno para el final"
                         />
                         <Services 
                         titulo="Terapia del habla"
+                        descripcion="Este es el ultimo boton"
+                        contenido="El ultimo es de los mejores"
                         />
-                      
 
+                        <Modal />
                      </Carousel>
 
-					</div>
+			</div>
 
 
         </div>
@@ -154,12 +176,17 @@ export default function InfoLanding(){
 
 //Servicios
 function Services(props){
-    return(
+    const [show, setShow] = useState(false);
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+  
+    return(
+            <>
                 <div className={styleService.container__service}>
 
                     <div className={styleService.container__img}>
-                        <button>
+                        <button variant="primary" onClick={handleShow}>
                             {/*insert image*/ /*cloudynary*/}
                         </button>
                     </div>
@@ -169,10 +196,57 @@ function Services(props){
                     </div>
 
                 </div>
+
+                   <Modal show={show} onHide={handleClose}>
+            
+                   <Modal.Header closeButton>
+                       <Modal.Title>{props.descripcion}</Modal.Title>
+                   </Modal.Header>
+       
+                   <Modal.Body>
+
+                        <div className = {styleModal.container}>
+
+                            <div div className={styleModal.container__header}> 
+
+                                <div className={styleModal.container__img}>
+
+                                </div>
+
+                                <div className={styleModal.container__headerText}>
+
+                                    <h2>{props.contenido}</h2>
+
+                                </div>
+
+                            </div>
+
+                            <div className={styleModal.container__description}>
+
+                            </div>
+                        </div>
+
+                   </Modal.Body>
+                   
+               </Modal>
+             </>
            
 
     )
 }
 
 //Modal de los servicios
+
+// function ModalService(props){
+//     const [show, setShow] = useState(false);
+
+//     const handleClose = () => setShow(false);
+//     const handleShow = () => setShow(true);
+//     return(
+//         <>
+     
+        
+//         </>   
+//     )
+// }
 
