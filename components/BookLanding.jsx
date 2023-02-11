@@ -6,11 +6,9 @@ function BookLanding() {
     <div className={style.bg_book}>  
     <div className={style.container_text}> 
     <h2 className={style.title}> 
-    Biblioteca 
+    Biblioteca. 
     </h2>
-    <h2 className={style.subtitle}> 
-    Juana Milano de Díaz
-    </h2>
+    <h2 className={style.subtitle}>{"Juana Milano de Díaz"}.</h2>
     <p className={style.text}> 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
     praesentium totam adipisci, odio ratione, vitae perferendis ullam

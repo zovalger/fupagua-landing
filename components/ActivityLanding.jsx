@@ -6,7 +6,7 @@ function ActivityLanding() {
  <div className={style.bg_activity}>  
   <div className={style.container_text}> 
   <h2 className={style.title}> 
-  Actividades 
+  Actividades. 
   </h2>
   <p className={style.text}> 
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero

@@ -12,7 +12,7 @@ import styleService from '../styles/InfoLanding/Services.module.css';
 
 // Componentes
 
-import NavLanding from "../components/NavLanding";
+import NavLanding from "../layouts/NavLanding";
 
 import SliderHeader from "../components/SliderHeader";
 

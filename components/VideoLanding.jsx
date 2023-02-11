@@ -6,7 +6,7 @@ function VideoLanding() {
     <div className={style.bg_video}>  
     <div className={style.container_text}> 
     <h2 className={style.title}> 
-    Aprendizaje
+    Aprendizaje.
     </h2>
     <p className={style.text}> 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
