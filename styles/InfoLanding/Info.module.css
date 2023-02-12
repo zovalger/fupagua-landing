@@ -3,7 +3,6 @@
     max-width: 100%;
     min-height: 100vh;
     flex-direction: column;
-    padding: 10px;
     background-color: #bbdfff;
     align-items: center;
 }
@@ -56,7 +55,7 @@
     display: flex;
     min-width: 50%;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
     flex-direction: column;
     justify-content: center;
 }

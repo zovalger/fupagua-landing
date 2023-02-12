@@ -12,15 +12,20 @@ import styleModal from '../styles/InfoLanding/Modal.module.css';
 
 // Librerias
 
-    //React-multi-carousel//
+//React-multi-carousel//
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-    //Bootstrap//
+//Bootstrap//
    
-    import Button from 'react-bootstrap/Button';
-    import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
+//Componentes//
+
+import Contador from './Contador';
 
 
 export default function InfoLanding(){
@@ -131,6 +136,13 @@ export default function InfoLanding(){
 
             </div>      
 
+            {/*Contador*/}
+
+            <Contador />
+
+
+            {/*Servicios*/}
+
             <div className={styleService.container}>
                 	<h2>Servicios.</h2>
                     <Carousel 
@@ -198,10 +210,12 @@ function Services(props){
 
                 </div>
 
-                        <Modal show={show} onHide={handleClose}>
+                        <Modal show={show} onHide={handleClose}
+                        size="lg"
+                        >
                 
                 <Modal.Header closeButton>
-                    <Modal.Title>{props.descripcion}</Modal.Title>
+                    <Modal.Title>{props.descripcion}</Modal.Title> {/*Descripción del servicio*/}
                 </Modal.Header>
 
                 <Modal.Body>
@@ -214,23 +228,97 @@ function Services(props){
 
                                 <div className={styleModal.container__img}>
 
+                                    <Image
+                                    src={'/IMG/info_1.jpg'}
+                                    width={400}
+                                    height={400}
+                                    alt='Foto'
+                                    />
+
                                 </div>
 
                                 <div className={styleModal.container__headerText}>
 
-                                    <h2>{props.contenido}</h2>
+                                    <p>{props.contenido}</p>
 
                                 </div>
 
                             </div>
 
                             <div className={styleModal.container__description}>
-
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
                             </div>
 
                         </div>
 
                     </div>
+                    
+                    <div className={styleModal.container}>
+
+<div className = {styleModal.container__card}>
+
+    <div div className={styleModal.container__header}> 
+
+        <div className={styleModal.container__img}>
+
+            <Image
+            src={'/IMG/info_1.jpg'}
+            width={400}
+            height={400}
+            alt='Foto'
+            />
+
+        </div>
+
+        <div className={styleModal.container__headerText}>
+
+            <p>{props.contenido}</p>
+
+        </div>
+
+    </div>
+
+    <div className={styleModal.container__description}>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
+    </div>
+
+</div>
+
+</div>
+
+
+<div className={styleModal.container}>
+
+<div className = {styleModal.container__card}>
+
+    <div div className={styleModal.container__header}> 
+
+        <div className={styleModal.container__img}>
+
+            <Image
+            src={'/IMG/info_1.jpg'}
+            width={400}
+            height={400}
+            alt='Foto'
+            />
+
+        </div>
+
+        <div className={styleModal.container__headerText}>
+
+            <p>{props.contenido}</p>
+
+        </div>
+
+    </div>
+
+    <div className={styleModal.container__description}>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
+    </div>
+
+</div>
+
+</div>
 
                 </Modal.Body>
                 
