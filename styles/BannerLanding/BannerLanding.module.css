@@ -50,10 +50,11 @@
 }
 
 .container_img {
-    flex-basis: 60%;
+    flex-basis: 30%;
     position: relative;
     text-align: center;
     overflow: hidden;
+    margin-left: 260px;
 }
 
 .button_book,
@@ -104,6 +105,10 @@
     .text {
         font-size: 20px;
     }
+    .container_img {
+        flex-basis: 60%;
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -139,6 +144,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 20px;
+        margin-left: 0;
     }
     .img {
         height: 80%;

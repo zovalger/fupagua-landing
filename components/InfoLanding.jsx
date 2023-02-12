@@ -52,7 +52,7 @@ export default function InfoLanding(){
 
         <div className={style.container}>
 
-            <h2>Información</h2>
+            <h2>Sobre nosotros.</h2>
 
             <div className={style.container__info}>
 
@@ -132,7 +132,7 @@ export default function InfoLanding(){
             </div>      
 
             <div className={styleService.container}>
-                	<h2>Servicios</h2>
+                	<h2>Servicios.</h2>
                     <Carousel 
                     containerClass="carousel-container"
                     ssr={true}

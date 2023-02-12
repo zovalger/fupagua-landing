@@ -2,7 +2,6 @@ import Image from "next/image";
 import style from "../styles/FormLanding/FormLanding.module.css";
 import Container from 'react-bootstrap/Container';
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
-import NavLanding from "../components/NavLanding";
 
 function FormularioLanding() {
     return (  

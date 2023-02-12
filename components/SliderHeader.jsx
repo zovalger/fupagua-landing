@@ -28,7 +28,7 @@ function SliderHeader() {
             />
         </div>   
             <h3 className={style.title}>Bienvenido</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>{"Fundación de personas autistas del estado Guárico"}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -53,8 +53,8 @@ function SliderHeader() {
             quality={40}
             /> 
          </div>   
-         <h3 className={style.title}>Bienvenido</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+         <h3 className={style.title}>Bienvenido.</h3>
+          <p>{"Fundación de personas autistas del estado Guárico"}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

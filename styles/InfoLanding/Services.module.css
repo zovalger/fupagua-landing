@@ -36,7 +36,7 @@
     height: 140px;
     width: 140px;
     background-color: rgb(20, 115, 238);
-    border: 3px solid rgb(18, 90, 184);
+    border: rgb(20, 115, 238);
 }
 
 .container__text {
