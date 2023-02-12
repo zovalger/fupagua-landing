@@ -137,8 +137,9 @@ export default function InfoLanding(){
                     containerClass="carousel-container"
                     ssr={true}
                     dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
+                    itemClass="carousel-item-padding-20-px"
                     responsive={responsive}
+                    infinite={true}
                     >
 
                         <Services 
@@ -162,7 +163,7 @@ export default function InfoLanding(){
                         contenido="El ultimo es de los mejores"
                         />
 
-                        <Modal />
+                      
                      </Carousel>
 
 			</div>
@@ -197,15 +198,17 @@ function Services(props){
 
                 </div>
 
-                   <Modal show={show} onHide={handleClose}>
-            
-                   <Modal.Header closeButton>
-                       <Modal.Title>{props.descripcion}</Modal.Title>
-                   </Modal.Header>
-       
-                   <Modal.Body>
+                        <Modal show={show} onHide={handleClose}>
+                
+                <Modal.Header closeButton>
+                    <Modal.Title>{props.descripcion}</Modal.Title>
+                </Modal.Header>
 
-                        <div className = {styleModal.container}>
+                <Modal.Body>
+
+                    <div className={styleModal.container}>
+
+                        <div className = {styleModal.container__card}>
 
                             <div div className={styleModal.container__header}> 
 
@@ -224,29 +227,16 @@ function Services(props){
                             <div className={styleModal.container__description}>
 
                             </div>
+
                         </div>
 
-                   </Modal.Body>
-                   
-               </Modal>
-             </>
+                    </div>
+
+                </Modal.Body>
+                
+            </Modal>
+            </>
            
 
     )
 }
-
-//Modal de los servicios
-
-// function ModalService(props){
-//     const [show, setShow] = useState(false);
-
-//     const handleClose = () => setShow(false);
-//     const handleShow = () => setShow(true);
-//     return(
-//         <>
-     
-        
-//         </>   
-//     )
-// }
-

@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    height: auto;
+    min-width: 100%;
+    flex-direction: row;
+}
+
+.container__card{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
