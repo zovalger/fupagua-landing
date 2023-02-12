@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import style from "../styles/InfoLanding/contador.module.css";
+import style from "../styles/SliderHeader/contador.module.css";
 
 export default function Contador({ numberVisit }) {
 	const [numCounter, setNumCounter] = useState(numberVisit);
@@ -37,10 +37,10 @@ export default function Contador({ numberVisit }) {
 	return (
 		<>
 			<div className={style.container}>
-				<div className={style.contador}>
+
 					<h2>Visitantes:</h2>
 					<p>{numCounter}</p>
-				</div>
+			
 			</div>
 		</>
 	);

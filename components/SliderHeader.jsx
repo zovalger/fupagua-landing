@@ -26,9 +26,12 @@ function SliderHeader() {
             priority
             quality={40}
             />
-        </div>   
-            <h3 className={style.title}>Bienvenido</h3>
+        </div>
+
+          <div className={style.container_text}>
+            <h3 className={style.title}>Bienvenido.</h3>
           <p>{"Fundación de personas autistas del estado Guárico"}</p>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -53,8 +56,11 @@ function SliderHeader() {
             quality={40}
             /> 
          </div>   
-         <h3 className={style.title}>Bienvenido.</h3>
-          <p>{"Fundación de personas autistas del estado Guárico"}</p>
+
+         <div className={style.container_text}>
+            <h3 className={style.title}>Bienvenido.</h3>
+            <p>{"Fundación de personas autistas del estado Guárico"}</p>
+        </div>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

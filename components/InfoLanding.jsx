@@ -122,7 +122,7 @@ export default function InfoLanding(){
 
                     <div className={style.container__img}>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1691.3044357309557!2d-67.372931!3d9.919639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aa93824029f4d%3A0x9a77658cc988e299!2sFEDE%20-%20GUARICO%20(Fundaci%C3%B3n%20de%20Edificaciones%20Educativa)!5e1!3m2!1ses!2sve!4v1675731124734!5m2!1ses!2sve" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1691.3044357309557!2d-67.372931!3d9.919639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aa93824029f4d%3A0x9a77658cc988e299!2sFEDE%20-%20GUARICO%20(Fundaci%C3%B3n%20de%20Edificaciones%20Educativa)!5e1!3m2!1ses!2sve!4v1675731124734!5m2!1ses!2sve" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>                    
                     
                     </div>
 
@@ -135,10 +135,6 @@ export default function InfoLanding(){
                     </div>
 
             </div>      
-
-            {/*Contador*/}
-
-            <Contador />
 
 
             {/*Servicios*/}
@@ -156,22 +152,22 @@ export default function InfoLanding(){
 
                         <Services 
                         titulo="Fisioterapia"
-                        descripcion="Este es el primer boton"
+                        tituloModal="Fisioterapia"
                         contenido="El primero es de los mejores"
                         />
                         <Services 
                         titulo="titulo prueba"
-                        descripcion="Este es el segundo boton"
+                        tituloModal="titulo de prueba"
                         contenido="Es la segunda vez que me abres"
                         />
                         <Services 
                         titulo="Terapia"
-                        descripcion="Este es el penultimo boton"
+                        tituloModal="Terapia"
                         contenido="Solo queda uno para el final"
                         />
                         <Services 
                         titulo="Terapia del habla"
-                        descripcion="Este es el ultimo boton"
+                        tituloModal="Terapia del habla"
                         contenido="El ultimo es de los mejores"
                         />
 
@@ -215,12 +211,75 @@ function Services(props){
                         >
                 
                 <Modal.Header closeButton>
-                    <Modal.Title>{props.descripcion}</Modal.Title> {/*Descripción del servicio*/}
+                    <Modal.Title>{props.tituloModal}</Modal.Title> {/*titulo del servicio*/}
                 </Modal.Header>
 
-                <Modal.Body>
+                <Modal.Body className="overflow-auto">
 
                     <div className={styleModal.container}>
+
+                        <div className={styleModal.container__serviceInfo}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quaerat sint. Vero tenetur, reiciendis nam rerum, non temporibus beatae cumque distinctio id soluta laborum maiores, voluptatibus ipsum. Odit, iste quia?</p>
+                        </div>
+
+                        <div className = {styleModal.container__card}>
+
+                            <div div className={styleModal.container__header}> 
+
+                                <div className={styleModal.container__img}>
+
+                                    <Image
+                                    src={'/IMG/info_1.jpg'}
+                                    width={400}
+                                    height={400}
+                                    alt='Foto'
+                                    loading='lazy'
+                                    />
+
+                                </div>
+
+                                <div className={styleModal.container__headerText}>
+
+                                    <p>{props.contenido}</p>
+
+                                </div>
+
+                            </div>
+
+                            <div className={styleModal.container__description}>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
+                            </div>
+
+                        </div>
+
+                        <div className = {styleModal.container__card}>
+
+                            <div div className={styleModal.container__header}> 
+
+                                <div className={styleModal.container__img}>
+
+                                    <Image
+                                    src={'/IMG/info_1.jpg'}
+                                    width={400}
+                                    height={400}
+                                    alt='Foto'
+                                    />
+
+                                </div>
+
+                                <div className={styleModal.container__headerText}>
+
+                                    <p>{props.contenido}</p>
+
+                                </div>
+
+                            </div>
+
+                            <div className={styleModal.container__description}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
+                             </div>
+
+                        </div>
 
                         <div className = {styleModal.container__card}>
 
@@ -253,72 +312,6 @@ function Services(props){
 
                     </div>
                     
-                    <div className={styleModal.container}>
-
-<div className = {styleModal.container__card}>
-
-    <div div className={styleModal.container__header}> 
-
-        <div className={styleModal.container__img}>
-
-            <Image
-            src={'/IMG/info_1.jpg'}
-            width={400}
-            height={400}
-            alt='Foto'
-            />
-
-        </div>
-
-        <div className={styleModal.container__headerText}>
-
-            <p>{props.contenido}</p>
-
-        </div>
-
-    </div>
-
-    <div className={styleModal.container__description}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
-    </div>
-
-</div>
-
-</div>
-
-
-<div className={styleModal.container}>
-
-<div className = {styleModal.container__card}>
-
-    <div div className={styleModal.container__header}> 
-
-        <div className={styleModal.container__img}>
-
-            <Image
-            src={'/IMG/info_1.jpg'}
-            width={400}
-            height={400}
-            alt='Foto'
-            />
-
-        </div>
-
-        <div className={styleModal.container__headerText}>
-
-            <p>{props.contenido}</p>
-
-        </div>
-
-    </div>
-
-    <div className={styleModal.container__description}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
-    </div>
-
-</div>
-
-</div>
 
                 </Modal.Body>
                 

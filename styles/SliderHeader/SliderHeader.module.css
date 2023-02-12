@@ -10,6 +10,20 @@
     animation: animate ease-in 1s infinite alternate;
 }
 
+
+.title {
+    font-size: 50px;
+}
+
+.container_text h3{
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.container_text p{
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+
 @Keyframes animate {
     0% {
         transform: scale(1);
@@ -19,9 +33,6 @@
     }
 }
 
-.title {
-    font-size: 50px;
-}
 
 @media screen and (max-width: 800px) {
     .container_img {
