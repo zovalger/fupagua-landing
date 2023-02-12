@@ -1,14 +1,13 @@
 // Funciones de React/Next
 import Head from "next/head";
 import Image from "next/image";
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
 //CSS
 
-import styleService from '../styles/InfoLanding/Services.module.css';
+import styleService from "../styles/InfoLanding/Services.module.css";
 
 // import styles from "../styles/NavLanding/NavLanding.module.scss";
-
 
 // Componentes
 
@@ -23,17 +22,17 @@ import VideoLanding from "../components/VideoLanding";
 import BookLanding from "../components/BookLanding";
 
 import ActivityLanding from "../components/ActivityLanding";
+import Contador from "../components/Contador";
 
+import Counter from "../models/Counter";
 
 // Librerias
 
-
-
 /////*** ******////
 
-export default function Home() {
+export default function Home({ numberVisit }) {
 	return (
-		<div className={''}>
+		<div className={""}>
 			<Head>
 				<title>FUPAGUA</title>
 				<meta
@@ -43,26 +42,24 @@ export default function Home() {
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 				<link rel="icon" href="/logo.jpg" />
 
-				<link rel="preconnect" href="https://fonts.googleapis.com"/>
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-				<link 
-				href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" 
-				rel="stylesheet"
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap"
+					rel="stylesheet"
 				/>
-
-
 			</Head>
 
 			<header>
 				<NavLanding />
 			</header>
 
-			<main className={''}>
-	
+			<main className={""}>
 				<section>
 					<SliderHeader />
 				</section>
-			
+
+				<Contador numberVisit={numberVisit} />
 				<section>
 					<InfoLanding />
 				</section>
@@ -78,12 +75,27 @@ export default function Home() {
 				<section>
 					<ActivityLanding />
 				</section>
-
 			</main>
 
-			<footer className={''}>
-			
-			</footer>
+			<footer className={""}></footer>
 		</div>
 	);
+}
+
+export async function getServerSideProps(context) {
+	let counter = {};
+
+	try {
+		counter =
+			(await Counter.findOne({ title: "visit-count" })) ||
+			new Counter({ title: "visit-count" });
+
+		await counter.save();
+	} catch (error) {}
+
+	return {
+		props: {
+			numberVisit: counter.num || 0,
+		},
+	};
 }
