@@ -3,6 +3,12 @@ import Head from "next/head";
 import Image from "next/image";
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
+
+// * logica interna
+import Counter from "../models/Counter";
+
+import connectDb from "../lib/db";
+
 //CSS
 
 import styleService from "../styles/InfoLanding/Services.module.css";
@@ -22,9 +28,11 @@ import VideoLanding from "../components/VideoLanding";
 import BookLanding from "../components/BookLanding";
 
 import ActivityLanding from "../components/ActivityLanding";
+
 import Contador from "../components/Contador";
 
-import Counter from "../models/Counter";
+
+
 
 // Librerias
 
@@ -86,12 +94,12 @@ export async function getServerSideProps(context) {
 	let counter = {};
 
 	try {
-		counter =
-			(await Counter.findOne({ title: "visit-count" })) ||
-			new Counter({ title: "visit-count" });
+		counter = await Counter.findOne({ title: "visit-count" });
 
 		await counter.save();
-	} catch (error) {}
+	} catch (error) {
+		console.log(error);
+	}
 
 	return {
 		props: {

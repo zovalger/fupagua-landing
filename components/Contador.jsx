@@ -15,7 +15,7 @@ export default function Contador({ numberVisit }) {
 			// no se envia la solicitud si no a pasado un dia desde la ultima visita
 			if (fechaEnviada)
 				if (fechaEnviada - Date.now() <= 86400000)
-					return console.log("no a pasado un dia");
+					return console.log("no se puede enviar la solicitud");
 
 			const res = await axios.post("/api/visit", {});
 

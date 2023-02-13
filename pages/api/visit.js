@@ -63,14 +63,10 @@ const handleSumCounter = async (req, res) => {
 			console.log(userAgent);
 
 			if (oldVisit.clientIp === clientIp)
-				return await res
-					.status(403)
-					.json({ message: "ya fue visitado desde esta ip" });
-					
+				return await res.status(403).json({ message: "rechazado 1" });
+
 			if (oldVisit.userAgent === userAgent)
-				return await res
-					.status(403)
-					.json({ message: "ya fue visitado desde este navegador" });
+				return await res.status(403).json({ message: "rechazado 2" });
 		}
 
 		oldVisit.userAgent = userAgent;
