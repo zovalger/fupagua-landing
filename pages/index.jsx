@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
-
 // * logica interna
 import Counter from "../models/Counter";
 
@@ -30,9 +29,6 @@ import BookLanding from "../components/BookLanding";
 import ActivityLanding from "../components/ActivityLanding";
 
 import Contador from "../components/Contador";
-
-
-
 
 // Librerias
 
@@ -91,6 +87,7 @@ export default function Home({ numberVisit }) {
 }
 
 export async function getServerSideProps(context) {
+	await connectDb();
 	let counter = {};
 
 	try {
