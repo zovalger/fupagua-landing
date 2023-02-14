@@ -8,12 +8,11 @@ function BookLanding() {
     <h2 className={style.title}> 
     Biblioteca. 
     </h2>
-    <h2 className={style.subtitle}>{"Juana Milano de Díaz"}.</h2>
+    <h2 className={style.subtitle}>Juana Milano de Díaz.</h2>
     <p className={style.text}> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-    praesentium totam adipisci, odio ratione, vitae perferendis ullam
-    atque, tenetur neque ex minima fugiat dolore dicta tempora illo
-    debitis itaque assumenda!
+    En nuestra biblioteca encontraras una variedad de libros distintos, 
+    en este apartado podrás observar información como nuestro catálogo, 
+    libros recomendados o si es de su interés también tenemos un círculo de lectura.
     </p> 
     <a href="biblioteca" className={style.button_book}>
       Ver catalogo

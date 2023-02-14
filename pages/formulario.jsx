@@ -1,10 +1,11 @@
 import Image from "next/image";
 import style from "../styles/FormLanding/FormLanding.module.css";
 import Container from 'react-bootstrap/Container';
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
+import Layout from "../layouts/Layout";
 
 function FormularioLanding() {
-    return (  
+    return (   
+<Layout title="Formulario">
   <div className={style.bg_form}>
           <div className={style.icon_container}>
             <ul>
@@ -76,6 +77,7 @@ function FormularioLanding() {
             </form>
           </div>
         </div>
+        </Layout> 
     );
   }
   

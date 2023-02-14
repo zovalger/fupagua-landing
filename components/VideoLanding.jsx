@@ -9,10 +9,8 @@ function VideoLanding() {
     Aprendizaje.
     </h2>
     <p className={style.text}> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-    praesentium totam adipisci, odio ratione, vitae perferendis ullam
-    atque, tenetur neque ex minima fugiat dolore dicta tempora illo
-    debitis itaque assumenda!
+    En este apartado encontrarás diversos vídeos de interés tanto educativos, 
+    informativos entre otros, que ayudarán a construir y mejorar la inclusión.
     </p> 
     <a href="videos" className={style.button_video}>
       Ver videos

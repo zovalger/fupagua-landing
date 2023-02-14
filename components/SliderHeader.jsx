@@ -8,7 +8,7 @@ function SliderHeader() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={'/IMG/frontFupaguaImg.jpg'}
+          src={'/Header/1.jpg'}
           alt="FUPAGUA"
           width={800}
           height={800}
@@ -38,7 +38,63 @@ function SliderHeader() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={'/IMG/Info_1.jpg'}
+          src={'/Header/2.jpg'}
+          alt="FUPAGUA_2"
+          width={800}
+          height={800}
+          priority
+          quality={40}
+        />
+        <Carousel.Caption>
+        <div className={style.container_img}>
+            <Image
+            className={style.logo}
+            src={'/logo/logo_extended.svg'}
+            width={"400"}
+            height={"400"}
+            alt='FUPAGUA_logo'
+            quality={40}
+            /> 
+         </div>   
+
+         <div className={style.container_text}>
+            <h3 className={style.title}>Bienvenido.</h3>
+            <p>{"Fundación de personas autistas del estado Guárico"}</p>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image
+          className="d-block w-100"
+          src={'/Header/3.jpg'}
+          alt="FUPAGUA_2"
+          width={800}
+          height={800}
+          priority
+          quality={40}
+        />
+        <Carousel.Caption>
+        <div className={style.container_img}>
+            <Image
+            className={style.logo}
+            src={'/logo/logo_extended.svg'}
+            width={"400"}
+            height={"400"}
+            alt='FUPAGUA_logo'
+            quality={40}
+            /> 
+         </div>   
+
+         <div className={style.container_text}>
+            <h3 className={style.title}>Bienvenido.</h3>
+            <p>{"Fundación de personas autistas del estado Guárico"}</p>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image
+          className="d-block w-100"
+          src={'/Header/4.jpg'}
           alt="FUPAGUA_2"
           width={800}
           height={800}

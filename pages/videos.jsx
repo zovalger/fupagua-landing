@@ -1,12 +1,12 @@
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import NavLanding from "../layouts/NavLanding";
-import styleService from '../styles/InfoLanding/Services.module.css';
+import Layout from "../layouts/Layout";
 
 function GroupExample() {
   return (
-      <h2>Videos de aprendizaje</h2>
+
+    <Layout title="Videos">
+  <h2>Videos de aprendizaje</h2>
+   </Layout> 
+    
   );
 }
 

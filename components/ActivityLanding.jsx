@@ -9,10 +9,8 @@ function ActivityLanding() {
   Actividades. 
   </h2>
   <p className={style.text}> 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-  praesentium totam adipisci, odio ratione, vitae perferendis ullam
-  atque, tenetur neque ex minima fugiat dolore dicta tempora illo
-  debitis itaque assumenda!
+  Entérese de las últimas novedades de FUPAGUA, aquí podrá visualizar los últimos eventos realizados en 
+  la fundación y mantenerse informado de cualquier actividad próxima.  
   </p> 
   </div>
   <div className={style.container_img}>
