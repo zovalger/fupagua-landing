@@ -13,7 +13,7 @@
 .container h2 {
     display: flex;
     text-align: center;
-    font-size: 60px;
+    font-size: 2.5rem;
     justify-content: center; 
 }
 
@@ -50,6 +50,7 @@
 .container__text h2 {
     text-align: center;
     font-size: 1.28rem;
+    font-weight: 600;
 }
 
 
@@ -70,28 +71,48 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .container {
-        min-height: 60vh;
+@media screen and (max-width: 540px) {
+    .container__img button {
+ 
+        height: 130px;
+        width: 130px;
+   
     }
-    .container__slide {
-        padding: 10px;
+
+
+    .container__service {
+
+        min-width: 250px;
+      
     }
+    
 }
 
 @media screen and (max-width: 412px) {
-    .container h2 {
-        font-size: 1.5rem;
+    .container__text h2 {
+       
+        font-size: 1.30rem;
     }
-    .container__img img {
-        width: 360px;
-        height: 210px;
+
+    
+}
+
+@media screen and (max-width: 320px ) {
+    .container__img button {
+ 
+        height: 90px;
+        width: 90px;
+   
     }
-    .container__img iframe {
-        width: 360px;
-        height: 210px;
-    }
+    
     .container__text {
-        min-width: 30%;
+     
+        width: 150px;
     }
+
+    .container__text h2 {
+       
+        font-size: 0.90rem;
+    }
+    
 }

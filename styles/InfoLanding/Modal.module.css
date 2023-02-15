@@ -11,14 +11,14 @@
 .container__card{
     display: flex;
     min-height: 200px;
-    width: 320px;
+    width: 355px;
     border: 2px solid black;
     border-radius: 2em;
     padding: 8px;
     justify-items: center;
     flex-direction: column;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 
@@ -52,9 +52,9 @@
 }
 
 .container__img{
-    width: 110px;
-    height: 110px;
-    border: 2px solid #1f9affdd;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #eeeeeedd;
     border-radius: 5em;
     display: flex;
     margin: auto;
@@ -69,18 +69,26 @@
 }
 
 
+/*****  Texto *****/
+
 .container__headerText{
     display: flex;
     height: auto;
     padding: 10px;
-    width: 60%;
+    width: 65%;
     justify-content: center;
-    margin-top: 5px;
+    flex-direction: column;
 }
 
 .container__headerText p{ 
-    font-size: 0.90rem;
+    font-size: 0.86rem;
     text-align: justify;
+}
+
+.container__headerText h2{ 
+    font-size: 1.20rem;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 

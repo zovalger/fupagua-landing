@@ -25,7 +25,6 @@ import Modal from 'react-bootstrap/Modal';
 
 //Componentes//
 
-import Contador from './Contador';
 
 
 export default function InfoLanding(){
@@ -57,7 +56,7 @@ export default function InfoLanding(){
 
         <div className={style.container}>
 
-            <h2>Sobre nosotros.</h2>
+            <h2>Sobre nosotros</h2>
 
             <div className={style.container__info}>
 
@@ -77,7 +76,7 @@ export default function InfoLanding(){
                     <div className={style.container__text}>
 
                         <p>
-                            FUPAGUA, <strong>{"Fundación de personas autistas del estado Guárico"}</strong>, 
+                            FUPAGUA, <strong>"Fundación de personas autistas del estado Guárico"</strong>, 
                             es una fundación sin animo de lucro con personal dispuestos a trabajar por el bienestar, 
                             integración y una mejor calidad de vida de las personas con Autismo y otros transtornos del desarrollo.<br /><br />
                             Nuestro objetivo es atender a los niños y adolescentes con autismo de San Juan de los Morros y zonas
@@ -96,6 +95,7 @@ export default function InfoLanding(){
                 <div className={style.container__img}>
 
                     <Image 
+                    className={style.horario}
                     src={'/IMG/Info_2.png'}
                     width={600}
                     height={600}
@@ -122,8 +122,8 @@ export default function InfoLanding(){
 
                     <div className={style.container__img}>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1691.3044357309557!2d-67.372931!3d9.919639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aa93824029f4d%3A0x9a77658cc988e299!2sFEDE%20-%20GUARICO%20(Fundaci%C3%B3n%20de%20Edificaciones%20Educativa)!5e1!3m2!1ses!2sve!4v1675731124734!5m2!1ses!2sve" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>                    
-                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.6110416648507!2d-67.3729159!3d9.919428800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aa9a9cfbae69b%3A0x5fabae70ea22b923!2sFundaci%C3%B3n%20de%20personas%20autistas%20del%20Gu%C3%A1rico%20FUPAGUA!5e1!3m2!1ses-419!2sve!4v1676488856074!5m2!1ses-419!2sve" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>                    
+                        
                     </div>
 
                     <div className={style.container__text}>
@@ -140,7 +140,7 @@ export default function InfoLanding(){
             {/*Servicios*/}
 
             <div className={styleService.container}>
-                	<h2>Servicios.</h2>
+                	<h2>Servicios</h2>
                     <Carousel 
                     containerClass="carousel-container"
                     ssr={true}
@@ -153,7 +153,12 @@ export default function InfoLanding(){
                         <Services 
                         titulo="Fisioterapia"
                         tituloModal="Fisioterapia"
+                        nombre="Lucas Perez"
                         contenido="El primero es de los mejores"
+                        telefono="0416-000000"
+                        correo="prueba@gmail.com"
+                        entrada="8:00 AM"
+                        salida="4:00 PM"
                         />
                         <Services 
                         titulo="titulo prueba"
@@ -214,7 +219,7 @@ function Services(props){
                     <Modal.Title>{props.tituloModal}</Modal.Title> {/*titulo del servicio*/}
                 </Modal.Header>
 
-                <Modal.Body className="overflow-auto">
+                <Modal.Body>
 
                     <div className={styleModal.container}>
 
@@ -240,7 +245,12 @@ function Services(props){
 
                                 <div className={styleModal.container__headerText}>
 
-                                    <p>{props.contenido}</p>
+                                    <h2>{props.nombre}</h2>
+
+                                    <p><strong>FPV:</strong> {props.fpv}</p>
+            
+                                    <p><strong>Correo:</strong> {props.correo}</p>
+
 
                                 </div>
 

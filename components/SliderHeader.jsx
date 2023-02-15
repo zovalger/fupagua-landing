@@ -5,6 +5,7 @@ import style from "../styles/SliderHeader/SliderHeader.module.css";
 function SliderHeader() {
   return (
     <Carousel>
+
       <Carousel.Item>
         <Image
           className="d-block w-100"
@@ -15,6 +16,7 @@ function SliderHeader() {
           priority
           quality={40}
         />
+       
         <Carousel.Caption>  
         <div className={style.container_img}>
         <Image
@@ -30,21 +32,23 @@ function SliderHeader() {
 
           <div className={style.container_text}>
             <h3 className={style.title}>Bienvenido.</h3>
-          <p>{"Fundación de personas autistas del estado Guárico"}</p>
+          <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
           </div>
         </Carousel.Caption>
+
       </Carousel.Item>
 
       <Carousel.Item>
         <Image
           className="d-block w-100"
           src={'/Header/2.jpg'}
-          alt="FUPAGUA_2"
+          alt="FUPAGUA"
           width={800}
           height={800}
           priority
           quality={40}
         />
+
         <Carousel.Caption>
         <div className={style.container_img}>
             <Image
@@ -59,20 +63,23 @@ function SliderHeader() {
 
          <div className={style.container_text}>
             <h3 className={style.title}>Bienvenido.</h3>
-            <p>{"Fundación de personas autistas del estado Guárico"}</p>
+            <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
         </div>
         </Carousel.Caption>
+
       </Carousel.Item>
+
       <Carousel.Item>
         <Image
           className="d-block w-100"
           src={'/Header/3.jpg'}
-          alt="FUPAGUA_2"
+          alt="FUPAGUA"
           width={800}
           height={800}
           priority
           quality={40}
         />
+
         <Carousel.Caption>
         <div className={style.container_img}>
             <Image
@@ -87,20 +94,23 @@ function SliderHeader() {
 
          <div className={style.container_text}>
             <h3 className={style.title}>Bienvenido.</h3>
-            <p>{"Fundación de personas autistas del estado Guárico"}</p>
+            <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
         </div>
         </Carousel.Caption>
+
       </Carousel.Item>
+
       <Carousel.Item>
         <Image
           className="d-block w-100"
           src={'/Header/4.jpg'}
-          alt="FUPAGUA_2"
+          alt="FUPAGUA"
           width={800}
           height={800}
           priority
           quality={40}
         />
+
         <Carousel.Caption>
         <div className={style.container_img}>
             <Image
@@ -115,10 +125,12 @@ function SliderHeader() {
 
          <div className={style.container_text}>
             <h3 className={style.title}>Bienvenido.</h3>
-            <p>{"Fundación de personas autistas del estado Guárico"}</p>
+            <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
         </div>
         </Carousel.Caption>
+
       </Carousel.Item>
+      
     </Carousel>
   );
 }
