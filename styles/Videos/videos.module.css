@@ -1,0 +1,27 @@
+.video{
+    min-width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.video iframe{
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 1rem;
+}
+
+.descripcion{
+    display: flex;
+    min-width: 100%;
+
+    flex-direction: column;
+    padding: 20px;
+}
+
+.descripcion h2{
+    text-align: center;
+}
+
+.descripcion p{
+    text-align: justify;
+}

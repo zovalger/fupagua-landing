@@ -69,7 +69,9 @@ export default function Home({ numberVisit }) {
 				</section>
 
 				<section>
-					<VideoLanding />
+					<VideoLanding 
+					boton={true}
+					/>
 				</section>
 
 				<section>
