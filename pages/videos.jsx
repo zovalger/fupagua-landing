@@ -28,7 +28,6 @@ function GroupExample() {
         </Carousel.Item>
 
 
-
       </Carousel>
 
     </Layout>
