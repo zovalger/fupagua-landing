@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "../styles/BannerLanding/BannerLanding.module.css";
 
-function BookLanding() {
+function BookLanding(props, {boton}) {
   return (
     <div className={style.bg_book}>  
     <div className={style.container_text}> 
@@ -14,9 +14,9 @@ function BookLanding() {
     en este apartado podrás observar información como nuestro catálogo, 
     libros recomendados o si es de su interés también tenemos un círculo de lectura.
     </p> 
-    <a href="biblioteca" className={style.button_book}>
+    {props.boton ? <a href="biblioteca" className={style.button_book}>
       Ver catalogo
-    </a> 
+    </a>  : <div></div>}
     </div>
     <div className={style.container_img}>
     <Image

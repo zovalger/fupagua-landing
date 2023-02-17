@@ -8,9 +8,15 @@ function GroupExample() {
   return (
 
     <Layout title="Videos">
+      <div className={style.container}>
       <VideoLanding
         buton={false}
       />
+
+        <div className={style.container__header}>
+          <h2>Videos de aprendizaje</h2>
+        </div>
+
 
       <Carousel wrap={true}>
 
@@ -29,6 +35,8 @@ function GroupExample() {
 
 
       </Carousel>
+
+      </div>
 
     </Layout>
 

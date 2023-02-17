@@ -75,7 +75,9 @@ export default function Home({ numberVisit }) {
 				</section>
 
 				<section>
-					<BookLanding />
+					<BookLanding 
+					boton={true}
+					/>
 				</section>
 
 				<section>
