@@ -30,6 +30,8 @@ import ActivityLanding from "../components/ActivityLanding";
 
 import Contador from "../components/Contador";
 
+import FooterLanding from "../layouts/FooterLanding";
+
 // Librerias
 
 /////*** ******////
@@ -85,7 +87,9 @@ export default function Home({ numberVisit }) {
 				</section>
 			</main>
 
-			<footer className={""}></footer>
+			<footer className={""}>
+			<FooterLanding />
+			</footer>
 		</div>
 	);
 }

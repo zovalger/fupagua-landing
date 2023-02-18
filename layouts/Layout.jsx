@@ -1,4 +1,5 @@
 import NavLanding from "../layouts/NavLanding";
+import FooterLanding from "../layouts/FooterLanding";
 
 function Layout({children, title}) {
   return (
@@ -11,9 +12,9 @@ function Layout({children, title}) {
 <main> {children} </main>
 
       <footer>
-              footer
-          </footer>
-          </div>   
+        <FooterLanding />
+        </footer>
+        </div>   
   );
 }
 
