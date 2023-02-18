@@ -1,20 +1,25 @@
-/****************Formulario******************/
+/****************Formulario*******background: #313131;***********/
 
 .bg_form {
+    margin-top: 50px;
     position: relative;
     height: 100vh;
     width: 100%;
-    background: #313131;
+    background-color: #bbdfff;
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .container_form {
-    flex-basis: 40%;
-    align-items: center;
-    width: 100%;
+    margin-top: 70px;
+    width: 75%;
+    padding: 35px;
     box-sizing: border-box;
+    background: white;
+    border-radius: 100px;
+    flex-basis: 40%;
 }
 
 .form_text {
@@ -25,7 +30,7 @@
 }
 
 .form_header {
-    color: #FFFFFF;
+    color: #A0A0A0;
     text-align: center;
     margin: 0;
     margin-bottom: 2px;
@@ -51,11 +56,15 @@
     background: rgba(243, 238, 238, 0.51);
     border: 1px solid rgba(0, 0, 0, 0.51);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
+    border-radius: 75px;
     margin-bottom: 6px;
     color: rgb(41, 38, 38);
     font-size: 15px;
     box-sizing: border-box;
+}
+
+.form_textarea {
+    border-radius: 20px;
 }
 
 .form_textarea {
@@ -75,14 +84,19 @@
     border-radius: 10px;
 }
 
+.button_align {
+    display: flex;
+    justify-content: space-around;
+}
+
 .btn_submit {
     align-items: center;
     color: white;
-    width: 100%;
+    width: 70%;
     box-sizing: border-box;
-    background: #39B30E;
-    border: solid #39B30E;
-    border-radius: 6px;
+    background: hsl(201deg 55% 39%);
+    border: solid hsl(201deg 55% 39%);
+    border-radius: 75px;
     padding: 12px 30px;
     font-size: 20px;
     margin: 8px 0;
@@ -90,25 +104,34 @@
 
 .btn_submit:hover {
     cursor: pointer;
-    background: #5ed832;
-    border: solid #5ed832;
+    background: rgb(59, 153, 204);
+    border: solid rgb(59, 153, 204);
 }
 
 
 /* Redes sociales */
 
-.icon_container {
-    flex-basis: 40%;
-    color: #fff;
-    width: 30%;
+.text_icon {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    width: auto;
     align-items: center;
-    padding-right: 20px;
+}
+
+.icon_container {
+    width: 70%;
+    display: inline-flex;
+    align-items: center;
+    gap: 5%;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .form_list_icon {
-    margin-bottom: 3rem;
-    margin-left: 8rem;
     display: flex;
+    align-items: center;
 }
 
 .icon {
