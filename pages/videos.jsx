@@ -22,7 +22,20 @@ function GroupExample() {
 
         <Carousel.Item> {/* recorrido de items*/}
          
+          <h2>Titulo del video.com</h2>
+          <iframe className={style.video} width={160} height={115} src="https://www.youtube.com/embed/17ntdUP5-Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
+         
+
+          <Carousel.Caption>
+           
+          </Carousel.Caption>
+
+        </Carousel.Item>
+
+        <Carousel.Item> {/* recorrido de items*/}
+         
+          <h2>Titulo del video_2.com</h2>
           <iframe className={style.video} width={160} height={115} src="https://www.youtube.com/embed/17ntdUP5-Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
          
