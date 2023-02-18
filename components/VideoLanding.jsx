@@ -3,7 +3,6 @@ import style from "../styles/BannerLanding/BannerLanding.module.css";
 
 function VideoLanding(props, { boton }) {
 
-  const Boton = props.boton
   return (
     <div className={style.bg_video}>
       <div className={style.container_text}>
