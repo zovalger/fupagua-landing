@@ -27,31 +27,29 @@
 }
 
 
-
-
 /******** Contenedor Texto********/
 
 
-.container__text{
- min-width: 100%;
- height: auto;
- padding: 8px;
-}
+  .container__text{
+  min-width: 100%;
+  height: auto;
+  padding: 8px;
+  }
 
-.container__text h2{
-    font-size: 2rem;
-    text-align: justify;
-    margin-bottom: 5px;
-   }
+  .container__text h2{
+      font-size: 2rem;
+      text-align: justify;
+      margin-bottom: 5px;
+    }
 
-   .container__text p{
-    font-size: 1.10rem;
-    text-align: justify;
-   }
+    .container__text p{
+      font-size: 1.10rem;
+      text-align: justify;
+    }
 
 
 
-   /*****Contenedor de libros*****/
+   /*****Contenedor de Imagen*****/
    .container__img{
     display: flex;
     min-width: 100%;
@@ -149,4 +147,35 @@
     100% {
       transform: rotateY(-15deg);
     }
+  }
+
+
+  @media screen and (max-width:412px) {
+    .container__book{
+   
+      width: 300px;
+  }
+
+
+  
+/******** Contenedor Texto********/
+
+.container__text h2{
+  font-size: 1.80rem;
+
+}
+
+.container__text p{
+  font-size: 1.05rem;
+
+}
+
+
+
+   /*****Contenedor de Imagen*****/
+.container__img img{
+   height: 260px;
+   width: 200px;
+}
+  
   }

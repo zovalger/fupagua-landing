@@ -13,6 +13,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import style from '../styles/Biblioteca/Biblioteca.module.css'
 import styleL from '../styles/Biblioteca/LibrosR.module.css'
+import styleC from '../styles/Biblioteca/LibrosC.module.css'
 
 function GroupExample() {
 
@@ -23,12 +24,12 @@ function GroupExample() {
       items: 5
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      breakpoint: { max: 3000, min: 720 },
+      items: 2
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
+      breakpoint: { max: 720, min: 464 },
+      items: 1
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -73,12 +74,53 @@ function GroupExample() {
           <div className={style.container__catalogo}>
             
               <div className={style.Header__catalogo}>
-  
+                  <div className={style.Header__text}>
+                        <h2>Biblioteca {`"Juana Milano de Díaz"`}</h2>
+                        <p>Bienvenidos al catalogo de la biblioteca {`"Juana Milano de Díaz"`}, aqui encontrara información referente de los libros
+                        que tenemos en poseción en la Fundación.
+                        </p>
+                  </div>
+                  <div className={style.Header__search}>  {/*Temporal*/}
+                    <div className={style.container__search}>
+
+                        <input 
+                        type={"text"}
+                        className={style.search}
+                        /> 
+
+
+                        <button className={style.button__filter}>
+                          <Image 
+                          src={'/Vectores/filter.png'}
+                          width={400}
+                          height={400}
+                          alt="Vector de filtro"
+                          loading="lazy"
+                          />
+                        </button>
+
+
+
+                    </div>
+
+                      <button className={style.button}>
+                        <Image 
+                        src={'/Vectores/search.png'}
+                        width={400}
+                        height={400}
+                        alt="Vector del Buscador"
+                        loading="lazy"
+                        />
+                      </button>
+
+                  </div>
               </div>
 
               <div className={style.content_catalogo}>
                 
-                </div>
+
+
+              </div>
 
 
           </div>
@@ -120,4 +162,22 @@ function LibrosRecomendados(){
     </>
   )
 
+}
+
+
+function Libros(){
+  return(
+
+    <>
+
+    <div className={styleC.container}>
+
+      {/*Ficha basica de los  libros*/}
+
+    </div>
+
+    </>
+
+
+  )
 }
