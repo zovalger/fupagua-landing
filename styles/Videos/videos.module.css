@@ -24,30 +24,26 @@
 
 
 /*** Contenedor de videos****/
-.video{
-    min-width: 100%;
-    height: 80vh;
-    padding: 10px;
+.container__video {
+	background: white;
+	border-radius: 0.7rem;
+	overflow: hidden;
+	/* // padding: 1rem;
+	// padding-top: 2rem; */
+	position: relative;
+  margin-top: .5rem;
 }
 
-.video iframe{
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 1rem;
+.video {
+	/* // background: gray; */
+	display: inline-flex;
+	height: 100%;
+	width: 100%;
+
+	align-items: center;
+	justify-content: center;
 }
 
-.descripcion{
-    display: flex;
-    min-width: 100%;
-    flex-direction: column;
-    padding: 20px;
+.video iframe {
+    width: 100%;
 }
-
-.descripcion h2{
-    text-align: center;
-}
-
-.descripcion p{
-    text-align: justify;
-}
-

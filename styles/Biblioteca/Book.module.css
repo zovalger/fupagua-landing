@@ -1,0 +1,54 @@
+.container {
+	display: flex;
+
+	overflow: hidden;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+
+	background-color: white;
+	/* // background-color: rgb(163, 255, 255); */
+	border-radius: 1rem;
+	font-size: 14px;
+}
+
+.imgContainer {
+	/* // background-color: aqua; */
+
+	width: 5rem;
+	height: 7rem;
+	flex-shrink: 0;
+	overflow: hidden;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 0.2rem;
+}
+
+.imgContainer img {
+	object-fit: cover;
+	height: auto;
+	width: 100%;
+}
+
+
+.text {
+	margin-left: .3rem;
+	flex-grow: 1;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.autor {
+	/* // font-weight: 200; */
+}
+
+.description {
+	/* // margin-top: 0.2rem; */
+	font-size: 14px;
+}

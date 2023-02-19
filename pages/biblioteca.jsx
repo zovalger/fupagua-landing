@@ -13,7 +13,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import style from '../styles/Biblioteca/Biblioteca.module.css'
 import styleL from '../styles/Biblioteca/LibrosR.module.css'
-import styleC from '../styles/Biblioteca/LibrosC.module.css'
+import styles from "../styles/Biblioteca/Book.module.css";
 
 function GroupExample() {
 
@@ -165,19 +165,37 @@ function LibrosRecomendados(){
 }
 
 
-function Libros(){
-  return(
+function Libros({ dataBook }){
+    const {
+      title,
+      subtitle,
+      autor,
+      description,
+      cota,
+      img_cloudinary_url,
+      img_local_url,
+    } = dataBook;
 
-    <>
-
-    <div className={styleC.container}>
-
-      {/*Ficha basica de los  libros*/}
-
-    </div>
-
-    </>
-
-
-  )
+    return (
+        <div className={styles.container}>
+          <div className={styles.imgContainer}>
+            <img
+              src={img_cloudinary_url ? img_cloudinary_url:img_local_url}
+              alt="foto de portada"
+            />
+          </div>
+          <div className={styles.text}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.subtitle}> {subtitle}</div>
+            <div className={styles.autor}>
+              <b>Autor: </b> {autor}
+            </div>
+            <div className={styles.autor}>
+              <b>cota: </b>
+              {cota}
+            </div>
+            <div className={styles.description}>{description}</div>
+          </div>
+        </div>
+    );
 }

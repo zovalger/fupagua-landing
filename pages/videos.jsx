@@ -18,42 +18,46 @@ function GroupExample() {
         </div>
 
 
-      <Carousel wrap={true}>
-
-        <Carousel.Item> {/* recorrido de items*/}
-         
-          <h2>Titulo del video.com</h2>
-          <iframe className={style.video} width={160} height={115} src="https://www.youtube.com/embed/17ntdUP5-Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-
-         
-
-          <Carousel.Caption>
-           
-          </Carousel.Caption>
-
-        </Carousel.Item>
-
-        <Carousel.Item> {/* recorrido de items*/}
-         
-          <h2>Titulo del video_2.com</h2>
-          <iframe className={style.video} width={160} height={115} src="https://www.youtube.com/embed/17ntdUP5-Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-
-         
-
-          <Carousel.Caption>
-           
-          </Carousel.Caption>
-
-        </Carousel.Item>
-
-
-      </Carousel>
-
       </div>
 
     </Layout>
 
   );
 }
+
+
+function Video(){
+  return(
+    <div className={style.container__video}>
+    <div className="row">
+      <div className="col-lg-4 col-sm-12">
+        <div className={style.video}>
+          <iframe
+            src={
+              url
+                ? `https://www.youtube.com/embed/${formateUrl()}`
+                : "https://www.youtube.com/embed/dWFBlfZSkak"
+            }
+            title="YouTube video player"
+          ></iframe>
+        </div>
+      </div>
+
+      <div className="col-lg-8 col-sm-12">
+        <div className="p-2">
+          <div>{title}</div>
+          <div className="small">Link: {url}</div>
+          <div className="small">Categoria: {categoryvideo.title}</div>
+          <div className="small">Descripcion: {description}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  )
+}
+
+
+
+
 
 export default GroupExample;
