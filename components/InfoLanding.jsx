@@ -224,7 +224,8 @@ function Services(props){
                     <div className={styleModal.container}>
 
                         <div className={styleModal.container__serviceInfo}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quaerat sint. Vero tenetur, reiciendis nam rerum, non temporibus beatae cumque distinctio id soluta laborum maiores, voluptatibus ipsum. Odit, iste quia?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quaerat sint. Vero tenetur, 
+                                reiciendis nam rerum, non temporibus beatae cumque distinctio id soluta laborum maiores, voluptatibus ipsum. Odit, iste quia?</p> {/*Heredar la descripción acerca del servicio*/}
                         </div>
 
                         <div className = {styleModal.container__card}>
@@ -234,7 +235,7 @@ function Services(props){
                                 <div className={styleModal.container__img}>
 
                                     <Image
-                                    src={'/IMG/info_1.jpg'}
+                                    src={'/IMG/info_1.jpg'} 
                                     width={400}
                                     height={400}
                                     alt='Foto'
