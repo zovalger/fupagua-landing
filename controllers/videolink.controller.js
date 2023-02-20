@@ -27,6 +27,8 @@ export async function handleUpdateDataVideolink(req, res) {
 }
 
 export async function getAllVideoLinks() {
+	await connectDb();
+
 	try {
 		const grupo = await VideolinkModel.aggregate([
 			{
