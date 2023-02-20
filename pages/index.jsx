@@ -88,7 +88,7 @@ export default function Home({ numberVisit }) {
 			</main>
 
 			<footer className={""}>
-			
+			<FooterLanding />
 			</footer>
 		</div>
 	);
