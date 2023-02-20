@@ -3,8 +3,9 @@ import VideoLanding from "../components/VideoLanding";
 import Carousel from 'react-bootstrap/Carousel';
 
 import style from '../styles/Videos/videos.module.css'
+import { getAllVideoLinks } from "../controllers/videolink.controller";
 
-function GroupExample() {
+function GroupExample( {videolinkGroups}) {
   return (
 
     <Layout title="Videos">
@@ -61,3 +62,27 @@ function Video(){
 
 
 export default GroupExample;
+
+
+
+
+
+
+export async function getServerSideProps(context) {
+   let videolinkGroups = []
+
+	try {
+		
+    videolinkGroups = await  getAllVideoLinks()
+	} catch (error) {
+		console.log(error);
+	}
+
+
+  console.log( videolinkGroups);
+	return {
+		props: {
+			videolinkGroups:videolinkGroups || [],
+		},
+	};
+}
