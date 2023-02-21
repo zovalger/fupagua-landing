@@ -1,10 +1,7 @@
 /****************Formulario*******background: #313131;***********/
 
 .bg_form {
-    margin-top: 50px;
-    position: relative;
-    height: 100vh;
-    width: 100%;
+    min-height: 100%;
     background-color: #bbdfff;
     background-size: cover;
     display: flex;
@@ -13,13 +10,16 @@
 }
 
 .container_form {
-    margin-top: 70px;
-    width: 75%;
+    display: flex;
+    position: relative;
+    width: 100%;
     padding: 35px;
     box-sizing: border-box;
     background: white;
     border-radius: 100px;
     flex-basis: 40%;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .form_text {
@@ -139,4 +139,45 @@
     height: 45px;
     display: inline-flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 650px) {}
+
+@media screen and (max-width: 500px) {
+    .container_form {
+        width: 80%;
+    }
+    .form_input,
+    .form_textarea {
+        width: 80%;
+        font-size: 12px;
+    }
+    .form_textarea {
+        min-height: 150px;
+        max-height: 200px;
+        min-width: 60%;
+        max-width: 80%;
+        overflow-y: visible;
+    }
+}
+
+@media screen and (max-width: 412px) {}
+
+@media screen and (max-width: 350px) {
+    .container_text {
+        justify-content: flex-start;
+        flex-basis: 40%;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 15px;
+        font-weight: 500px;
+    }
 }
