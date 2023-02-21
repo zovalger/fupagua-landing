@@ -18,6 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
 }
 
 .footer .group_1 .box figure img{
@@ -30,9 +33,11 @@
     font-size: 20px;
 }
 
-.footer .group_1 .box p{
+.footer .group_1 .box .link{
     color: #efefef;
     margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
 }
 
 .footer .group_1 .red a{
@@ -50,4 +55,31 @@
 
 .footer .group_2{
     background-color: #494848;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .footer .group_1 {
+    width: 90%;
+    display: block;
+    grid-gap: 30px;
+    padding: 35px 0px;
+}
+
+.footer .group_1 .box figure img{
+    width: 150px;
+}
+
+.footer .group_1 .box h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer .group_1 .red a{
+    width: 40px;
+    height: 40px;
+}
+
 }

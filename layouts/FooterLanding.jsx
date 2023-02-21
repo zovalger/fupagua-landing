@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import style from "../styles/FooterLanding/FooterLanding.module.css";
 
 export function FooterLanding() {
@@ -19,8 +20,8 @@ export function FooterLanding() {
         </div>
         <div className={style.box}>
             <h2>SOBRE NOSOTROS</h2>
-            <p>Nosotros</p>
-            <p>Contacto</p>
+            <Link  href="/" className={style.link}>Nosotros</Link>
+            <Link  href="formulario" className={style.link}>Contactanos</Link>
         </div>
         <div className={style.box}>
             <h2>SIGUENOS</h2>
@@ -31,6 +32,7 @@ export function FooterLanding() {
                     height={20}
                     width={20}
                     alt="facebook"
+                    className="icon"
                     />
                 </a>
                 <a href="#" className="twitter">
@@ -39,6 +41,7 @@ export function FooterLanding() {
                     height={20}
                     width={20}
                     alt="twitter"
+                    className="icon"
                     />
                 </a>
                 <a href="#" className="instagram">
@@ -47,6 +50,7 @@ export function FooterLanding() {
                     height={20}
                     width={20}
                     alt="instagram"
+                    className="icon"
                     /> 
                 </a>
                 <a href="#" className="whatsapp">
@@ -55,6 +59,7 @@ export function FooterLanding() {
                     height={20}
                     width={20}
                     alt="whatsapp"
+                    className="icon"
                     />
                 </a>
                 <a href="#" className="telegram">
@@ -63,6 +68,7 @@ export function FooterLanding() {
                     height={20}
                     width={20}
                     alt="telegram"
+                    className="icon"
                     />
                 </a>
             </div>
