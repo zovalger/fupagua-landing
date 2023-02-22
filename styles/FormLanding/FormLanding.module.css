@@ -64,12 +64,12 @@
 }
 
 .form_textarea {
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 .form_textarea {
     min-height: 150px;
-    max-height: 200px;
+    max-height: 250px;
     min-width: 100%;
     max-width: 100%;
     overflow-y: visible;
@@ -143,41 +143,89 @@
 
 @media screen and (max-width: 1024px) {}
 
-@media screen and (max-width: 650px) {}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+    .form {
+        width: 100%;
+    }
     .container_form {
-        width: 80%;
+        width: 90%;
     }
-    .form_input,
-    .form_textarea {
-        width: 80%;
-        font-size: 12px;
+    .form_label {
+        margin-right: 45px;
     }
-    .form_textarea {
-        min-height: 150px;
-        max-height: 200px;
-        min-width: 60%;
-        max-width: 80%;
-        overflow-y: visible;
+    .btn_submit {
+        width: 50%;
+        padding: 12px 30px;
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    .button_align {
+        display: flex;
+        justify-content: center;
+    }
+    .icon {
+        width: 38px;
+        height: 38px;
+    }
+    .subtitle_icon {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 24px;
     }
 }
 
-@media screen and (max-width: 412px) {}
+@media screen and (max-width: 545px) {
+    .icon {
+        width: 34px;
+        height: 34px;
+    }
+    .subtitle_icon {
+        font-size: 18px;
+    }
+}
 
-@media screen and (max-width: 350px) {
-    .container_text {
-        justify-content: flex-start;
-        flex-basis: 40%;
+@media screen and (max-width: 505px) {
+    .icon {
+        width: 34px;
+        height: 34px;
     }
-    .title {
-        font-size: 25px;
+    .subtitle_icon {
+        font-size: 17px;
     }
-    .subtitle {
-        font-size: 20px;
+}
+
+@media screen and (max-width: 485px) {
+    .icon {
+        width: 30px;
+        height: 30px;
     }
-    .text {
+    .subtitle_icon {
+        font-size: 16px;
+    }
+    .form_label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+    .subtitle_icon {
         font-size: 15px;
-        font-weight: 500px;
+    }
+    .form_text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .icon_container {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 50px;
     }
 }
