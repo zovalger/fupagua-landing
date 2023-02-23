@@ -76,8 +76,8 @@ function GroupExample() {
               <div className={style.Header__catalogo}>
                   <div className={style.Header__text}>
                         <h2>Biblioteca {`"Juana Milano de Díaz"`}</h2>
-                        <p>Bienvenidos al catalogo de la biblioteca {`"Juana Milano de Díaz"`}, aqui encontrara información referente de los libros
-                        que tenemos en poseción en la Fundación.
+                        <p>Bienvenidos al catalogo de la biblioteca {`"Juana Milano de Díaz"`}, aquí encontrará información referente de los libros
+                        que tenemos en posesión en la Fundación.
                         </p>
                   </div>
                   <div className={style.Header__search}>  {/*Temporal*/}
@@ -131,8 +131,6 @@ function GroupExample() {
   </Layout>
   );
 }
-
-export default GroupExample;
 
 function LibrosRecomendados(){
   return(
@@ -199,3 +197,5 @@ function Libros({ dataBook }){
         </div>
     );
 }
+
+export default GroupExample;

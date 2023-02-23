@@ -136,6 +136,75 @@ export default function InfoLanding(){
 
             </div>      
 
+            {/* Más sobre FUPAGUA */}
+
+            <div className={style.container__infoTwo}>
+
+
+                <div className={style.info}>         
+                        <Image
+                        src={'/logo/Logo.png'}
+                        width={400}
+                        height={500}
+                        alt="Logo de FUPAGUA"
+                        loading='lazy'
+                        />
+
+                    <h2>Misión</h2>
+                    <p>Atender a infantes, niños, niñas y adolescentes que presenten condiciones del espectro autista
+                        y otras discapacidades, con el propósito de promover que conjuntamente con sus familas puedan participar
+                        como miembros activos de sus comunidades en función de sus habilidades y de su entorno, a través de la 
+                        difusión del síndrome y dis capacidad en general, de la educación investigación científica relacionada con 
+                        el espectro autista, y del trabajo conjunto de diferentes actores sociales en pro del fortalecimiento de sus
+                        capacidades y la búsqueda de oportunidades para el goce y disfrute de sus derechos.
+                    </p>
+                </div>
+
+                <div className={style.info}>
+                <Image
+                    src={'/logo/Logo.png'}
+                    width={200}
+                    height={200}
+                    alt="Logo de FUPAGUA"
+                    loading='lazy'
+                    />
+                     <h2>Visión</h2>
+                    <p>Ser una fundación con espiritu social consolidada, que involucre a diferentes actores que reconozcan,
+                        respeten, y defiendan los derechos de niños, niñas, adolescentes y adultos que presenten condiciones dentro
+                        del espectro autista y otras discapacidades, en la búsqueda de su efectiva y eficaz integración a la 
+                        comunidad donde se desenvuelven.
+                    </p>
+                    
+                </div>
+                
+                <div className={style.info}>
+                <Image
+                    src={'/logo/Logo.png'}
+                    width={200}
+                    height={200}
+                    alt="Logo de FUPAGUA"
+                    loading='lazy'
+                    />
+                     <h2>Valores</h2>
+                     <ul>
+                        <li>Compromiso.</li>
+                        <li>Cooperación.</li>
+                        <li>Justicia.</li>
+                        <li>Equidad.</li>
+                        <li>Fraternidad.</li>
+                        <li>Solidaridad social.</li>
+                        <li>Participación.</li>
+                        <li>Trascendencia.</li>
+                        <li>Integración.</li>
+                        <li>Empatía.</li>
+                        <li>Responsabilidad.</li>
+                        <li>Tolerancia.</li>
+                     </ul>
+                 </div>
+
+
+
+            </div>
 
             {/*Servicios*/}
 
