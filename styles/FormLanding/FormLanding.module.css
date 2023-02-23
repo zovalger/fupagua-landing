@@ -15,8 +15,8 @@
     width: 100%;
     padding: 35px;
     box-sizing: border-box;
-    background: white;
-    border-radius: 100px;
+    background: rgb(250, 246, 246);
+    border-radius: 20px;
     flex-basis: 40%;
     margin-top: 70px;
     margin-bottom: 50px;
@@ -24,13 +24,13 @@
 
 .form_text {
     font-size: 17px;
-    color: #A0A0A0;
+    color: #18171c;
     text-align: center;
     margin-bottom: 7px;
 }
 
 .form_header {
-    color: #A0A0A0;
+    color: #18171c;
     text-align: center;
     margin: 0;
     margin-bottom: 2px;
@@ -43,25 +43,23 @@
     color: #A0A0A0;
 }
 
-.form_text {
-    font-size: 15px;
-    color: #A0A0A0;
-    text-align: center;
-}
-
 .form_input,
 .form_textarea {
     padding: 10px;
     width: 100%;
-    background: rgba(243, 238, 238, 0.51);
+    background: rgba(248, 245, 245, 0.51);
     border: 1px solid rgba(0, 0, 0, 0.51);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 75px;
+    box-shadow: 4px 4px 10px rgba(87, 88, 88, 0.25);
+    border-radius: 12px;
     margin-bottom: 6px;
-    color: rgb(41, 38, 38);
-    font-size: 15px;
+    color: rgba(243, 238, 238, 0.51);
+    font-size: 16px;
     box-sizing: border-box;
 }
+
+.form_input:focus+input {
+    border: 1px solid rgba(40, 161, 231, 0.377);
+  }
 
 .form_textarea {
     border-radius: 0px;
@@ -92,10 +90,10 @@
 .btn_submit {
     align-items: center;
     color: white;
-    width: 70%;
+    width: 50%;
     box-sizing: border-box;
-    background: hsl(201deg 55% 39%);
-    border: solid hsl(201deg 55% 39%);
+    background: #00aae4;
+    border: solid #00aae4 ;
     border-radius: 75px;
     padding: 12px 30px;
     font-size: 20px;
@@ -104,8 +102,8 @@
 
 .btn_submit:hover {
     cursor: pointer;
-    background: rgb(59, 153, 204);
-    border: solid rgb(59, 153, 204);
+    background: #37bfec;
+    border: solid #37bfec;
 }
 
 

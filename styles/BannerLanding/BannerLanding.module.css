@@ -47,6 +47,7 @@
         font-size: 20px;
         font-weight: 500px;
         margin: 20px 0;
+        text-align: justify;
     }
     
     .container_img {
@@ -96,6 +97,7 @@
             flex-basis: 60%;
         }
         .title {
+            margin-top: 10px;
             font-size: 70px;
         }
         .subtitle {
@@ -103,6 +105,7 @@
         }
         .text {
             font-size: 20px;
+            padding: 20px;
         }
         .container_img {
             flex-basis: 60%;
@@ -141,6 +144,7 @@
         }
         .text {
             font-size: 20px;
+           
         }
         .container_img {
             flex-basis: 60%;

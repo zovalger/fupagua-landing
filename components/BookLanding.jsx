@@ -10,12 +10,13 @@ function BookLanding(props, {boton}) {
     </h2>
     <h2 className={style.subtitle}>{`"Juana Milano de Díaz"`}</h2>
     <p className={style.text}> 
-    En nuestra biblioteca encontraras una variedad de libros distintos, 
-    en este apartado podrás observar información como nuestro catálogo, 
-    libros recomendados o si es de su interés también tenemos un círculo de lectura.
+    En FUPAGUA contamos con una gran variedad de contenido 
+    informativo en donde se muestran diversas imprentas y audiolibros 
+    de interés, en esta sección se pueden visualizar recomendaciones 
+    de la biblioteca con todo su catálogo disponible.
     </p> 
     {props.boton ? <a href="biblioteca" className={style.button_book}>
-      Ver catalogo
+      Ver catálogo
     </a>  : <div></div>}
     </div>
     <div className={style.container_img}>

@@ -75,9 +75,8 @@ function GroupExample() {
             
               <div className={style.Header__catalogo}>
                   <div className={style.Header__text}>
-                        <h2>Biblioteca {`"Juana Milano de Díaz"`}</h2>
-                        <p>Bienvenidos al catalogo de la biblioteca {`"Juana Milano de Díaz"`}, aquí encontrará información referente de los libros
-                        que tenemos en posesión en la Fundación.
+                        <h2>Bienvenidos a la Biblioteca {`"Juana Milano de Díaz"`}</h2>
+                        <p>Aquí encontrará información referente de los libros que expone nuestra biblioteca pública.
                         </p>
                   </div>
                   <div className={style.Header__search}>  {/*Temporal*/}
