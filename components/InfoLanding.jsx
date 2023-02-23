@@ -27,7 +27,7 @@ import Modal from 'react-bootstrap/Modal';
 
 
 
-export default function InfoLanding(){
+export default function InfoLanding({fupaguaServices}){
 
 
 

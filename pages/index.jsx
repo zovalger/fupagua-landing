@@ -31,12 +31,13 @@ import ActivityLanding from "../components/ActivityLanding";
 import Contador from "../components/Contador";
 
 import FooterLanding from "../layouts/FooterLanding";
+import { getAllFupaguaServices } from "../controllers/services.controller";
 
 // Librerias
 
 /////*** ******////
 
-export default function Home({ numberVisit }) {
+export default function Home({ numberVisit,fupaguaServices }) {
 	return (
 		<div className={""}>
 			<Head>
@@ -67,19 +68,15 @@ export default function Home({ numberVisit }) {
 
 				<Contador numberVisit={numberVisit} />
 				<section>
-					<InfoLanding />
+					<InfoLanding  fupaguaServices={fupaguaServices}/>
 				</section>
 
 				<section>
-					<VideoLanding 
-					boton={true}
-					/>
+					<VideoLanding boton={true} />
 				</section>
 
 				<section>
-					<BookLanding 
-					boton={true}
-					/>
+					<BookLanding boton={true} />
 				</section>
 
 				<section>
@@ -88,7 +85,7 @@ export default function Home({ numberVisit }) {
 			</main>
 
 			<footer className={""}>
-			<FooterLanding />
+				<FooterLanding />
 			</footer>
 		</div>
 	);
@@ -97,9 +94,14 @@ export default function Home({ numberVisit }) {
 export async function getServerSideProps(context) {
 	await connectDb();
 	let counter = {};
+	let fupaguaServices = [];
 
 	try {
 		counter = await Counter.findOne({ title: "visit-count" });
+
+		fupaguaServices = await getAllFupaguaServices();
+
+		console.log(fupaguaServices);
 
 		await counter.save();
 	} catch (error) {
@@ -109,6 +111,7 @@ export async function getServerSideProps(context) {
 	return {
 		props: {
 			numberVisit: counter.num || 0,
+			fupaguaServices: fupaguaServices || [],
 		},
 	};
 }
