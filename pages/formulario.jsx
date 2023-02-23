@@ -3,9 +3,20 @@ import style from "../styles/FormLanding/FormLanding.module.css";
 import Container from 'react-bootstrap/Container';
 import Layout from "../layouts/Layout";
 import NavLanding from "../layouts/NavLanding";
+import emailjs from '@emailjs/browser';
 
 
 function FormularioLanding() {
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    emailjs.sendForm('service_7fqgcuo', 'template_wxeh9ne', event.target, 'elkytiYvgDrTl-E_7')
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+
+  }
+
     return (   
 <Layout title="Formulario">
   
@@ -15,7 +26,7 @@ function FormularioLanding() {
   <div className={style.bg_form}>
       
           <div className={style.container_form}>
-            <form action="start" className={style.form}>
+            <form action="start" className={style.form} onSubmit={sendEmail}>
 
               <div className={style.form_header}>
                 <h2 className={style.title}> Contactanos </h2>
@@ -56,16 +67,16 @@ function FormularioLanding() {
               </div>
 
               <label for="" className={style.form_label}>Nombre</label>
-              <input type="text" id="nombre" placeholder="Nombre" className={style.form_input}></input>
+              <input type="text" id="nombre" placeholder="Nombre" name="user_nombre" className={style.form_input}></input>
 
               <label for="" className={style.form_label}>Numero de Teléfono</label>
-              <input type="text" id="numero" placeholder="Teléfono" className={style.form_input}></input>
+              <input type="text" id="numero" placeholder="Teléfono" name="user_telefono" className={style.form_input}></input>
 
               <label for="" className={style.form_label}>Correo Electronico</label>
-              <input type="text" id="email" placeholder="E-Mail" className={style.form_input}></input>
+              <input type="text" id="email" placeholder="E-Mail" name="user_email" className={style.form_input}></input>
 
               <label for="" className={style.form_label}>Mensaje de texto</label>
-              <textarea id="mensaje" placeholder="          Escriba aqui su mensaje" className={style.form_textarea}> </textarea>
+              <textarea id="mensaje" placeholder="          Escriba aqui su mensaje"  name="user_mensaje" className={style.form_textarea}> </textarea>
 
               <div className ={style.button_align}>
               <input type="submit" value="Enviar" className={style.btn_submit}></input>
