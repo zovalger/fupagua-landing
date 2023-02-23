@@ -20,8 +20,8 @@ export function FooterLanding() {
         </div>
         <div className={style.box}>
             <h2>SOBRE NOSOTROS</h2>
-            <Link  href="/" className={style.link}>Nosotros</Link>
-            <Link  href="formulario" className={style.link}>Contactanos</Link>
+            <Link  href="/" className={style.link}>Nosotros.</Link>
+            <Link  href="formulario" className={style.link}>Contactanos.</Link>
         </div>
         <div className={style.box}>
             <h2>SIGUENOS</h2>

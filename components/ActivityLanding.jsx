@@ -9,8 +9,7 @@ function ActivityLanding() {
   Actividades. 
   </h2>
   <p className={style.text}> 
-  Entérese de las últimas novedades de FUPAGUA, aquí podrá visualizar los últimos eventos realizados en 
-  la fundación y mantenerse informado de cualquier actividad próxima.  
+  En FUPAGUA se están realizando constantes cambios para la mejora y facilitación de nuestros servicios. Aquí podrá consultar las actualizaciones de las actividades realizadas así como anuncios de próximos eventos.
   </p> 
   </div>
   <div className={style.container_img}>

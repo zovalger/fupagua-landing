@@ -10,8 +10,10 @@ function VideoLanding(props, { boton }) {
           Aprendizaje
         </h2>
         <p className={style.text}>
-          En este apartado encontrarás diversos vídeos de interés tanto educativos,
-          informativos entre otros, que ayudarán a construir y mejorar la inclusión.
+        En FUPAGUA se exponen diversos medios audiovisuales educativos que permitirán adquirir 
+        herramientas y acelerar el aprendizaje del público, para ayudar a mejorar las 
+        capacidades pedagógicas de los egresados y darles un apoyo a su conocimiento e
+        integración social e intelectual.
         </p>
         {props.boton ?<a href="videos" className={style.button_video}>
           Ver videos
