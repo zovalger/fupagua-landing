@@ -18,7 +18,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(/Banners/Catalogo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Banners/Catalogo.jpg);
     background-size: cover;
     display: flex;
     align-items: center;

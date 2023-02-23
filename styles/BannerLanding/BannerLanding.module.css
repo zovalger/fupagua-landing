@@ -90,7 +90,7 @@
         .bg_book,
         .bg_video,
         .bg_form {
-            height: 70vh;
+            height: 80vh;
             background-size: auto;
         }
         .container_text {
@@ -119,7 +119,7 @@
         }
     }
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 810px) {
         .bg_activity,
         .bg_book,
         .bg_video {
