@@ -15,10 +15,10 @@ function FormularioLanding() {
   <div className={style.bg_form}>
       
           <div className={style.container_form}>
-            <form action="start">
+            <form action="start" className={style.form}>
 
               <div className={style.form_header}>
-                <h2 className={style.subtitle}> Contactanos </h2>
+                <h2 className={style.title}> Contactanos </h2>
                 <div className={style.icon_container}>
                 <a>
     <div>
@@ -30,7 +30,7 @@ function FormularioLanding() {
         alt="Telephone"
         className={style.icon} /> 
         <div className={style.text_icon}>
-        <h4>+58414111000</h4>
+        <h4 className={style.subtitle_icon}>+58414111000</h4>
         </div>
     </li>
     </div>
@@ -45,7 +45,7 @@ function FormularioLanding() {
         alt="Email"
         className={style.icon} />
                <div className={style.text_icon}>
-               <h4>Example@email.com</h4>
+               <h4  className={style.subtitle_icon}>Example@email.com</h4>
         </div>
     </li>
     </div>
@@ -64,8 +64,8 @@ function FormularioLanding() {
               <label for="" className={style.form_label}>Correo Electronico</label>
               <input type="text" id="email" placeholder="E-Mail" className={style.form_input}></input>
 
-              <label for="" className={style.form_label}>Mensaje</label>
-              <textarea id="mensaje" placeholder="          Escriba aqui su mensaje" className={style.form_textarea}> Escriba aquisu mensaje</textarea>
+              <label for="" className={style.form_label}>Mensaje de texto</label>
+              <textarea id="mensaje" placeholder="          Escriba aqui su mensaje" className={style.form_textarea}> </textarea>
 
               <div className ={style.button_align}>
               <input type="submit" value="Enviar" className={style.btn_submit}></input>
