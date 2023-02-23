@@ -18,7 +18,24 @@ function GroupExample( {videolinkGroups}) {
           <h2>Videos de aprendizaje</h2>
         </div>
 
+          <div>
 
+          {videolinkGroups.map(({_id})=>{
+            <div key={_id}> 
+              {videolinkGroups.map(({registros})=>
+              <div key={registros}>
+              <Video
+             
+              url = {registros.url} 
+              title = {registros.title} 
+              description = {registros.description} 
+              />
+              </div>
+              )}
+            </div>
+          })}
+
+          </div>
       </div>
 
     </Layout>
@@ -27,7 +44,7 @@ function GroupExample( {videolinkGroups}) {
 }
 
 
-function Video(){
+function Video(props){
   return(
     <div className={style.container__video}>
     <div className="row">
@@ -47,9 +64,9 @@ function Video(){
       <div className="col-lg-8 col-sm-12">
         <div className="p-2">
           <div>{title}</div>
-          <div className="small">Link: {url}</div>
+          <div className="small">Link: {props.url}</div>
           <div className="small">Categoria: {categoryvideo.title}</div>
-          <div className="small">Descripcion: {description}</div>
+          <div className="small">Descripcion: {props.description}</div>
         </div>
       </div>
     </div>
