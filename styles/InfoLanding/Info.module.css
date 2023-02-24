@@ -13,6 +13,7 @@
     margin-top: 50px;
     font-size: 60px;
     margin-bottom: 50px;
+    font-weight: bold;
 }
 
 .container__info {
@@ -55,14 +56,25 @@
    text-align: center;
    align-self: center;
    margin-bottom: 30px;
+   font-weight: bold;
 }
 
 
 .info p{
     font-size: 0.89rem;
-    text-align: start;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: justify;
+ }
+
+ .info .info_img{
+    display: flex;
+    height: 210px;
+    width: 190px;
+    border-radius: 50%;
+    position: absolute;
+    top: -110px;
+    left: -40px;
  }
 
 .info img{
@@ -73,7 +85,6 @@
     position: absolute;
     top: -62px;
     left: -40px;
-   
 }
 
 .info ul{
@@ -144,6 +155,11 @@
 /****************Responsive*************/
 
 @media screen and (max-width: 800px) {
+
+    .container h2 {
+        font-size: 30px;
+    }
+
     .container__img img {
         width: 400px;
         height: 250px;
@@ -161,6 +177,7 @@
     .container__text {
         min-width: 35%;
         padding: 20px;
+        text-align: justify;
     }
     .container__text p {
         text-align: justify;
@@ -175,6 +192,13 @@
         left: -30px;
 
     }
+
+    .info .info_img{
+        height: 190px;
+        width: 170px;
+        top: -90px;
+        left: -10px;
+     }
     
     
     .info ul li{
@@ -261,7 +285,7 @@
     }
     
     .info h2{
-       font-size: 2.5rem;
+       font-size: 25px;
        text-align: center;
        align-self: center;
        margin-bottom: 30px;
@@ -271,7 +295,7 @@
     
     .info p{
         font-size: 0.89rem;
-        text-align: start;
+        text-align: justify;
         margin-left: 10px;
         margin-right: 10px;
      }
@@ -329,13 +353,13 @@
         min-width: 30%;
     }
     .container h2 {
-        margin-top: 20px;
-        font-size: 1.5rem;
+        margin-top: 50px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
     .info h2{
-        font-size: 2.5rem;
+        font-size: 25px;
         text-align: center;
         align-self: center;
         margin-bottom: 30px;
@@ -368,6 +392,7 @@
         min-width: 30%;
     }
     .container__text p {
+        text-align: justify;
         font-size: 1rem;
     }
 }

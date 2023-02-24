@@ -138,7 +138,27 @@ export default function InfoLanding({fupaguaServices}){
 
             {/* Más sobre FUPAGUA */}
 
-            <div className={style.container__infoTwo}>
+            <div className={style.container__infoTwo}> 
+
+
+            <div className={style.info}>         
+                        <Image
+                        src={'/logo/logo_centro.png'}
+                        width={500}
+                        height={500}
+                        alt="Logo de centro"
+                        loading='lazy'
+                        className={style.info_img}
+                        />
+                        
+                   <h2>Centro de Diagnóstico y Tratamiento {`"Lcda. Nora Díaz"`}</h2>
+                 
+                    <p>Se establecen conversaciones con el Ministerio de Infraestructura y se consigue la sede en calidad
+                        de comodato para abrir sus puertas el 16/10/1998 como <strong>{`Centro de Diagnóstico y Tratamiento "Lcda. Nora Díaz".`}</strong> Nos hemos esforzado, conjuntamente con el Equipo de Integración {`"José Félix Ribas"`}, por la integración de los niños con autismo y/o discapacidad 
+                        en general en escuelas regulares, con éxito; así mismo desde nuestros inicios hemos logrado la asistencia a diplomados, conferencia, 
+                        talleres, seminarios a nivel nacional e internacional, y entrenamientos sucesivos en diferentes centros.
+                    </p>
+                </div>
 
 
                 <div className={style.info}>         
@@ -209,7 +229,7 @@ export default function InfoLanding({fupaguaServices}){
             {/*Servicios*/}
 
             <div className={styleService.container}>
-                	<h2>Servicios</h2>
+                	<h2 className={styleService.text_services}>Nuestros servicios</h2>
                     <Carousel 
                     containerClass="carousel-container"
                     ssr={true}
