@@ -43,11 +43,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5rem;
-    height: 140px;
-    width: 140px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
     background-color: rgb(20, 115, 238);
     border: rgb(20, 115, 238);
+    padding: 5px;
+}
+
+.container__img button img{
+    background: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .container__text {

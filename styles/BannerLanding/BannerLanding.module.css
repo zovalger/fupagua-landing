@@ -36,7 +36,7 @@
     }
     
     .title {
-        font-size: 80px;
+        font-size: 60px;
     }
     
     .subtitle {
@@ -90,7 +90,7 @@
         .bg_book,
         .bg_video,
         .bg_form {
-            height: 80vh;
+            height: 90vh;
             background-size: auto;
         }
         .container_text {
@@ -114,8 +114,15 @@
     }
     
     @media screen and (max-width: 930px) {
+        .bg_activity,
+        .bg_book,
+        .bg_video,
+        .bg_form {
+            padding-top: 5px;
+        }
+
         .title {
-            font-size: 60px;
+            font-size: 50px;
         }
     }
     
