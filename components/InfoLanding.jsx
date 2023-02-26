@@ -78,7 +78,7 @@ export default function InfoLanding({fupaguaServices}){
                         <p>
                             FUPAGUA, <strong>{`"Fundación de personas autistas del estado Guárico"`}</strong>, 
                             es una fundación sin animo de lucro con personal dispuestos a trabajar por el bienestar, 
-                            integración y una mejor calidad de vida de las personas con Autismo y otros transtornos del desarrollo.<br /><br />
+                            integración y una mejor calidad de vida de las personas con Autismo y otros trastornos del desarrollo.<br /><br />
                             Nuestro objetivo es atender a los niños y adolescentes con autismo de San Juan de los Morros y zonas
                             adyacentes, en la busqueda de su integración a la comunidad.
                         </p>
