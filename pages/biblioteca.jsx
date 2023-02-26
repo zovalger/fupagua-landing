@@ -14,6 +14,7 @@ import style from "../styles/Biblioteca/Biblioteca.module.css";
 import styleL from "../styles/Biblioteca/LibrosR.module.css";
 import styles from "../styles/Biblioteca/Book.module.css";
 import { getRecommendBooks } from "../controllers/book.controller";
+import BibliotecaSearch from "../components/Biblioteca/BibliotecaSearch";
 
 function GroupExample({ recommendedBooks }) {
 	const responsive = {
@@ -45,7 +46,6 @@ function GroupExample({ recommendedBooks }) {
 				<div className={styleL.container}>
 					<h2>Libros recomendados</h2>
 
-
 					<Carousel
 						containerClass="carousel-container"
 						ssr={true}
@@ -63,45 +63,7 @@ function GroupExample({ recommendedBooks }) {
 
 				{/*Catalogo de libros*/}
 
-				<div className={style.container__catalogo}>
-					<div className={style.Header__catalogo}>
-						<div className={style.Header__text}>
-							<h2>Bienvenidos a la Biblioteca {`"Juana Milano de Díaz"`}</h2>
-							<p>
-								Aquí encontrará información referente de los libros que expone
-								nuestra biblioteca pública.
-							</p>
-						</div>
-						<div className={style.Header__search}>
-							{" "}
-							{/*Temporal*/}
-							<div className={style.container__search}>
-								<input type={"text"} className={style.search} />
-
-								<button className={style.button__filter}>
-									<Image
-										src={"/Vectores/filter.png"}
-										width={400}
-										height={400}
-										alt="Vector de filtro"
-										loading="lazy"
-									/>
-								</button>
-							</div>
-							<button className={style.button}>
-								<Image
-									src={"/Vectores/search.png"}
-									width={400}
-									height={400}
-									alt="Vector del Buscador"
-									loading="lazy"
-								/>
-							</button>
-						</div>
-					</div>
-
-					<div className={style.content_catalogo}></div>
-				</div>
+				<BibliotecaSearch />
 			</div>
 		</Layout>
 	);

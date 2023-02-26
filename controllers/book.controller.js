@@ -60,8 +60,38 @@ export async function getRecommendBooks() {
 export async function getBooks_query(query) {
 	await connectDb();
 
+	const {
+		or,
+		sortBy = "title",
+		direction = "ASC",
+		title,
+		description,
+		subtitle,
+		cota,
+		autor,
+		materia,
+		observations,
+		type = "book",
+	} = query;
+
+	const ordenamiento = {};
+	ordenamiento[sortBy] = direction === "ASC" ? 1 : -1;
+
+	const operador = or ? "$or" : "$and";
+
 	try {
-		const grupo = await BookModel.find().lean();
+		const grupo = await BookModel.find({
+			[operador]: [
+				{ title: { $regex: title || "", $options: "i" } },
+				{ description: { $regex: description || "", $options: "i" } },
+				{ subtitle: { $regex: subtitle || "", $options: "i" } },
+				{ cota: { $regex: cota || "", $options: "i" } },
+				{ autor: { $regex: autor || "", $options: "i" } },
+				{ materia: { $regex: materia || "", $options: "i" } },
+			],
+		})
+			.sort(ordenamiento)
+			.lean();
 
 		return grupo;
 	} catch (error) {
