@@ -58,7 +58,7 @@
 }
 
 .form_input:focus+input {
-    border: 1px solid rgba(40, 161, 231, 0.377);
+    border: 1px solid rgba(20, 115, 238);
   }
 
 .form_textarea {
@@ -92,8 +92,8 @@
     color: white;
     width: 50%;
     box-sizing: border-box;
-    background: #00aae4;
-    border: solid #00aae4 ;
+    background: rgb(20, 115, 238);
+    border: solid rgb(20, 115, 238);
     border-radius: 75px;
     padding: 12px 30px;
     font-size: 20px;
@@ -102,8 +102,8 @@
 
 .btn_submit:hover {
     cursor: pointer;
-    background: #37bfec;
-    border: solid #37bfec;
+    background: rgb(48, 129, 235);
+    border: solid rgb(48, 129, 235);
 }
 
 

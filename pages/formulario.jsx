@@ -29,7 +29,7 @@ function FormularioLanding() {
             <form action="start" className={style.form} onSubmit={sendEmail}>
 
               <div className={style.form_header}>
-                <h2 className={style.title}> ¡Contactanos! </h2>
+                <h2 className={style.title}> ¡Contáctanos! </h2>
                 <div className={style.icon_container}>
                 <a>
     <div>
@@ -41,7 +41,7 @@ function FormularioLanding() {
         alt="Telephone"
         className={style.icon} /> 
         <div className={style.text_icon}>
-        <h4 className={style.subtitle_icon}>+58414111000</h4>
+        <h4 className={style.subtitle_icon}>+580000000</h4>
         </div>
     </li>
     </div>
@@ -62,7 +62,7 @@ function FormularioLanding() {
     </div>
                 </a>
                 </div>
-                <p className={style.form_text}> Envianos un mensaje </p>
+                <p className={style.form_text}> Envíanos un mensaje </p>
                 <p className={style.form_text}> Pronto te atenderemos</p>
               </div>
 
@@ -72,7 +72,7 @@ function FormularioLanding() {
               <label for="" className={style.form_label}>Numero de Teléfono</label>
               <input type="text" id="numero" placeholder="Teléfono" name="user_telefono" className={style.form_input}></input>
 
-              <label for="" className={style.form_label}>Correo Electronico</label>
+              <label for="" className={style.form_label}>Correo Electrónico</label>
               <input type="text" id="email" placeholder="E-Mail" name="user_email" className={style.form_input}></input>
 
               <label for="" className={style.form_label}>Mensaje de texto</label>

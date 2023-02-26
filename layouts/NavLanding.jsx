@@ -27,7 +27,7 @@ export function NavLanding() {
             navbarScroll
           >
             <Nav.Link href="/">Sobre nosotros</Nav.Link>
-            <Nav.Link href="formulario">Contactanos</Nav.Link>
+            <Nav.Link href="formulario">Contáctanos</Nav.Link>
             <Nav.Link href="biblioteca">Biblioteca</Nav.Link>
             <Nav.Link href="videos">Videos</Nav.Link>
           </Nav>
