@@ -6,7 +6,7 @@ function ActivityLanding() {
  <div className={style.bg_activity}>  
   <div className={style.container_text}> 
   <h2 className={style.title}> 
-  Actividades. 
+  Actividades
   </h2>
   <p className={style.text}> 
   En FUPAGUA se están realizando constantes cambios para la mejora y facilitación de nuestros servicios. Aquí podrá consultar las actualizaciones de las actividades realizadas así como anuncios de próximos eventos.

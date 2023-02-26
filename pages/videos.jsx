@@ -15,13 +15,13 @@ function GroupExample({ videolinkGroups }) {
 				<div className={style.container__header}>
 					<h2>Videos de aprendizaje</h2>
 				</div>
-
-				<div>
+				
+				<div className={style.body_videos}>
 					{/* recorrido de todas las categorias */}
 					{videolinkGroups.map((category, index1) => (
 
             // el key es para identificar elementos en un array (manias de react)
-						<div key={index1}>
+						<div key={index1} className={style.category}>
 
 							{/* se coloca el nombre de la categoria */}
 
@@ -49,8 +49,7 @@ function Video({ data }) {
 
 	return (
 		<div className={style.container__video}>
-			<div className="row">
-				<div className="col-lg-4 col-sm-12">
+			
 					<div className={style.video}>
 						<iframe
 							src={
@@ -59,19 +58,18 @@ function Video({ data }) {
 									: "https://www.youtube.com/embed/dWFBlfZSkak"
 							}
 							title="YouTube video player"
+							frameBorder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+							allowFullScreen
 						></iframe>
 					</div>
-				</div>
 
-				<div className="col-lg-8 col-sm-12">
-					<div className="p-2">
-						<div>{title}</div>
+						<div className={style.title}>{title}</div>
 						{/* <div className="small">Link: {url}</div> */}
 						{/* <div className="small">Categoria: {categoryvideo.title}</div> */}
-						<div>{description}</div>
-					</div>
-				</div>
-			</div>
+						<div className={style.description}>{description}</div>
+				
+	
 		</div>
 	);
 }

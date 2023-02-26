@@ -27,7 +27,7 @@ import Modal from 'react-bootstrap/Modal';
 
 
 
-export default function InfoLanding({fupaguaServices}){
+ function InfoLanding({ fupaguaServices }){
 
 
 
@@ -138,7 +138,7 @@ export default function InfoLanding({fupaguaServices}){
 
             {/* Más sobre FUPAGUA */}
 
-            <div className={style.container__infoTwo}> 
+            <div className={style.container__infoTwo}>
 
 
             <div className={style.info}>         
@@ -229,7 +229,10 @@ export default function InfoLanding({fupaguaServices}){
             {/*Servicios*/}
 
             <div className={styleService.container}>
-                	<h2 className={styleService.text_services}>Nuestros servicios</h2>
+                	<h2 className={styleService.text_services}>Nuestros servicios</h2> 
+
+
+               
                     <Carousel 
                     containerClass="carousel-container"
                     ssr={true}
@@ -239,35 +242,22 @@ export default function InfoLanding({fupaguaServices}){
                     infinite={true}
                     >
 
-                        <Services 
-                        titulo="Fisioterapia"
-                        tituloModal="Fisioterapia"
-                        nombre="Lucas Perez"
-                        contenido="El primero es de los mejores"
-                        telefono="0416-000000"
-                        correo="prueba@gmail.com"
-                        entrada="8:00 AM"
-                        salida="4:00 PM"
-                        />
-                        <Services 
-                        titulo="titulo prueba"
-                        tituloModal="titulo de prueba"
-                        contenido="Es la segunda vez que me abres"
-                        />
-                        <Services 
-                        titulo="Terapia"
-                        tituloModal="Terapia"
-                        contenido="Solo queda uno para el final"
-                        />
-                        <Services 
-                        titulo="Terapia del habla"
-                        tituloModal="Terapia del habla"
-                        contenido="El ultimo es de los mejores"
-                        />
+                            {fupaguaServices.map((service, index1)=>{
+                                            return(
+                    
+                                                <Services
+                                                key={index1}
+                                                data={service}
+                                                />
+
+                                            )
+                        })}
 
                       
                      </Carousel>
-
+                   
+                 
+        
 			</div>
 
 
@@ -278,24 +268,32 @@ export default function InfoLanding({fupaguaServices}){
 
 
 //Servicios
-function Services(props){
+function Services( { data } ){
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  
+
+    const { id, title, description, img , empleados } = data;
+    console.log(empleados)
     return(
             <>
                 <div className={styleService.container__service}>
 
                     <div className={styleService.container__img}>
                         <button variant="primary" onClick={handleShow}>
-                            {/*insert image*/ /*cloudynary*/}
+                            <Image
+                            src={img}
+                            width={200}
+                            height={200}
+                            alt="Imagen del servicio"
+                            loading='lazy'
+                            />
                         </button>
                     </div>
 
                     <div className={styleService.container__text}>
-                        <h2>{props.titulo}</h2> {/*De la base de datos*/}
+                        <h2>{title}</h2> {/*De la base de datos*/}
                     </div>
 
                 </div>
@@ -305,110 +303,80 @@ function Services(props){
                         >
                 
                 <Modal.Header closeButton>
-                    <Modal.Title>{props.tituloModal}</Modal.Title> {/*titulo del servicio*/}
+                    <Modal.Title>
+                        <div className={styleModal.title}> 
+                            <div className={styleModal.title__img}>
+                                <Image 
+                                src={'/logo/logo_centro.png'}
+                                height={500}
+                                width={500}
+                                alt="Logo de centro"
+                                loading='lazy'
+                                />
+                            </div>
+
+                            <div className={styleModal.title__text}>
+                                <h2>{title}</h2>
+                            </div>
+                        </div>
+                        </Modal.Title> 
                 </Modal.Header>
 
                 <Modal.Body>
 
+
+                    
                     <div className={styleModal.container}>
 
                         <div className={styleModal.container__serviceInfo}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quaerat sint. Vero tenetur, 
-                                reiciendis nam rerum, non temporibus beatae cumque distinctio id soluta laborum maiores, voluptatibus ipsum. Odit, iste quia?</p> {/*Heredar la descripción acerca del servicio*/}
+                            <p>{description}</p> {/*Heredar la descripción acerca del servicio*/}
                         </div>
 
-                        <div className = {styleModal.container__card}>
+                        {empleados.map((id, index2)=>{
+                          
+                            return(
+                               <div key={index2}>
+                                <div className = {styleModal.container__card}>
 
-                            <div div className={styleModal.container__header}> 
-
-                                <div className={styleModal.container__img}>
-
-                                    <Image
-                                    src={'/IMG/info_1.jpg'} 
-                                    width={400}
-                                    height={400}
-                                    alt='Foto'
-                                    loading='lazy'
-                                    />
-
+                                <div className={styleModal.container__header}> 
+    
+                                    <div className={styleModal.container__img}>
+    
+                                        <Image
+                                        src={id.img} 
+                                        width={400}
+                                        height={400}
+                                        alt='Foto de perfil'
+                                        loading='lazy'
+                                        />
+    
+                                    </div>
+    
+                                    <div className={styleModal.container__headerText}>
+    
+                                        <h2>{id.name}</h2>
+    
+                                        <p><strong>FPV:</strong> {id.FPV}</p>
+                
+                                        <p><strong>Correo:</strong> {id.email}</p>
+    
+    
+                                    </div>
+    
                                 </div>
-
-                                <div className={styleModal.container__headerText}>
-
-                                    <h2>{props.nombre}</h2>
-
-                                    <p><strong>FPV:</strong> {props.fpv}</p>
-            
-                                    <p><strong>Correo:</strong> {props.correo}</p>
-
-
+    
+                                <div className={styleModal.container__description}>
+                                    {id.description ? <h3>Más información</h3> : <h3></h3>}
+                                    <p>{id.description}</p>
                                 </div>
-
+    
                             </div>
-
-                            <div className={styleModal.container__description}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
                             </div>
-
-                        </div>
-
-                        <div className = {styleModal.container__card}>
-
-                            <div div className={styleModal.container__header}> 
-
-                                <div className={styleModal.container__img}>
-
-                                    <Image
-                                    src={'/IMG/info_1.jpg'}
-                                    width={400}
-                                    height={400}
-                                    alt='Foto'
-                                    />
-
-                                </div>
-
-                                <div className={styleModal.container__headerText}>
-
-                                    <p>{props.contenido}</p>
-
-                                </div>
-
-                            </div>
-
-                            <div className={styleModal.container__description}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
-                             </div>
-
-                        </div>
-
-                        <div className = {styleModal.container__card}>
-
-                            <div div className={styleModal.container__header}> 
-
-                                <div className={styleModal.container__img}>
-
-                                    <Image
-                                    src={'/IMG/info_1.jpg'}
-                                    width={400}
-                                    height={400}
-                                    alt='Foto'
-                                    />
-
-                                </div>
-
-                                <div className={styleModal.container__headerText}>
-
-                                    <p>{props.contenido}</p>
-
-                                </div>
-
-                            </div>
-
-                            <div className={styleModal.container__description}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit natus autem earum ea magni quasi, assumenda unde, reiciendis nobis officiis, dolore reprehenderit! Possimus delectus obcaecati incidunt nam, tempore beatae?</p>
-                            </div>
-
-                        </div>
+    
+                            )
+                        })}
+                       
+                
 
                     </div>
                     
@@ -421,3 +389,5 @@ function Services(props){
 
     )
 }
+
+export default InfoLanding

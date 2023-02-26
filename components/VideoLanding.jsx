@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import style from "../styles/BannerLanding/BannerLanding.module.css";
 
 function VideoLanding(props, { boton }) {
@@ -15,9 +16,9 @@ function VideoLanding(props, { boton }) {
         capacidades pedagógicas de los egresados y darles un apoyo a su conocimiento e
         integración social e intelectual.
         </p>
-        {props.boton ?<a href="videos" className={style.button_video}>
+        {props.boton ?<Link href="videos" className={style.button_video}>
           Ver videos
-        </a> : <div></div>}
+        </Link> : <div></div>}
       </div>
       <div className={style.container_img}>
         <Image

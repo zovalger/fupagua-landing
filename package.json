@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,9 +16,12 @@
     "eslint-config-next": "13.0.5",
     "mongoose": "^6.9.1",
     "next": "13.0.5",
+    "next-images": "^1.8.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2"
   }
 }

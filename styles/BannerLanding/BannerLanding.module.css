@@ -36,7 +36,7 @@
     }
     
     .title {
-        font-size: 80px;
+        font-size: 60px;
     }
     
     .subtitle {
@@ -90,8 +90,9 @@
         .bg_book,
         .bg_video,
         .bg_form {
-            height: 80vh;
+            height: 90vh;
             background-size: auto;
+            padding-top: 10px;
         }
         .container_text {
             flex-basis: 60%;
@@ -114,8 +115,16 @@
     }
     
     @media screen and (max-width: 930px) {
+        .bg_activity,
+        .bg_book,
+        .bg_video,
+        .bg_form {
+            padding-top: 12px;
+            height: auto;
+        }
+
         .title {
-            font-size: 60px;
+            font-size: 50px;
         }
     }
     
@@ -125,6 +134,7 @@
         .bg_video {
             flex-direction: column-reverse;
             height: auto;
+            padding-top: 30px;
         }
         .container_text {
             display: flex;

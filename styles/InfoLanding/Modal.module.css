@@ -8,9 +8,48 @@
     justify-content: baseline;
 }
 
+.title{
+    display: flex;
+    min-width: 200px !important;
+    flex-direction:row;
+    padding: 5px;
+    align-self: center;
+
+}
+
+.title__img{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
+    position: relative;
+}
+
+.title__img img { 
+    width: 90px;
+    height: 100px;
+    position: absolute;
+
+    left: 0;
+   
+}
+
+.title__text { 
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    justify-content: center;
+  
+}
+
+.title__text h2{ 
+    justify-self: center;
+    font-size: 1.8rem;
+}
+
 .container__card{
     display: flex;
-    min-height: 180px;
+    min-height: 200px;
     width: 345px;
     border: 2px solid black;
     border-radius: 2em;
@@ -18,6 +57,7 @@
     justify-items: center;
     flex-direction: column;
     margin: 10px;
+    align-items: center;
 }
 
 
@@ -98,11 +138,19 @@
     padding: 5px;
     justify-content: center;
     margin-top: 10px;
+    flex-direction: column;
 }
 
 .container__description p{
-    font-size: 0.90rem;
+    font-size: 0.82rem;
     text-align: justify;
+}
+
+.container__description h3{
+    font-size: 1.20rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 990px) {
@@ -113,17 +161,34 @@
     }
 
     .container__card{
-        margin-left: 0px;
-        width: 90%;
+        min-width: 400px;
     }
 }
 
 
 @media screen and (max-width: 650px) {
+    .title{
   
+        min-width: 150px !important;
+       
+    
+    }
+    
+    .title__img img { 
+        width: 80px;
+        height: 80px;
+    }
+    
+
+    .title__text h2{ 
+        font-size: 1.45rem;
+    }
+
+
     .container__card{
-        margin-left: 0px;
-        width: 90%;
+        min-width: 380px !important;
+        margin: auto;
+        margin-bottom: 25px;
     }
 
 
@@ -155,6 +220,30 @@
 }
 
 @media screen and (max-width: 450px){
+
+    .title{
+  
+        min-width: 120px !important;
+       
+    
+    } 
+    .container__card{
+    
+        min-width: 270px !important;
+       
+    }
+    
+
+    .title__img img { 
+        width: 60px;
+        height: 60px;
+    }
+    
+
+    .title__text h2{ 
+        text-align: center;
+        font-size: 1.0rem;
+    }
 
     .container__card{
     
@@ -189,6 +278,24 @@
 
 @media screen and (max-width: 300px) {
 
+    .container__card{
+    
+        min-width: 200px !important;
+      
+    }
+
+    .title__img img { 
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    .title__text h2{ 
+        text-align: center;
+        font-size: 0.80rem;
+    }
+
+
 
     .container__img{
         width: 100px;
@@ -220,7 +327,7 @@
 
 
     .container__description p{
-        font-size: 0.73rem;
+        font-size: 0.70rem;
         text-align: justify;
     }
 }
