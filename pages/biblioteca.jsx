@@ -54,10 +54,17 @@ function GroupExample({ recommendedBooks }) {
 						responsive={responsive}
 						infinite={true}
 					>
-						<LibrosRecomendados />
-						<LibrosRecomendados />
-						<LibrosRecomendados />
-						<LibrosRecomendados />
+
+					{recommendedBooks.map((recomendado, index1)=>{
+						return(
+							<LibrosRecomendados
+							key={index1}
+							data = {recomendado}
+							/>
+						)
+					}
+					)}
+
 					</Carousel>
 				</div>
 
@@ -69,13 +76,23 @@ function GroupExample({ recommendedBooks }) {
 	);
 }
 
-function LibrosRecomendados() {
+function LibrosRecomendados({ data }) {
+
+	
+    const { _id, registros } = data;
 	return (
-		<>
-			<div className={styleL.container__book}>
+		<div>
+		{registros.map((id, index2)=>{
+			return(
+				<div key={index2} >
+				{id.recommended ? <div className={styleL.container__book}>
+
+				<div>
+					<h4 style={{ marginTop: "20px" }}>{id.title}</h4>
+				</div>
 				<div className={styleL.container__img}>
 					<Image
-						src={"/IMG/Info_1.jpg"}
+						src={id.portada}
 						width={400}
 						height={400}
 						alt="Libro de FUPAGUA"
@@ -85,14 +102,17 @@ function LibrosRecomendados() {
 				<div className={styleL.container__text}>
 					<h2>Sipnosis:</h2>
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
-						similique quaerat quae dolore tenetur quo eum amet odio explicabo,
-						deleniti, porro voluptates iure. Officiis consectetur dignissimos
-						asperiores quaerat repellat illum.
+						{id.description}
 					</p>
 				</div>
 			</div>
-		</>
+		: <div></div>}
+		</div>
+			 )
+			}
+			)}
+		</div>
+		
 	);
 }
 
