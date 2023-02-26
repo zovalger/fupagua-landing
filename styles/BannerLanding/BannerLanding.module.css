@@ -92,6 +92,7 @@
         .bg_form {
             height: 90vh;
             background-size: auto;
+            padding-top: 10px;
         }
         .container_text {
             flex-basis: 60%;
@@ -118,7 +119,8 @@
         .bg_book,
         .bg_video,
         .bg_form {
-            padding-top: 5px;
+            padding-top: 12px;
+            height: auto;
         }
 
         .title {
@@ -132,6 +134,7 @@
         .bg_video {
             flex-direction: column-reverse;
             height: auto;
+            padding-top: 30px;
         }
         .container_text {
             display: flex;
