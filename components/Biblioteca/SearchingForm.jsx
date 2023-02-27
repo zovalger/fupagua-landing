@@ -135,7 +135,7 @@ export default function SearchingForm({ getListOfBooks, cancelQuery }) {
 					<div className="col-6">
 						<span></span>
 
-						<Form.Group className="mb-3" controlId="formBasicEmail">
+						<Form.Group className="mb-3">
 							<Form.Label>Ordenar por</Form.Label>
 							<Form.Select
 								onChange={SortByOnChange}
@@ -151,20 +151,20 @@ export default function SearchingForm({ getListOfBooks, cancelQuery }) {
 							</Form.Select>
 						</Form.Group>
 
-						<Form.Group className="mb-3" controlId="formBasicEmail">
-							<Form.Group className="mb-3" controlId="formBasicEmail">
-								<Form.Label>Autor</Form.Label>
-								<Form.Control
-									name="autor"
-									type="search"
-									// placeholder="Enter email"
-									onChange={onInputChange}
-									autoComplete="none"
-									value={query.autor}
-								/>
-								<Form.Text className="text-muted"></Form.Text>
-							</Form.Group>
+						<Form.Group className="mb-3">
+							<Form.Label>Autor</Form.Label>
+							<Form.Control
+								name="autor"
+								type="search"
+								// placeholder="Enter email"
+								onChange={onInputChange}
+								autoComplete="none"
+								value={query.autor}
+							/>
+							<Form.Text className="text-muted"></Form.Text>
+						</Form.Group>
 
+						<Form.Group className="mb-3">
 							<Form.Label>Subtítulo</Form.Label>
 							<Form.Control
 								name="subtitle"
@@ -177,7 +177,7 @@ export default function SearchingForm({ getListOfBooks, cancelQuery }) {
 							<Form.Text className="text-muted"></Form.Text>
 						</Form.Group>
 
-						<Form.Group className="mb-3" controlId="formBasicEmail">
+						<Form.Group className="mb-3">
 							<Form.Label>Cota</Form.Label>
 							<Form.Control
 								name="cota"
@@ -192,8 +192,8 @@ export default function SearchingForm({ getListOfBooks, cancelQuery }) {
 					</div>
 
 					<div className="col-6">
-						<Form.Group className="mb-3" controlId="formBasicEmail">
-							<Form.Label>Direccion</Form.Label>
+						<Form.Group className="mb-3">
+							<Form.Label>Dirección</Form.Label>
 							<Button
 								className="bg-white text-black text-start w-100"
 								type="button"
@@ -209,7 +209,7 @@ export default function SearchingForm({ getListOfBooks, cancelQuery }) {
 							</Button>
 						</Form.Group>
 
-						<Form.Group className="mb-3" controlId="formBasicEmail">
+						<Form.Group className="mb-3">
 							<Form.Label>Materia</Form.Label>
 							<Form.Control
 								name="materia"
@@ -222,7 +222,7 @@ export default function SearchingForm({ getListOfBooks, cancelQuery }) {
 							<Form.Text className="text-muted"></Form.Text>
 						</Form.Group>
 
-						<Form.Group className="mb-3" controlId="formBasicEmail">
+						<Form.Group className="mb-3">
 							<Form.Label>Descripción</Form.Label>
 							<Form.Control
 								name="description"
