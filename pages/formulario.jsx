@@ -56,7 +56,7 @@ function FormularioLanding() {
         alt="Email"
         className={style.icon} />
                <div className={style.text_icon}>
-               <h4  className={style.subtitle_icon}>Ejemplo@email.com</h4>
+               <h4  className={style.subtitle_icon}>fupagua.server@gmail.com</h4>
         </div>
     </li>
     </div>
@@ -79,7 +79,7 @@ function FormularioLanding() {
               <textarea id="mensaje" placeholder="          Escriba aqui su mensaje"  name="user_mensaje" className={style.form_textarea}> </textarea>
 
               <div className ={style.button_align}>
-              <input type="submit" value="Enviar" className={style.btn_submit}></input>
+              <button href="/" type="submit" value="Enviar" className={style.btn_submit}>Enviar</button>
               </div>
 
             </form>
