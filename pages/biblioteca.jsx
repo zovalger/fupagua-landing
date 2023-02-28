@@ -15,6 +15,7 @@ import styleL from "../styles/Biblioteca/LibrosR.module.css";
 import styles from "../styles/Biblioteca/Book.module.css";
 import { getRecommendBooks } from "../controllers/book.controller";
 import BibliotecaSearch from "../components/Biblioteca/BibliotecaSearch";
+import { useState } from "react";
 
 function GroupExample({ recommendedBooks }) {
 	const responsive = {
@@ -54,17 +55,9 @@ function GroupExample({ recommendedBooks }) {
 						responsive={responsive}
 						infinite={true}
 					>
-
-					{recommendedBooks.map((recomendado, index1)=>{
-						return(
-							<LibrosRecomendados
-							key={index1}
-							data = {recomendado}
-							/>
-						)
-					}
-					)}
-
+						{recommendedBooks.map((recomendado, index1) => {
+							return <LibrosRecomendados key={index1} data={recomendado} />;
+						})}
 					</Carousel>
 				</div>
 
@@ -77,42 +70,46 @@ function GroupExample({ recommendedBooks }) {
 }
 
 function LibrosRecomendados({ data }) {
+	const { _id, registros } = data;
 
-	
-    const { _id, registros } = data;
 	return (
 		<div>
-		{registros.map((id, index2)=>{
-			return(
-				<div key={index2} >
-				{id.recommended ? <div className={styleL.container__book}>
+			{registros.map((id, index2) => {
+				return (
+					<div key={index2}>
+						<Recommended_Book id={id} />
+					</div>
+				);
+			})}
+		</div>
+	);
+}
 
-				<div>
-					<h4 style={{ marginTop: "20px" }}>{id.title}</h4>
-				</div>
-				<div className={styleL.container__img}>
-					<Image
-						src={id.portada}
-						width={400}
-						height={400}
-						alt="Libro de FUPAGUA"
-					/>
-				</div>
+function Recommended_Book({ id }) {
+	const [imgDownloaded, setImgDownloaded] = useState(id.portada);
 
-				<div className={styleL.container__text}>
-					<h2>Sipnosis:</h2>
-					<p>
-						{id.description}
-					</p>
-				</div>
+	const onErrorLoad = () => setImgDownloaded("/unknowBook.jpg");
+
+	return (
+		<div className={styleL.container__book}>
+			<div>
+				<h4 style={{ marginTop: "20px" }}>{id.title}</h4>
 			</div>
-		: <div></div>}
+			<div className={styleL.container__img}>
+				<Image
+					src={imgDownloaded}
+					width={400}
+					height={400}
+					alt="Libro de FUPAGUA"
+					onError={onErrorLoad}
+				/>
+			</div>
+
+			<div className={styleL.container__text}>
+				<h2>Sipnosis:</h2>
+				<p>{id.description}</p>
+			</div>
 		</div>
-			 )
-			}
-			)}
-		</div>
-		
 	);
 }
 
@@ -126,6 +123,8 @@ function Libros({ dataBook }) {
 		img_cloudinary_url,
 		img_local_url,
 	} = dataBook;
+
+	usesta;
 
 	return (
 		<div className={styles.container}>

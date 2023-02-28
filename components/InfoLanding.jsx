@@ -63,7 +63,7 @@ import Modal from 'react-bootstrap/Modal';
                     <div className={style.container__img}>
 
                         <Image 
-                        src={'/IMG/info_1.jpg'}
+                        src={'/IMG/Info_1.jpg'}
                         width={600}
                         height={600}
                         alt="FUPAGUA"
@@ -273,8 +273,12 @@ function Services( { data } ){
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    
+    
     const { id, title, description, img , empleados } = data;
+    
+        const [imgDownloaded, setImgDownloaded] = useState(img);
+        const onErrorLoad = () => setImgDownloaded("/nowifi.png");
     console.log(empleados)
     return(
             <>
@@ -283,11 +287,13 @@ function Services( { data } ){
                     <div className={styleService.container__img}>
                         <button variant="primary" onClick={handleShow}>
                             <Image
-                            src={img}
+                            src={imgDownloaded}
                             width={200}
                             height={200}
                             alt="Imagen del servicio"
                             loading='lazy'
+                            onError={onErrorLoad}
+
                             />
                         </button>
                     </div>
