@@ -128,7 +128,7 @@ import Modal from 'react-bootstrap/Modal';
 
                     <div className={style.container__text}>
 
-                        <p>Estamos ubicados en la Urb.Rómulos gallegos. Av.principal, sector al lado de Hidro Páez.</p>
+                        <p>Estamos ubicados en la Urb.Rómulos gallegos. Av.principal, sector al lado de Hidro Páez. San Juan de los Morros</p>
                         
                      
 

@@ -44,7 +44,7 @@ function GroupExample({ recommendedBooks }) {
 				<BookLanding boton={false} />
 				{/*Libros recomendados*/}
 
-				<div className={styleL.container}>
+				{/*<div className={styleL.container}>
 					<h2>Libros recomendados</h2>
 
 					<Carousel
@@ -59,7 +59,7 @@ function GroupExample({ recommendedBooks }) {
 							return <LibrosRecomendados key={index1} data={recomendado} />;
 						})}
 					</Carousel>
-				</div>
+				</div>*/}
 
 				{/*Catalogo de libros*/}
 
@@ -76,9 +76,9 @@ function LibrosRecomendados({ data }) {
 		<div>
 			{registros.map((id, index2) => {
 				return (
-					<div key={index2}>
-						<Recommended_Book id={id} />
-					</div>
+					
+						<Recommended_Book id={id} key={index2}/>
+				
 				);
 			})}
 		</div>
@@ -106,45 +106,8 @@ function Recommended_Book({ id }) {
 			</div>
 
 			<div className={styleL.container__text}>
-				<h2>Sipnosis:</h2>
+				<h2>Descripción:</h2>
 				<p>{id.description}</p>
-			</div>
-		</div>
-	);
-}
-
-function Libros({ dataBook }) {
-	const {
-		title,
-		subtitle,
-		autor,
-		description,
-		cota,
-		img_cloudinary_url,
-		img_local_url,
-	} = dataBook;
-
-	usesta;
-
-	return (
-		<div className={styles.container}>
-			<div className={styles.imgContainer}>
-				<img
-					src={img_cloudinary_url ? img_cloudinary_url : img_local_url}
-					alt="foto de portada"
-				/>
-			</div>
-			<div className={styles.text}>
-				<div className={styles.title}>{title}</div>
-				<div className={styles.subtitle}> {subtitle}</div>
-				<div className={styles.autor}>
-					<b>Autor: </b> {autor}
-				</div>
-				<div className={styles.autor}>
-					<b>cota: </b>
-					{cota}
-				</div>
-				<div className={styles.description}>{description}</div>
 			</div>
 		</div>
 	);

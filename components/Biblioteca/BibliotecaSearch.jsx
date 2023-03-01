@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import { useEffect, useState } from "react";
 import SearchingForm from "./SearchingForm";
 import style from "./BibliotecaSearch.module.css";
+import styleF from '../../styles/Biblioteca/Book.module.css'
 import Image from "next/image";
 
 export default function BibliotecaSearch({}) {
@@ -77,12 +78,33 @@ export default function BibliotecaSearch({}) {
 		}
 	};
 
-	const llenarLista = (book) => (
-		<div>{JSON.stringify(book)}</div>
 
-		// <Link to={`./${book.id}`} key={book.id}>
-		// 	<Book dataBook={book} />
-		// </Link>
+	
+	const llenarLista = (book) => (
+		<div className={styleF.container__book}>
+			<div className={styleF.container__bookImage}>
+				<Image
+				src={book.portada}
+				height={400}
+				width={400}
+				alt="portada"
+				/>
+			</div>
+			<div className={styleF.container__bookText}>
+
+			<p>Titulo: {book.title}, Subtitulo: {book.subtitle}, 
+			Cota: {book.cota}, Autores: {book.autor}, Editorial: {book.editors}, 
+			Fecha de edición: {book.editionDate}, Tamaño: {book.height}, Observaciones: {book.observations}, 
+			Tipo: {book.type}, Materias: {book.materia}.
+			</p>
+		
+			</div>
+
+			{/* {JSON.stringify(book)} */}
+
+		</div>
+
+		
 	);
 
 	return (
@@ -106,8 +128,8 @@ export default function BibliotecaSearch({}) {
 				<div className={style.content_catalogo}></div>
 			</div>
 
-			<div className="container">
-				<div className="">
+			<div className={styleF.container}>
+				<div className={styleF.container_two}>
 					{/*********************************************************************
 									muestra el contenido de la busqueda solo si
 											hay algun valor en el formulario de busqueda

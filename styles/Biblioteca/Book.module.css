@@ -1,25 +1,44 @@
 .container {
 	display: flex;
-
-	overflow: hidden;
-	padding: 0.5rem;
-	margin-bottom: 0.5rem;
-
-	background-color: white;
-	/* // background-color: rgb(163, 255, 255); */
+	min-width: 100%;
 	border-radius: 1rem;
-	font-size: 14px;
+	padding: 0px;
+	
+	flex-direction: column;
 }
 
-.imgContainer {
-	/* // background-color: aqua; */
+.container_two{
+	display: flex;
+	min-width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
 
-	width: 5rem;
-	height: 7rem;
+.container__book {
+	display: flex;
+	max-width: 90%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 1rem;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	flex-direction: row;
+	height: auto;
+	max-height: 800px;
+	align-items: center;
+}
+
+.container__bookImage {
+	display: flex;
+	width: 6rem;
+	height: 8rem;
 	flex-shrink: 0;
 	overflow: hidden;
 
-	display: flex;
+	display: inline-flex;
 
 	align-items: center;
 	justify-content: center;
@@ -27,28 +46,75 @@
 	border-radius: 0.2rem;
 }
 
-.imgContainer img {
-	object-fit: cover;
-	height: auto;
-	width: 100%;
+.container__bookImage img{
+	
+		height: auto;
+		width: 100%;
+}
+
+.container__bookText {
+	display: flex;
+	max-width: 80%;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container__bookText p{
+	font-size: 1.1rem;
+	text-align: start;
+}
+
+@media screen and (max-width:600px) {
+
+	.container__book {
+		display: flex;
+		min-width: 90%;
+	}
+	
+
+	
+	.container__bookText {
+
+		max-width: 80%;
+
+	}
+
+	
 }
 
 
-.text {
-	margin-left: .3rem;
-	flex-grow: 1;
+@media screen and (max-width:500px) {
+	.container__book {
+		display: flex;
+		min-width: 90%;
+		height: auto;
+	}
+	
+	
+	
+	.container__bookText {
+
+		max-width: 75%;
+
+	}
+	
+	.container__bookText p{
+		font-size: 0.88rem;
+
+	}
+	
+	
 }
 
-.title {
-	font-weight: 500;
-	font-size: 16px;
-}
+@media screen and (max-width:320px) {
 
-.autor {
-	/* // font-weight: 200; */
-}
+	
+	.container__bookText p{
+		font-size: 0.68rem;
 
-.description {
-	/* // margin-top: 0.2rem; */
-	font-size: 14px;
+	}
+	
+	
 }
