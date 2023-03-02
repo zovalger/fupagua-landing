@@ -1,3 +1,5 @@
+import styles from "./Recommended_Book.module.css";
+
 import Image from "next/image";
 import { useState } from "react";
 

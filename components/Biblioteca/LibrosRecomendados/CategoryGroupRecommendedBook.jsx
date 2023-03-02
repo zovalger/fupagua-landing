@@ -1,6 +1,7 @@
 //React-multi-carousel//
 import Carousel from "react-multi-carousel";
 import Recommended_Book from "./Recommended_Book";
+import styles from "./CategoryGroupRecommendedBook.module.css";
 
 const responsive = {
 	superLargeDesktop: {

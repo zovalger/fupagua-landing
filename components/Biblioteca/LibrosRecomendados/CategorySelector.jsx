@@ -1,3 +1,7 @@
+import styles from "./CategorySelector.module.css";
+
+
+
 export default function CategorySelector({
 	title,
 	onSelectCategory,
