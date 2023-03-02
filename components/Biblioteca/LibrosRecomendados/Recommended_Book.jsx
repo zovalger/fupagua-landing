@@ -9,7 +9,7 @@ export default function Recommended_Book({ data }) {
 
 	return (
 		<div
-		// className={styleL.container__book}
+		className={styles.container__book}
 		>
 			<div>
 				<h4 style={{ marginTop: "20px" }}>{data.title}</h4>

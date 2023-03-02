@@ -92,10 +92,8 @@ export default function BibliotecaSearch({}) {
 			</div>
 			<div className={styleF.container__bookText}>
 
-			<p>Titulo: {book.title}, Subtitulo: {book.subtitle}, 
-			Cota: {book.cota}, Autores: {book.autor}, Editorial: {book.editors}, 
-			Fecha de edición: {book.editionDate}, Tamaño: {book.height}, Observaciones: {book.observations}, 
-			Tipo: {book.type}, Materias: {book.materia}.
+			<p><strong>Titulo:</strong> {book.title}, <strong>Subtitulo:</strong> {book.subtitle}, 
+			<strong>Cota:</strong> {book.cota}, <strong>Autores:</strong> {book.autor}, <strong>Editorial:</strong> {book.editors}, <strong>Fecha de edición:</strong> {book.editionDate}, <strong>Tamaño:</strong> {book.height}, <strong>Observaciones:</strong> {book.observations}, <strong>Tipo:</strong> {book.type}, <strong>Materias:</strong> {book.materia}.
 			</p>
 		
 			</div>

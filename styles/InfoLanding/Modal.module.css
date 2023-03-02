@@ -49,11 +49,11 @@
 
 .container__card{
     display: flex;
-    min-height: 200px;
+    min-height: 300px;
     width: 345px;
     border: 2px solid black;
     border-radius: 2em;
-    padding: 8px;
+    padding: 4px;
     justify-items: center;
     flex-direction: column;
     margin: 10px;
@@ -120,12 +120,12 @@
 
 .container__headerText p{ 
     font-size: 0.82rem;
-    text-align: justify;
+    text-align: start;
 }
 
 .container__headerText h2{ 
-    font-size: 1.20rem;
-    text-align: justify;
+    font-size: 1.18rem;
+    text-align: start;
     margin-bottom: 10px;
 }
 

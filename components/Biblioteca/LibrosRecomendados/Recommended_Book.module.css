@@ -1,0 +1,10 @@
+.container__book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    height: 600px;
+    width: 400px;
+    flex-direction: column;
+    padding: 10px;
+}
