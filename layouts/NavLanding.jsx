@@ -2,6 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Link from "next/link";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from "next/image";
 
@@ -26,10 +27,18 @@ export function NavLanding() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/">Sobre nosotros</Nav.Link>
-            <Nav.Link href="Contactanos">Contáctanos</Nav.Link>
-            <Nav.Link href="biblioteca">Biblioteca</Nav.Link>
-            <Nav.Link href="videos">Videos</Nav.Link>
+            <Link href="/" className="nav-link">
+            Sobre nosotros
+              </Link>
+            <Link href="Contactanos" className="nav-link">
+            Contáctanos
+              </Link>
+            <Link href="biblioteca" className="nav-link">
+            Biblioteca
+              </Link>
+            <Link  href="videos" className="nav-link">
+            Videos
+              </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
