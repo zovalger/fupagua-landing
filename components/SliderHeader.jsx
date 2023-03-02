@@ -31,8 +31,8 @@ function SliderHeader() {
         </div>
 
           <div className={style.container_text}>
-            <h3 className={style.title}>Bienvenido.</h3>
-          <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
+            <h3 className={style.title}>Bienvenido</h3>
+          <p>{"Fundación de Personas Autistas del Guárico"}</p>
           </div>
         </Carousel.Caption>
 
@@ -62,8 +62,8 @@ function SliderHeader() {
          </div>   
 
          <div className={style.container_text}>
-            <h3 className={style.title}>Bienvenido.</h3>
-            <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
+            <h3 className={style.title}>Bienvenido</h3>
+            <p>{"Fundación de Personas Autistas del Guárico"}</p>
         </div>
         </Carousel.Caption>
 
@@ -93,8 +93,8 @@ function SliderHeader() {
          </div>   
 
          <div className={style.container_text}>
-            <h3 className={style.title}>Bienvenido.</h3>
-            <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
+            <h3 className={style.title}>Bienvenido</h3>
+            <p>{"Fundación de Personas Autistas del Guárico"}</p>
         </div>
         </Carousel.Caption>
 
@@ -124,8 +124,8 @@ function SliderHeader() {
          </div>   
 
          <div className={style.container_text}>
-            <h3 className={style.title}>Bienvenido.</h3>
-            <p>{"Fundación de Personas Autistas del estado Guárico"}</p>
+            <h3 className={style.title}>Bienvenido</h3>
+            <p>{"Fundación de Personas Autistas del Guárico"}</p>
         </div>
         </Carousel.Caption>
 

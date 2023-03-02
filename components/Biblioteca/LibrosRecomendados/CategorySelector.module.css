@@ -21,7 +21,7 @@
     justify-content: center;
     height: 3.5rem;
     width: 7.5rem;
-    background-color: #7cb77c;
+    background-color: #5fe379;
     border-radius: 1em;
     padding: 5px;
     margin: auto;
@@ -31,6 +31,11 @@
 }
 @media screen and (max-width: 500px) {
     .categorySelector {
+        height: 2.8rem;
+        width: 6.8rem;
+        font-size: 0.88rem;
+    }
+    .active {
         height: 2.8rem;
         width: 6.8rem;
         font-size: 0.88rem;

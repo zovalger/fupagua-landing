@@ -41,7 +41,7 @@ function FormularioLanding() {
         alt="Telephone"
         className={style.icon} /> 
         <div className={style.text_icon}>
-        <h4 className={style.subtitle_icon}>+584167392911</h4>
+        <h4 className={style.subtitle_icon}>+58 4167392911</h4>
         </div>
     </li>
     </div>
