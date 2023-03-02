@@ -21,12 +21,12 @@ export function FooterLanding() {
         <div className={style.box}>
             <h2>SOBRE NOSOTROS</h2>
             <Link  href="/" className={style.link}>Nosotros.</Link>
-            <Link  href="formulario" className={style.link}>Contáctanos.</Link>
+            <Link  href="Contactanos" className={style.link}>Contáctanos.</Link>
         </div>
         <div className={style.box}>
             <h2>SIGUENOS</h2>
             <div className={style.red}>
-                <a href="#" className="facebook">
+                <a href="https://www.facebook.com/people/Fupagua/100066278966499/" className="facebook" target="_blank">
                 <Image
                     src={("/logo-redes/facebook.svg")}
                     height={20}
@@ -35,7 +35,7 @@ export function FooterLanding() {
                     className="icon"
                     />
                 </a>
-                <a href="#" className="twitter">
+                <a href="https://twitter.com/fupaguasjm?lang=es" className="twitter" target="_blank">
                 <Image
                     src={("/logo-redes/twitter.svg")}
                     height={20}
@@ -44,7 +44,7 @@ export function FooterLanding() {
                     className="icon"
                     />
                 </a>
-                <a href="#" className="instagram">
+                <a href="https://www.instagram.com/explore/tags/fupagua/top/" className="instagram" target="_blank">
                 <Image
                     src={("/logo-redes/instagram.svg")}
                     height={20}
@@ -52,24 +52,6 @@ export function FooterLanding() {
                     alt="instagram"
                     className="icon"
                     /> 
-                </a>
-                <a href="#" className="whatsapp">
-                <Image
-                    src={("/logo-redes/whatsapp.svg")}
-                    height={20}
-                    width={20}
-                    alt="whatsapp"
-                    className="icon"
-                    />
-                </a>
-                <a href="#" className="telegram">
-                <Image
-                    src={("/logo-redes/telegram.svg")}
-                    height={20}
-                    width={20}
-                    alt="telegram"
-                    className="icon"
-                    />
                 </a>
             </div>
         </div>

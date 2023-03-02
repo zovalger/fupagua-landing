@@ -17,7 +17,7 @@ export default function RecommendedBooks_section({ data }) {
 		superLargeDesktop: {
 			// the naming can be any, depends on you.
 			breakpoint: { max: 4000, min: 3000 },
-			items: 5,
+			items: 4,
 		},
 		desktop: {
 			breakpoint: { max: 3000, min: 650 },
@@ -62,6 +62,7 @@ export default function RecommendedBooks_section({ data }) {
 				</Carousel>
 
 			{/* recorrido de todos los grupos de categorias */}
+				<div className={styles.container__libros}>
 
 			{data.map((category) => (
 				<CategoryGroupRecommendedBook
@@ -70,6 +71,7 @@ export default function RecommendedBooks_section({ data }) {
 					key={category._id}
 				/>
 			))}
+			</div>
 		</div>
 	);
 }

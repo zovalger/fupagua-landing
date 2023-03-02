@@ -1,16 +1,19 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
-
-.container h2{
-   align-self: center;
-   justify-self: center;
-   font-size: 1.80rem;
-   margin: 20px;
+.container h2 {
+    align-self: center;
+    justify-self: center;
+    font-size: 2.55rem;
+    margin: 20px;
 }
-
-.container__category{
-  display: flex;
- justify-content: space-evenly;
+.container__category {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container__libros {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
 }

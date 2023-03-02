@@ -10,5 +10,5 @@ export default function CategorySelector({
 	// es true o false (usar para cambiar de estilo del boton y que se vea que esta seleccionado)
 	// selectedCategory
 
-	return <div className={styles.categorySelector} onClick={() => onSelectCategory(title)}>{title}</div>;
+		return <div className={selectedCategory ===title ?  `${styles.active}` : `${styles.categorySelector}`} onClick={() => onSelectCategory(title)}>{title}</div>;
 }

@@ -1,20 +1,38 @@
-.categorySelector{
+.categorySelector {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 3.5rem;
-   width: 7.5rem;
-    background-color: rgb(142, 255, 155);
-    border-radius: 4em;
+    width: 7.5rem;
+    background-color: #fff;
+    border-radius: 1em;
     padding: 5px;
     margin: auto;
     font-size: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
 }
-
+.categorySelector:hover {
+    background-color: #7cb77c;
+}
+.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 7.5rem;
+    background-color: #7cb77c;
+    border-radius: 1em;
+    padding: 5px;
+    margin: auto;
+    font-size: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
 @media screen and (max-width: 500px) {
-    .categorySelector{
+    .categorySelector {
         height: 2.8rem;
-       width: 6.8rem;
-       font-size: 0.88rem;
+        width: 6.8rem;
+        font-size: 0.88rem;
     }
 }
