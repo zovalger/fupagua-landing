@@ -17,8 +17,6 @@ import { useState } from "react";
 import RecommendedBooks_section from "../components/Biblioteca/LibrosRecomendados/RecommendedBooks_section";
 
 export default function GroupExample({ recommendedBooks }) {
-
-
 	return (
 		<Layout title="Biblioteca">
 			<div className={style.container}>
@@ -26,7 +24,10 @@ export default function GroupExample({ recommendedBooks }) {
 				<BookLanding boton={false} />
 
 				{/*Libros recomendados*/}
-				<RecommendedBooks_section data={recommendedBooks} />
+
+				{recommendedBooks.length > 0 ? (
+					<RecommendedBooks_section data={recommendedBooks} />
+				) : null}
 
 				{/*Catalogo de libros*/}
 
