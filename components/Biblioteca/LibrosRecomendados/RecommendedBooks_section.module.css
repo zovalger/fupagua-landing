@@ -17,3 +17,31 @@
     margin-bottom: 20px;
     padding: 10px;
 }
+
+@media screen and (max-width: 960px) {
+    .container h2 {
+        font-size: 2.40rem;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container h2 {
+        font-size: 1.80rem;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container h2 {
+        font-size: 1.40rem;
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container h2 {
+        font-size: 1.20rem;
+
+    }
+}
