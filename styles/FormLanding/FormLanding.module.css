@@ -2,7 +2,7 @@
 
 .bg_form {
     min-height: 100%;
-    background-color: #bbdfff;
+    background-color: #79B6f7;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
     width: 100%;
     padding: 35px;
     box-sizing: border-box;
-    background: rgb(250, 246, 246);
+    background: #fff;
     border-radius: 20px;
     flex-basis: 40%;
     margin-top: 70px;
@@ -57,10 +57,6 @@
     box-sizing: border-box;
 }
 
-.form_input:focus+input {
-    border: 1px solid rgba(20, 115, 238);
-}
-
 .form_textarea {
     border-radius: 0px;
 }
@@ -89,11 +85,11 @@
 
 .btn_submit {
     align-items: center;
-    color: white;
+    color: #fff;
     width: 50%;
     box-sizing: border-box;
-    background: rgb(20, 115, 238);
-    border: solid rgb(20, 115, 238);
+    background: #3D80C7;
+    border: solid #3D80C7;
     border-radius: 75px;
     padding: 12px 30px;
     font-size: 20px;
@@ -102,8 +98,8 @@
 
 .btn_submit:hover {
     cursor: pointer;
-    background: rgb(48, 129, 235);
-    border: solid rgb(48, 129, 235);
+    background: #4f88c4;
+    border: solid #4f88c4;
 }
 
 

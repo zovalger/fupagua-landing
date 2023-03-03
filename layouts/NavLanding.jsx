@@ -3,12 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Link from "next/link";
+import style from "../styles/BannerLanding/BannerLanding.module.css";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from "next/image";
 
 export function NavLanding() {
   return (
-    <Navbar bg="primary" expand="lg" variant="dark" fixed="top">
+    <Navbar className={style.navbar}  expand="lg" variant="dark" fixed="top" >
       <Container fluid>
       <Navbar.Brand href="/">
             <img

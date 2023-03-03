@@ -11,7 +11,7 @@
     margin-top: 20px;
 }
 .container__book {
-    background-color: rgb(255, 255, 255);
+    background-color: #FFFFE0;
     width: 400px;
     display: flex;
     height: auto;

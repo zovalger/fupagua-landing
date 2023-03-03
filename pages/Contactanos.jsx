@@ -29,7 +29,7 @@ function FormularioLanding() {
             <form action="/" className={style.form} onSubmit={sendEmail}>
 
               <div className={style.form_header}>
-                <h2 className={style.title}> ¡Contáctanos! </h2>
+                <b> <h2 className={style.title}> ¡Contáctanos! </h2> </b>
                 <div className={style.icon_container}>
                 <a>
     <div>
