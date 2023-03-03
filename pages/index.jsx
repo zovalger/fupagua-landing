@@ -72,11 +72,11 @@ export default function Home({ numberVisit,fupaguaServices }) {
 				</section>
 
 				<section>
-					<VideoLanding boton={true} />
+					<BookLanding boton={true} />
 				</section>
 
 				<section>
-					<BookLanding boton={true} />
+					<VideoLanding boton={true} />
 				</section>
 
 				<section>

@@ -5,7 +5,7 @@
     flex-direction: column;
     min-height: 100vh;
     max-width: 100%;
-    background-color: #bbdfff;
+    background-color: #79B6f7;
     padding: 5px;
     justify-content: center;
 }
@@ -46,8 +46,8 @@
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    background-color: rgb(20, 115, 238);
-    border: rgb(20, 115, 238);
+    background-color: #3D80C7;
+    border: #3D80C7;
     padding: 20px;
 }
 
