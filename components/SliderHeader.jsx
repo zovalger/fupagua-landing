@@ -8,7 +8,7 @@ function SliderHeader() {
 
       <Carousel.Item>
         <Image
-          className="d-block w-100"
+          className={style.image}
           src={'/Header/1.jpg'}
           alt="FUPAGUA"
           width={800}
@@ -21,7 +21,7 @@ function SliderHeader() {
         <div className={style.container_img}>
         <Image
             className={style.logo}
-            src={'/logo/logo_extended.svg'}
+            src={'/logo/logo_fupagua.png'}
             width={"400"}
             height={"400"}
             alt='FUPAGUA_logo'
@@ -40,7 +40,7 @@ function SliderHeader() {
 
       <Carousel.Item>
         <Image
-          className="d-block w-100"
+          className={style.image}
           src={'/Header/2.jpg'}
           alt="FUPAGUA"
           width={800}
@@ -53,7 +53,7 @@ function SliderHeader() {
         <div className={style.container_img}>
             <Image
             className={style.logo}
-            src={'/logo/logo_extended.svg'}
+            src={'/logo/logo_fupagua.png'}
             width={"400"}
             height={"400"}
             alt='FUPAGUA_logo'
@@ -71,7 +71,7 @@ function SliderHeader() {
 
       <Carousel.Item>
         <Image
-          className="d-block w-100"
+          className={style.image}
           src={'/Header/3.jpg'}
           alt="FUPAGUA"
           width={800}
@@ -84,7 +84,7 @@ function SliderHeader() {
         <div className={style.container_img}>
             <Image
             className={style.logo}
-            src={'/logo/logo_extended.svg'}
+            src={'/logo/logo_fupagua.png'}
             width={"400"}
             height={"400"}
             alt='FUPAGUA_logo'
@@ -102,7 +102,7 @@ function SliderHeader() {
 
       <Carousel.Item>
         <Image
-          className="d-block w-100"
+          className={style.image}
           src={'/Header/4.jpg'}
           alt="FUPAGUA"
           width={800}
@@ -115,7 +115,7 @@ function SliderHeader() {
         <div className={style.container_img}>
             <Image
             className={style.logo}
-            src={'/logo/logo_extended.svg'}
+            src={'/logo/logo_fupagua.png'}
             width={"400"}
             height={"400"}
             alt='FUPAGUA_logo'

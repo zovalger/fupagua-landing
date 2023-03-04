@@ -80,12 +80,12 @@
     }
     
     .button_video:hover {
-        background: rgb(241, 115, 115);
+        background: #f0ee7f;
         color: #fff;
     }
     
     .button_book:hover {
-        background: rgb(111, 243, 111);
+        background: #a7e46a;
         color: #fff;
     }
     /****************Responsive*************/
