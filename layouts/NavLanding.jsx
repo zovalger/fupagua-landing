@@ -13,9 +13,9 @@ export function NavLanding() {
       <Container fluid>
       <Navbar.Brand href="/">
             <img
-              src="logo/logo.svg"
-              width="30"
-              height="30"
+              src="logo/logo_fupagua.png"
+              width="40"
+              height="40"
               className="d-inline-block align-top"
               alt="logo_FUPAGUA"
             />

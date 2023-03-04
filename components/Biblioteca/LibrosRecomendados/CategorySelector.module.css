@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 .categorySelector:hover {
-    background-color: #7cb77c;
+    background-color: #99df54;
 }
 .active {
     display: flex;
@@ -21,7 +21,8 @@
     justify-content: center;
     height: 3.5rem;
     width: 7.5rem;
-    background-color: #5fe379;
+    background-color: #67B11E;
+    color: #fff;
     border-radius: 1em;
     padding: 5px;
     margin: auto;

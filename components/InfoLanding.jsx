@@ -97,8 +97,8 @@ import Modal from 'react-bootstrap/Modal';
                     <Image 
                     className={style.horario}
                     src={'/IMG/Info_2.png'}
-                    width={600}
-                    height={600}
+                    width={500}
+                    height={500}
                     alt="FUPAGUA"
                     loading='lazy'
                     quality={40}

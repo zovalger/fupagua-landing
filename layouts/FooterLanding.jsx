@@ -12,7 +12,7 @@ export function FooterLanding() {
                     <Image
                     width={200}
                     height={200}
-                    src={("/logo/logo_extended.svg")}
+                    src={("/logo/logo_fupagua.png")}
                     alt="logo de FUPAGUA" />
                 </a>
             </figure>
@@ -26,7 +26,7 @@ export function FooterLanding() {
         <div className={style.box}>
             <h2>SIGUENOS</h2>
             <div className={style.red}>
-                <a href="https://www.facebook.com/people/Fupagua/100066278966499/" className="facebook" target="_blank">
+                <a href="https://www.facebook.com/people/Fupagua/100066278966499/" className="facebook" target="_blank" rel="noreferrer">
                 <Image
                     src={("/logo-redes/facebook.svg")}
                     height={20}
@@ -35,7 +35,7 @@ export function FooterLanding() {
                     className="icon"
                     />
                 </a>
-                <a href="https://twitter.com/fupaguasjm?lang=es" className="twitter" target="_blank">
+                <a href="https://twitter.com/fupaguasjm?lang=es" className="twitter" target="_blank" rel="noreferrer">
                 <Image
                     src={("/logo-redes/twitter.svg")}
                     height={20}
@@ -44,7 +44,7 @@ export function FooterLanding() {
                     className="icon"
                     />
                 </a>
-                <a href="https://www.instagram.com/explore/tags/fupagua/top/" className="instagram" target="_blank">
+                <a href="https://www.instagram.com/explore/tags/fupagua/top/" className="instagram" target="_blank" rel="noreferrer">
                 <Image
                     src={("/logo-redes/instagram.svg")}
                     height={20}

@@ -16,9 +16,9 @@
     padding: 35px;
     box-sizing: border-box;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 40px;
     flex-basis: 40%;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -98,8 +98,8 @@
 
 .btn_submit:hover {
     cursor: pointer;
-    background: #4f88c4;
-    border: solid #4f88c4;
+    background: #6694c5;
+    border: solid #6694c5;
 }
 
 
@@ -250,9 +250,6 @@
     }
     .form_text {
         font-size: 15px;
-    }
-    .container_form {
-        border-radius: 0px;
     }
     .subtitle_icon {
         font-size: 16px;
