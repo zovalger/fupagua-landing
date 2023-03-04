@@ -52,10 +52,9 @@
 }
 
 .container__img button img{
-    background: none;
-    height: 80%;
-    width: 80%;
-    object-fit: cover;
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
 
 }
 

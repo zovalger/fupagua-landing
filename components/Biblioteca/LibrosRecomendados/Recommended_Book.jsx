@@ -11,9 +11,7 @@ export default function Recommended_Book({ data }) {
 		<div
 		className={styles.container__book}
 		>
-			<div>
-				<h4 style={{ marginTop: "20px" }}>{data.title}</h4>
-			</div>
+		
 			<div
 				className={styles.container__img}
 			>
@@ -29,7 +27,9 @@ export default function Recommended_Book({ data }) {
 			<div
 			className={styles.container__text}
 			>
-				<h2>Descripción</h2>
+					<div>
+				<h4 style={{ marginTop: "20px" }}>{data.title}</h4>
+			</div>
 				<p>{data.description}</p>
 			</div>
 		</div>

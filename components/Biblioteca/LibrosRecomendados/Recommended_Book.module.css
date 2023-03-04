@@ -19,10 +19,9 @@
     display: flex;
     flex-direction: column;
 }
-.container__text h2 {
-    font-size: 2rem;
-    text-align: justify;
-    margin-bottom: 5px;
+.container__text h4 {
+    font-size: 1.8rem;
+    text-align: center;
     justify-self: center;
     margin-bottom: 15px;
 }

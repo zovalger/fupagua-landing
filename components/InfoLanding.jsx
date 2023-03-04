@@ -79,7 +79,7 @@ import Modal from 'react-bootstrap/Modal';
                             FUPAGUA, <strong>{`"Fundación de Personas Autistas del Guárico"`}</strong>, 
                             es una fundación sin ánimo de lucro con personal dispuestos a trabajar por el bienestar, 
                             integración y una mejor calidad de vida de las personas con Autismo y otros trastornos del desarrollo.<br /><br />
-                            Nuestro objetivo es atender a los niños y adolescentes con autismo de San Juan de los Morros y zonas
+                            Nuestro objetivo es atender a los niños y adolescentes con autismo y otras discapacidades de San Juan de los Morros y zonas
                             adyacentes, en la busqueda de su integración a la comunidad.
                         </p>
 
@@ -108,8 +108,8 @@ import Modal from 'react-bootstrap/Modal';
 
                 <div className={style.container__text}>
 
-                    <p>Nuestro horario laboral es de Lunes a Viernes.</p><br />
-                    <p>Trabajamos desde las 8:00 AM hasta la 12:00 PM y de 1:00 PM a 4:00 PM</p>
+                    <p><strong>Nuestro horario laboral:</strong> Lunes a Viernes.</p><br />
+                    <p><strong>Desde:</strong> 8:00 AM hasta la 12:00 PM. Y de 1:00 PM a 4:00 PM.</p>
 
                 </div>
 
@@ -128,7 +128,7 @@ import Modal from 'react-bootstrap/Modal';
 
                     <div className={style.container__text}>
 
-                        <p>Estamos ubicados en la Urb.Rómulos gallegos. Av.principal, sector al lado de Hidro Páez. San Juan de los Morros</p>
+                        <p>Urbanización Rómulo Gallegos, avenida principal antigua sede de Mindur, al lado del estacionamiento de Hidropáez.</p>
                         
                      
 
@@ -141,24 +141,7 @@ import Modal from 'react-bootstrap/Modal';
             <div className={style.container__infoTwo}>
 
 
-            <div className={style.info}>         
-                        <Image
-                        src={'/logo/logo_centro.png'}
-                        width={500}
-                        height={500}
-                        alt="Logo de centro"
-                        loading='lazy'
-                        className={style.info_img}
-                        />
-                        
-                   <h2>Centro de Diagnóstico y Tratamiento {`"Lcda. Nora Díaz"`}</h2>
-                 
-                    <p>Se establecen conversaciones con el Ministerio de Infraestructura y se consigue la sede en calidad
-                        de comodato para abrir sus puertas el 16/10/1998 como <strong>{`Centro de Diagnóstico y Tratamiento "Lcda. Nora Díaz".`}</strong> Nos hemos esforzado, conjuntamente con el Equipo de Integración {`"José Félix Ribas"`}, por la integración de los niños con autismo y/o discapacidad 
-                        en general en escuelas regulares, con éxito; así mismo desde nuestros inicios hemos logrado la asistencia a diplomados, conferencia, 
-                        talleres, seminarios a nivel nacional e internacional, y entrenamientos sucesivos en diferentes centros.
-                    </p>
-                </div>
+         
 
 
                 <div className={style.info}>         
@@ -222,6 +205,25 @@ import Modal from 'react-bootstrap/Modal';
                      </ul>
                  </div>
 
+                 <div className={style.info}>         
+                        <Image
+                        src={'/logo/logo_centro.png'}
+                        width={500}
+                        height={500}
+                        alt="Logo de centro"
+                        loading='lazy'
+                        className={style.info_img}
+                        />
+                        
+                   <h2>Centro de Diagnóstico y Tratamiento {`"Lcda. Nora Díaz"`}</h2>
+                 
+                    <p>La fundación desde su génesis establece conversaciones con el Ministerio de Infraestructura y gracias a la intervención de algunos benefactores, se consigue nuestra sede en calidad de comodato.
+                    Abrimos nuestras puertas un 16 de octubre de 1998 como <strong>Centro de Diagnóstico  y Tratamiento {`"Lcda. Nora Díaz"`}</strong>.
+                    El epónimo fue escogido en agradecimiento a quién se esforzó por lograr el entrenamiento de los profesionales y la capacitación de los padres como coterapeutas para poder dar inicio a este grandioso proyecto.
+                    Iniciamos con cinco niños en tratamiento y hemos logrado atender a más de 1000 familias para dar el diagnóstico correspondiente y ofrecer el tratamiento requerido para alcanzar una vida de calidad en su entorno .
+                    </p>
+
+                </div>
 
 
             </div>

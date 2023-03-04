@@ -44,7 +44,7 @@ export default function Home({ numberVisit,fupaguaServices }) {
 				<title>FUPAGUA</title>
 				<meta
 					name="description"
-					content="fundacion de personas autista del estado guarico"
+					content="Fundación de Personas Autista del Guárico"
 				/>
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 				<link rel="icon" href="/logo.jpg" />

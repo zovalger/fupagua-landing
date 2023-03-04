@@ -10,7 +10,7 @@ function Layout({children, title}) {
 				<title>FUPAGUA</title>
 				<meta
 					name="description"
-					content="fundaciónn de Personas Autista del Estado Guárico"
+					content="Fundación de Personas Autista del Guárico"
 				/>
 				<link rel="icon" href="/logo.jpg" />
 			</Head>
