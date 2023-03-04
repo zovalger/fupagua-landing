@@ -314,15 +314,18 @@
     }
     
     .info ul{
-        display: block;
+        display: block !important;
+        list-style-type: start;
+        list-style-position: inside;
         padding-left: 2em;
     }
     
     .info ul li{
-        display: block;
+        display: block !important;
+        margin: 0;
         font-size: 1rem;
-        margin-bottom: 3px;
-        margin-top: 3px;
+        margin-bottom: 5px;
+        margin-top: 5px;
         text-align: start;
 
     }
