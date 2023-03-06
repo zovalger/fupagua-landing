@@ -14,7 +14,8 @@ function FormularioLanding() {
     emailjs.sendForm('service_5bw60h5', 'template_wxeh9ne', event.target, 'elkytiYvgDrTl-E_7')
     .then(response => console.log(response))
     .catch(error => console.log(error))
-
+    event.target.reset()
+    window.location.replace('/');
   }
 
     return (   
@@ -79,7 +80,7 @@ function FormularioLanding() {
               <textarea id="mensaje" placeholder="Escriba aqui su mensaje"  name="user_mensaje" className={style.form_textarea} required> </textarea>
 
               <div className ={style.button_align}>
-              <button href="/" type="submit" value="Enviar" className={style.btn_submit} onClick={() => location.replace("/") }>Enviar</button>
+              <button href="/" type="submit" value="Enviar" className={style.btn_submit}>Enviar</button>
               </div>
 
             </form>
